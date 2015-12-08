@@ -1,0 +1,89 @@
+
+/*Font-Size
+The time has long passed that we only need pixel values. Where possible these days I try to use em or rem.  
+These are both relative units of measurement, the difference between them being that em is based on the value of its 
+parent container and rem is based on the font-size of the root (the html element).
+*/
+
+// Mixin
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+ 
+// Usage
+.element {
+    @include font-size(1.8);
+}
+ 
+// Result
+.element {
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+/*
+Font-Face
+Manually embedding fonts via CSS3 isn't easy, because there are so many formats for different kinds of browsers. A mixin is the perfect solution for this. This mixin is called font-face and it expects two values. The first one is the name for the font-family and the second is the path to the different file-formats of the font. Read more about these various formats on Mozilla Developer Network.
+*/
+// Mixin
+@mixin font-face($name, $url) {
+  @font-face {
+    font-family: #{$name};
+    src: url('#{$url}.eot');
+    src: url('#{$url}.eot#iefix') format("embedded-opentype"),
+         url('#{$url}.ttf') format('truetype'),
+         url('#{$url}.svg##{$name}') format('svg'),
+         url('#{$url}.woff') format('woff');
+ 
+    @content;
+  }
+}
+ 
+// Usage
+@include font-face('icons', '../fonts/icons/iconfont');
+ 
+// Result
+@font-face {
+  font-family: icons;
+  src: url("../fonts/icons/iconfont.eot");
+  src: url("../fonts/icons/iconfont.eot#iefix") format("embedded-opentype"), 
+       url("../fonts/icons/iconfont.ttf") format("truetype"), 
+       url("../fonts/icons/iconfont.svg#icons") format("svg"), 
+       url("../fonts/icons/iconfont.woff") format("woff");
+}
+
+
+/*
+Respond-to
+I am so thankful for this mixin by Snugug: it's a great way to configure your global breakpoints and the best part is that you give each breakpoint its own name. Differentiating things with names is so much better than with pixels. This also gives you a good overview of all widths used and a central place to change the behavior.
+*/
+// Use mixin by Snugug
+// URL: https://gist.github.com/Snugug/2493551
+ 
+// Define your breakpoints and give each one a name
+$breakpoints: (
+  'small' 481px,
+  'medium' 600px,
+  'large' 769px
+);
+ 
+// Usage
+.element {
+    background: red;
+     
+    @include respond-to('medium') {
+        background: blue;
+    }
+}
+ 
+// Result
+.element {
+    background: red;
+}
+ 
+@media screen and (min-width: 600px) {
+    .element {
+        background: blue;
+    }
+}
