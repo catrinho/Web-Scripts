@@ -5,7 +5,9 @@
 */
 
 @import "_partials/reset";
+
 @import "_partials/variaveis";
+
 @import "_partials/mixins";
 @import "_partials/grelhas";
 @import "_partials/tipografia";
@@ -54,7 +56,8 @@ body{
 header{
 	z-index:100;
 	width:100%;
-	position:relative;
+	position:fixed;
+	top:0;
 	display:block;
 	background:$bg-color;
 	@include header_height;
@@ -102,8 +105,16 @@ header{
 	
 section{
 	width:100%;
-	position:relative;
+	// position:relative;
 	display:block;
+
+	.page-title{
+		text-align:center;
+		h1{
+			@include font_family($font-family-serif-buttler-medium);
+			font-size: $font-size-h1;
+		}	
+	}
 }
 section#header-bg{
 		// width: 100vw;
@@ -120,6 +131,7 @@ section#header-bg{
 			justify-content: center;
 			align-items: center;
 			background:#3ded34;
+
 			img{
 				max-width: 1440px;
 				width: 100%;
@@ -129,9 +141,67 @@ section#header-bg{
 }
 
 section#expo{
-	padding-top: 150px;
+	margin-top: 150px;
+	position:relative;
 
-	.page-title{
-		@include font_family($font-family-serif-buttler-medium);
+	.expositor{
+		//width: 850*0.085%;
+		height: 200px;
+		background:#ededad;
+		margin: 0 auto;
+		float: none;
+		margin:15px 0;
 	}
+}
+
+
+section#colecao{
+	margin-top: 150px;
+	 position:relative;
+
+	.montra-colecao{
+		height: 600px;
+		padding-bottom:40px; 
+		.col-colecao{
+				background:$cor-black;
+				float: left;
+				width: 18.111%;
+				height: 600px;
+				margin: 30px 11px;
+				position:relative;
+				max-width: 200;
+
+					.grayscale {
+					   	  @include grayscale_element(0);
+					    &:hover {
+					        @include grayscale_element(#{$grayscale_value});
+					        //background-color: rgba(183,29,41,1);
+					        background-color:rgba(183,29,41,0.4);
+							//background: @include filter-gradient($cor-red, $cor-red, horizontal);
+							//background: @include background-image(linear-gradient(left, rgba(183,29,41,0.4);) 0%, rgba(183,29,41,0.4); 100%));
+
+					    }
+					}
+				h2{
+					@include font_family($font-family-serif-buttler-bold);
+					font-size: 65px;
+					transform: rotate(-90deg);
+					position: relative;
+    				bottom: 50px;
+    				vertical-align: text-bottom;
+    				text-align:left;
+    				color: white;
+				}
+
+		}
+	}	
+}
+
+footer{
+	background-color:$cor-red;
+	height:300px;
+	display:block;
+	position: absolute;	
+    margin-top: 60px;
+    margin-bottom: 0px!important;
 }

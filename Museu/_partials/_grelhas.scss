@@ -22,7 +22,7 @@
       float: left;
       position: relative;
 	   	min-height: 2px;
-	   	margin:cell(($grid_gutter_width /2));
+	   	margin:ceil(($grid_gutter_width /2));
 }
 
 @mixin clearfix {
@@ -36,10 +36,15 @@
         width: 0;
         height: 0; } 
 }
+
+  .clearfix{
+    @include clearfix;
+  }
  @mixin container($sub,$size:0) {
   .container{
         width:$size - $sub;
         margin:0 auto;
+        position: relative;
       }  
  } 
 
