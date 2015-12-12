@@ -1,39 +1,24 @@
 /*
-Error: Invalid CSS after "        margin-top": expected ";", was ":$margem /2;"
-        on line 43 of grelha.scss
+Error: Invalid CSS after "...mber of columns": expected selector or at-rule, was "$grid_gutter_wi..."
+        on line 7 of grelha.scss
 
-38: }
-39: 
-40:  @mixin column {
-41:         float: left;
-42:         display: block
-43:         margin-top:$margem /2;
-44:         margin-bottom:$margem /2;
-45:         margin-left: $margem;
-46:         margin-right: $margem,;
-47:         position: relative;
-48: 	   	min-height: 1px;
+2: 
+3: // Variáveis
+4: 
+5: $grid_columns:           12 !default //number of columns
+6: 
+7: $grid_gutter_width:      20px !default // space between columns
+8: 
+9: $column-padding:    10px !default // space inside the columns
+10: 
+11: 
+12: $desktop-width:         1024px!default;
 
 Backtrace:
-grelha.scss:43
+grelha.scss:7
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1161:in `expected'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1097:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1092:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:757:in `block in try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:1137:in `rethrow'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:762:in `try_declaration'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:692:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:657:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:638:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:230:in `mixin_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:218:in `special_directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:193:in `directive'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:656:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:649:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:117:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:42:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/scss/parser.rb:43:in `parse'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:403:in `_to_tree'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:378:in `_render_with_sourcemap'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/engine.rb:295:in `render_with_sourcemap'
@@ -41,16 +26,17 @@ grelha.scss:43
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `each'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin/compiler.rb:293:in `watch'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/plugin.rb:108:in `method_missing'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/base.rb:52:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/lib/sass/exec/base.rb:19:in `parse!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.19/bin/sass:13:in `<top (required)>'
+/usr/bin/sass:23:in `load'
+/usr/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"        margin-top\": expected \";\", was \":$margem /2;\"\A         on line 43 of grelha.scss\A \A 38: }\A 39: \A 40:  @mixin column {\A 41:         float: left;\A 42:         display: block\A 43:         margin-top:$margem /2;\A 44:         margin-bottom:$margem /2;\A 45:         margin-left: $margem;\A 46:         margin-right: $margem,;\A 47:         position: relative;\A 48: 	   	min-height: 1px;"; }
+  content: "Error: Invalid CSS after \"...mber of columns\": expected selector or at-rule, was \"$grid_gutter_wi...\"\A         on line 7 of grelha.scss\A \A 2: \A 3: // Variáveis\A 4: \A 5: $grid_columns:           12 !default //number of columns\A 6: \A 7: $grid_gutter_width:      20px !default // space between columns\A 8: \A 9: $column-padding:    10px !default // space inside the columns\A 10: \A 11: \A 12: $desktop-width:         1024px!default;"; }

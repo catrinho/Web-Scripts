@@ -1,0 +1,83 @@
+// Tipografia
+
+
+//## Fonte: Buttler
+	@include font-face('butlerregular','fonts/Buttler/butler_regular-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('butlerbold','fonts/Buttler/butler_bold-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('butlermedium','fonts/Buttler/butler_medium-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('butler_stencilblack','fonts/Buttler/butler_black_stencil-webfont-wefont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+
+//## Fonte: Proxima Nova
+
+	@include font-face('proxima_nova_rgregular','fonts/ProximaNova/proxima_nova_regular-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('proxima_novaregular_italicc','fonts/ProximaNova/proxima_novaregular_italic'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('proxima_novalight','fonts/ProximaNova/proxima_nova_light-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('proxima_novalight_italic','fonts/ProximaNova/proxima_nova_light_italic-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('proxima_nova_rgbold','fonts/ProximaNova/proxima_nova_bold-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+	@include font-face('proxima_nova_rgbold_italic','fonts/ProximaNova/proxima_nova_bold_italic-webfont'){
+		font-weight: normal;
+   		font-style: normal;
+	}
+
+	
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+	$font-family-sans-PN-regular:  "proxima_nova_rgregular", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-regularitalic:  "proxima_nova_rgregular_italic", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-bold:  "proxima_nova_rgbold", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-bolditalic:  "proxima_nova_rgbold_italic", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-regular:  "proxima_nova_rglight", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-regular:  "proxima_nova_rgligth_italic", Helvetica, Arial, sans-serif !default;
+
+	$font-family-serif-buttler-regular:       "butlerregular'",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-bold:       "butlerbold'",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-medium:       "butlermedium'",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-stencil:       "butler_stencilblack'",Georgia, "Times New Roman", Times, serif !default;
+
+
+
+
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+
+
+

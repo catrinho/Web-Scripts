@@ -1,0 +1,137 @@
+/* 
+
+	PROJECTO: MUSEU FBAUP;
+	VERSÃO: 0.1;
+*/
+
+@import "_partials/reset";
+@import "_partials/variaveis";
+@import "_partials/mixins";
+@import "_partials/grelhas";
+@import "_partials/tipografia";
+
+
+body{
+	@include border_box;
+	background: #FFF;
+}
+.overNone{
+		overflow-y: hidden;
+	}
+
+.search_oberlay{
+	z-index:100;
+	position:fixed;
+	background:rgba(255,255,255,0.9);
+	height:100vh;
+	width:100vw;
+	overflow-y:hidden;
+	display:none;
+	 -webkit-transition: all 0.5s ease-in;
+
+	input[type="search"] {
+	    position: absolute;
+	    top: 50%;
+	    width: 100%;
+	    color:$cor-black;
+	    background:none;
+	    font-size: 60px;
+	    font-weight: 300;
+	    text-align: center;
+	    border: 0px;
+	    margin: 0px auto;
+	    margin-top: -51px;
+	    padding-left: 30px;
+	    padding-right: 30px;
+	    outline: none;
+	    @include placeholder($cor-black);
+	}
+
+
+}
+
+
+header{
+	z-index:100;
+	width:100%;
+	position:relative;
+	display:block;
+	background:$bg-color;
+	@include header_height;
+
+
+
+	.logo img{
+		width: 200px;
+		//margin-top:$header-height/2-$font-size-base;
+	}
+
+	.menu{
+		//background: $cor-red;
+		nav{
+			@include header_height;
+			//margin-top:$header-height/2-$font-size-base;
+			ul {
+			  
+			  display: block;
+			  margin: 0 auto;
+			  list-style: none;
+			  text-align: center;
+			  float:right;
+			}
+
+			li {
+			  display: inline-block;
+			  	a{
+			  		text-decoration: none;
+			  		color:$cor-black;
+			  		margin: 15px 20px;
+					display: block;
+					@include font_family($font-family-serif-buttler-medium);
+					font-size: floor(($font-size-base * 1.26));
+			  	}
+			  	
+			}
+			.search{
+				float:right;
+				@include search;
+			}	
+		}	
+	}		
+}
+	
+section{
+	width:100%;
+	position:relative;
+	display:block;
+}
+section#header-bg{
+		// width: 100vw;
+		// height: 100vh;
+
+
+		.header-img{
+
+			// width: 100vw;
+			// height: 100vh;
+
+			display: block;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background:#3ded34;
+			img{
+				max-width: 1440px;
+				width: 100%;
+				
+			}
+	}
+}
+
+section#expo{
+	padding-top: 150px;
+
+	.page-title{
+		@include font_family($font-family-serif-buttler-medium);
+	}
+}

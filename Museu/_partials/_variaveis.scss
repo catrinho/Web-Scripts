@@ -1,0 +1,59 @@
+//VARIAVEIS
+
+//********* Cores
+
+// Vermelho  #b71d29
+// Azul  #29bbb3
+// Beje  #edecd6
+// Castanho  #7d6949
+// Preto  #0b0e16
+
+$cor-red: #b71d29;
+$cor-blue:#29bbb3;
+$cor-beje: #edecd6;
+$cor-brow: #7d6949;
+$cor-black: #0b0e16;
+
+
+$bg-color:#ffffff;
+
+$header-height:70px;
+
+
+//********* Grelha
+
+$grid_columns:           12 !default; // definiçao do numero de colunas
+$grid_gutter_width:      20px !default; // espaço entre colunas	
+
+$desktop-width: 1200px;
+$tablet-width: 960px;
+$movel-width: 480px;
+
+$media:  screen !default; // -- media queries media "screen or print"
+
+
+//********* Tipografia
+//
+//## Font, line-height, and color for body text, headings, and more.
+/*##
+ceil($number)
+	Rounds a number up to the next whole number.
+floor($number)
+	Rounds a number down to the previous whole number.
+*/ 
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px

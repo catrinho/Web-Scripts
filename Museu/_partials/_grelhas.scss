@@ -1,0 +1,112 @@
+// GRELHAS
+
+	 @function calculo-column-width($num: 1, $width: $desktop-width) {
+          @return ((($num * ($width / $grid_columns )) - (2 * $grid_gutter_width))*100%)/$desktop-width; }
+      
+
+@mixin Algn-Right{
+  .algn-right{
+    float: right;
+    position:relative
+  }
+}
+
+@mixin Algn-Left{
+  .algn-left{
+    float: left;
+    position:relative
+  }
+}
+@mixin column {
+		  display: block;
+      float: left;
+      position: relative;
+	   	min-height: 2px;
+	   	margin:cell(($grid_gutter_width /2));
+}
+
+@mixin clearfix {
+    zoom: 1;
+    &:after { clear: both; }
+    &:before, &:after {
+        content: '\0020';
+        display: block;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+        height: 0; } 
+}
+ @mixin container($sub,$size:0) {
+  .container{
+        width:$size - $sub;
+        margin:0 auto;
+      }  
+ } 
+
+ @mixin row {
+        @include clearfix;
+        margin-bottom: 2 * $grid_gutter_width; 
+  }
+
+  .row{
+    @include clearfix;
+    @include row;
+    width:100%
+  }
+
+
+
+// - - -  Colunas  
+
+
+@include MediaLargeScreens{
+   @for $num from 1 through $grid_columns {
+    .col-lg-#{$num} { 
+        //mixin da coluna..
+        @include  column;
+        width:calculo-column-width($num);
+     }
+  }  
+   @include container(30,$desktop-width); 
+}
+
+/* Small Desktop/ Tablet screens */
+@include MediaMediumScreens{
+  @for $num from 1 through $grid_columns {
+    .col-md-#{$num} { 
+        //mixin da coluna..
+        @include  column;
+        width:calculo-column-width($num);
+     } 
+  }
+  @include container(22,$tablet-width);    
+}
+
+
+
+/* Tablet screens */
+@include MediaSmallScreens{ 
+  @for $num from 1 through $grid_columns {
+    .col-sm-#{$num} { 
+        //mixin da coluna..
+        @include  column;
+        width:calculo-column-width($num);
+     }   
+  } 
+  @include container(22,$tablet-width);       
+}
+
+
+
+/* Small /Mobile screens */
+@include MediaMobileScreens{ 
+  @for $num from 1 through $grid_columns {
+    .col-xs-#{$num} { 
+        //mixin da coluna..
+        @include  column;
+        width:calculo-column-width($num);
+     }   
+  }  
+  @include container(22,$tablet-width);    
+}
+
