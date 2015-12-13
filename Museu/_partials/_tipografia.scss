@@ -1,20 +1,20 @@
 // Tipografia
-
+@mixin LoadFonts{
 
 //## Fonte: Buttler
-	@include font-face('butlerregular','fonts/Buttler/butler_regular-webfont'){
+	@include font-face('butlerregular','fonts/Butler/butler_regular-webfont'){
 		font-weight: normal;
    		font-style: normal;
 	}
-	@include font-face('butlerbold','fonts/Buttler/butler_bold-webfont'){
+	@include font-face('butlerbold','fonts/Butler/butler_bold-webfont'){
 		font-weight: normal;
    		font-style: normal;
 	}
-	@include font-face('butlermedium','fonts/Buttler/butler_medium-webfont'){
+	@include font-face('butlermedium','fonts/Butler/butler_medium-webfont'){
 		font-weight: normal;
    		font-style: normal;
 	}
-	@include font-face('butler_stencilblack','fonts/Buttler/butler_black_stencil-webfont-wefont'){
+	@include font-face('butler_stencilblack','fonts/Butler/butler_black_stencil-webfont'){
 		font-weight: normal;
    		font-style: normal;
 	}
@@ -46,7 +46,7 @@
    		font-style: normal;
 	}
 
-	
+}	
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
@@ -55,8 +55,8 @@
 	$font-family-sans-PN-regularitalic:  "proxima_nova_rgregular_italic", Helvetica, Arial, sans-serif !default;
 	$font-family-sans-PN-bold:  "proxima_nova_rgbold", Helvetica, Arial, sans-serif !default;
 	$font-family-sans-PN-bolditalic:  "proxima_nova_rgbold_italic", Helvetica, Arial, sans-serif !default;
-	$font-family-sans-PN-regular:  "proxima_nova_rglight", Helvetica, Arial, sans-serif !default;
-	$font-family-sans-PN-regular:  "proxima_nova_rgligth_italic", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-light:  "proxima_nova_rglight", Helvetica, Arial, sans-serif !default;
+	$font-family-sans-PN-lightitalic:  "proxima_nova_rgligth_italic", Helvetica, Arial, sans-serif !default;
 
 	$font-family-serif-buttler-regular:       "butlerregular'",Georgia, "Times New Roman", Times, serif !default;
 	$font-family-serif-buttler-bold:       "butlerbold'",Georgia, "Times New Roman", Times, serif !default;
@@ -78,6 +78,52 @@ $font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
 $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
+$i: 1;
 
+@each $size in $font-size-h1,$font-size-h2,$font-size-h3,$font-size-h4,$font-size-h5,$font-size-h6{
+    h#{$i} { 
+        font-size: $size;
+        font-weight: normal;
+   		font-style: normal;
+     }
+     $i: $i + 1;
+}
 
+@mixin colecao_headings{
+			h2{
+					@include font_family($font-family-serif-buttler-bold);
+					display: block;
+					font-size: 65px;
+					transform: rotate(-90deg);
+					position: relative;
+    				bottom: 150px;
+    				vertical-align: text-bottom;
+    				text-align:left;
+    				color: white;
+    				left: 60px;
+    				@include clearfix;
+    		}
+}
+@mixin footer_Text{
 
+	h2.museu{
+		@include font_family($font-family-serif-buttler-stencil);
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		font-weight: 400;
+		font-size: 17px;
+		line-height: 52px;
+   }
+   h3{
+   		@include font_family($font-family-serif-buttler-regular);
+   		font-size: 17px;
+   		line-height: 52px;
+   }
+
+   ul li {
+   	   	@include font_family($font-family-sans-PN-light);
+   	   	text-align:left;
+   	   	line-height: 26px;
+   }
+}
+ 

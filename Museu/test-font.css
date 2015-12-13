@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Maison Neue Bold';
+    src: url('maisonneuebold-webfont.eot');
+    src: url('maisonneuebold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('maisonneuebold-webfont.woff2') format('woff2'),
+         url('maisonneuebold-webfont.woff') format('woff'),
+         url('maisonneuebold-webfont.ttf') format('truetype'),
+         url('maisonneuebold-webfont.svg#maison_neuebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
