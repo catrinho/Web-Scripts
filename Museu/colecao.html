@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="UTF-8">
+
+  <title>Museu FABUP</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+  <link rel="stylesheet" type="text/css" href="museu.css">
+   
+</head>
+<body>
+
+
+	<!-- Pesquisa fullscreen -->
+	<div class="search_oberlay">
+		<input class="search" type="text" placeholder="search" />
+	</div>
+	<!-- Menu de Navegação -->
+	<header>
+		<div class="container">
+			<div class="col-lg-3 logo algn-left ">
+				<img href="#" src="img/museu.png" alt="Logo Museu"/>	<!-- Logo Museu-->
+			</div>
+			<div class="col-lg-9 algn-right menu">
+				<nav class="col-lg-12">
+					<ul>
+						<li><a href="#">Exposições</a></li>
+						<li><a href="#">Colecções</a></li>
+						<li><a href="#">Galerias</a></li>
+						<li><a href="#">Sobre</a></li>
+						<li>
+							<div class="search">
+								<a class="search-icon">
+								  <span class="circle"></span>
+								  <span class="handle"></span>
+								</a>
+							</div>
+						</li>
+					</ul>	
+					
+				</nav>
+				
+			</div>
+		</div>
+	</header>
+
+	<!-- Imagem Principal-->
+		<section id="header-bg" >
+			<div class="header-img-colecao" style="background-image:url('')">
+	<!-- A altura da imagem é mais pequena do que na home page! 
+			Imagem DA coleção!!!!! -->
+	<!-- Titulo a grande em cima da imagem. Com margem -->
+				<h6>Colecção</h6>	
+			</div>
+	
+		</section>
+
+		<section id="grelha-colecao">
+		<div>
+			<h4>Desenho</h4>
+		</div>
+		<div class="container">
+			<div class="col-lg-4">
+				<img src="cd_1.jpg" alt="António Carneiro (1872-1930)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_2.jpg" alt="António Cruz (1907-1983)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_3.jpg" alt="Augusto Gomes (1919-1976)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_4.jpg" alt="Barata Feyo (1899-1991)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_5.jpg" alt="Domingos Sequeira (1768-1837)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_6.jpg" alt="Henrique Pousão (1859-1884)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_7.jpg" alt="Marques Oliveira (1853-1927)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_8.jpg" alt="Silva Porto (1850-1893)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_9.jpg" alt="Soares dos Reis (1847-1889)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_10.jpg" alt="Sofia Souza (1870-1960)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_11.jpg" alt="Tadeu de Almeida Furtado (1813-1901)">
+			</div>
+			<div class="col-lg-4">
+				<img src="cd_12.jpg" alt="Vieira Portuense (1765-1805)">
+			</div>
+		</div>
+		</section>
+
+		<footer class="row">
+			<div class="container">
+				<div class="col-lg-3">
+					<ul>
+						<li>Sobre</li>
+						<li>Contactos</li>
+						<li>Localização</li>
+					</ul>
+				</div>
+				<div class="col-lg-3">
+					<h3>Exposições</h3>
+					<ul>
+						<li>Exposição 1</li>
+						<li>Exposição 2</li>
+					</ul>
+				</div>	
+				<div class="col-lg-3">
+					<h3>Galerias</h3>
+					<ul>
+						<li>Museu</li>
+						<li>Cozinha</li>
+						<li>Galeria dos Leões</li>
+					</ul>
+				</div>	
+				<div class="col-lg-3">
+					<h3>Arquivo</h3>		<!-- ???!?!?!??!?!?!?! -->
+					<ul>
+						<li>2015</li>
+						<li>2014</li>
+						<li>2013</li>
+						<li>2012</li>
+					</ul>
+				</div>	
+			</div>
+		</footer>
+
+<script src="js/jquery.1.11.3.js"></script>
+<script type="text/javascript">
+   	
+   	$( ".search-icon" ).click(function() {
+  		$(this).toggleClass("open");
+  		$('body').toggleClass('overNone');
+  		$(".search_oberlay").toggle();
+
+	});
+</script>
+
+</body>
+
+</html>
