@@ -643,7 +643,7 @@ header {
           transform: rotate(90deg); }
 
 section {
-  width: 100%;
+  width: 101%;
   display: block; }
   section .page-title {
     text-align: center; }
