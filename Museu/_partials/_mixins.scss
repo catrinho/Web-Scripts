@@ -51,8 +51,8 @@
   }
 }
 
-@mixin font_family($fname){
-	font-family: $fname;
+@mixin font_family($name){
+	font-family: $name;
 }
 
 
