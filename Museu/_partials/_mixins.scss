@@ -51,8 +51,8 @@
   }
 }
 
-@mixin font_family($name){
-	font-family: $name;
+@mixin font_family($fname){
+	font-family: $fname;
 }
 
 
@@ -70,6 +70,7 @@ $duration: 0.6s;
     border-radius: 6px;
     padding-top: 8px;
     z-index: 150;
+    margin-right: 10px;
 }
 .circle {
   position: relative;

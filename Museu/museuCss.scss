@@ -71,7 +71,7 @@ header{
 
 	.menu{
 		margin: 0px;
-
+		float:right;
 		nav{
 			@include header_height;
 			margin: 0px;
@@ -119,42 +119,42 @@ section{
 		}	
 	}
 }
-// section#header-bg{
-// 		 width: 100%;
-// 		 height: 600px;
 
-// 		 .header-img {
-// 			  // position: absolute; 
-// 			   top: -50%; 
-// 			   left: -50%; 
-// 			   width: 100vw;
-// 		 		height: 100vh;
-			
-// 			img {
-// 				width:100%;
-// 			  // position: absolute; 
-// 			  	top: -50%; 
-// 			   left: -50%;
-// 			  // right: 0; 
-// 			  // bottom: 0; 
-// 			  // margin: auto; 
-// 			  // min-width: 50%;
-// 			  // min-height: 50%;
-// 			}
-// 		}
-	
-// }
  section#header-bg{
  	width: 100%;
 	height:100vh;
 	//background-color:black;
-
+	/*
  	.header-img {
  	 width: 100%;
 	  height:100vh;
 	  //background-color:black;
 	  background-image:'img/capa_img.png';
+	}*/
+	.header-img {
+		  position: relative;
+		  width: 101%;
+		  height: 101%;
+		  overflow: hidden;
+		
+		img {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  // height: 100%;
+		  width: 100%;
+		  -webkit-transform: translate(-50%,-50%);
+		      -ms-transform: translate(-50%,-50%);
+		          transform: translate(-50%,-50%);
+		}
+		.pic-caption{
+		    position: absolute;
+		    color: white;
+		    top: 400px;
+		    left: 200px;
+		}
 	}
+
  }
 
 section#expo{
@@ -184,7 +184,7 @@ section#colecao{
 				float: left;
 				width: 18.111%;
 				height: 450px;
-				margin: 10px 11px;
+				margin: 10px 17px;
 				position:relative;
 				max-width: 200px;
 
@@ -204,6 +204,10 @@ section#colecao{
 					    }	
 				@include colecao_headings;
 		}
+
+		.col-colecao:last-child{
+			float: right;
+		}	
 	}	
 }
 
@@ -221,4 +225,8 @@ footer{
 
     @include footer_Text;
 
+    a{
+    	text-decoration:none;
+    	color: white;
+    }
 }
