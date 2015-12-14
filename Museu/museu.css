@@ -575,10 +575,10 @@ header {
     header .menu nav {
       height: 70px;
       margin: 0px;
-      margin-top: 1px; }
+      margin-top: 8px; }
       header .menu nav ul {
         display: block;
-        margin: 0 auto;
+        margin: 0 -15px;
         list-style: none;
         text-align: center;
         float: right; }
@@ -691,6 +691,37 @@ section#expo {
     margin: 0 auto;
     float: none;
     margin: 15px 0; }
+    section#expo .expositor img {
+      height: 200px;
+      width: 100%;
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      filter: grayscale(0); }
+    section#expo .expositor:hover {
+      -webkit-filter: grayscale(90%);
+      -moz-filter: grayscale(90%);
+      filter: grayscale(90%);
+      background-color: rgba(183, 29, 41, 0.4); }
+    section#expo .expositor h2 {
+      font-family: "butlerbold'", Georgia, "Times New Roman", Times, serif;
+      display: block;
+      font-size: 60px;
+      position: relative;
+      text-align: left;
+      color: white;
+      left: 20px;
+      bottom: 182px; }
+    section#expo .expositor h3 {
+      font-family: "proxima_nova_rgbold_italic", Helvetica, Arial, sans-serif;
+      display: block;
+      font-size: 24px;
+      position: relative;
+      vertical-align: text-bottom;
+      text-align: left;
+      color: white;
+      left: 20px;
+      bottom: 175px;
+      line-height: 30px; }
 
 section#colecao {
   margin-top: 150px;
@@ -703,7 +734,7 @@ section#colecao {
       float: left;
       width: 18.111%;
       height: 450px;
-      margin: 10px 17px;
+      margin: 10px 21.2px;
       position: relative;
       max-width: 200px; }
       section#colecao .montra-colecao .col-colecao .grayscale {
@@ -740,7 +771,10 @@ section#colecao {
           width: 0;
           height: 0; }
     section#colecao .montra-colecao .col-colecao:last-child {
-      float: right; }
+      float: right;
+      margin-right: 0px; }
+    section#colecao .montra-colecao .col-colecao:first-child {
+      margin-left: 0px; }
 
 footer {
   text-align: left;

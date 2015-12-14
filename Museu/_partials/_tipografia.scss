@@ -104,6 +104,31 @@ $i: 1;
     				@include clearfix;
     		}
 }
+@mixin expositor_headings{
+			h2{
+					@include font_family($font-family-serif-buttler-bold);
+					display: block;
+					font-size: 60px;					
+					position: relative;
+    				text-align:left;
+    				color: white;
+    				left: 20px;
+    				bottom: 182px;
+    		}
+
+    		h3{
+					@include font_family($font-family-sans-PN-bolditalic);
+					display: block;
+					font-size: 24px;					
+					position: relative;
+    				vertical-align: text-bottom;
+    				text-align:left;
+    				color: white;
+    				left: 20px;
+    				bottom: 175px;
+    				line-height: 30px;
+    		}
+}
 @mixin footer_Text{
 
 	h2.museu{

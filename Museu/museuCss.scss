@@ -75,12 +75,12 @@ header{
 		nav{
 			@include header_height;
 			margin: 0px;
-			margin-top: 1px;
+			margin-top: 8px;
 			//margin-top:$header-height/2-$font-size-base;
 			ul {
 			  
 			  display: block;
-			  margin: 0 auto;
+			  margin: 0 -15px;
 			  list-style: none;
 			  text-align: center;
 			  float:right;
@@ -168,8 +168,25 @@ section#expo{
 		margin: 0 auto;
 		float: none;
 		margin:15px 0;
-	}
+	img{
+			height: 200px;
+			width: 100%;
+
+
+				   	  @include grayscale_element(0);
+				}
+				&:hover {
+				        @include grayscale_element(#{$grayscale_value});
+				        //background-color: rgba(183,29,41,1);
+				        background-color:rgba(183,29,41,0.4);
+						//background: @include filter-gradient($cor-red, $cor-red, horizontal);
+						//background: @include background-image(linear-gradient(left, rgba(183,29,41,0.4);) 0%, rgba(183,29,41,0.4); 100%));
+				}
+					@include expositor_headings;
+	}					
 }
+
+
 
 
 section#colecao{
@@ -184,7 +201,7 @@ section#colecao{
 				float: left;
 				width: 18.111%;
 				height: 450px;
-				margin: 10px 17px;
+				margin: 10px 21.2px;
 				position:relative;
 				max-width: 200px;
 
@@ -207,9 +224,15 @@ section#colecao{
 
 		.col-colecao:last-child{
 			float: right;
+			margin-right: 0px;
+		}	
+
+		.col-colecao:first-child{
+			margin-left: 0px;
 		}	
 	}	
 }
+
 
 footer{
 	text-align:left; 
