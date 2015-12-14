@@ -148,6 +148,31 @@ $duration: 0.6s;
     filter:#{"grayscale(#{$value})"};
 }
 
+@mixin expositor{
+  .expositor{
+    //width: 850*0.085%;
+    height: 200px;
+    background:#ededad;
+    margin: 0 auto;
+    margin:25px 0;
+  img{
+      height: 200px;
+      width: 100%;
+
+
+              @include grayscale_element(0);
+        }
+        &:hover {
+                @include grayscale_element(#{$grayscale_value});
+                //background-color: rgba(183,29,41,1);
+                background-color:rgba(183,29,41,0.4);
+            //background: @include filter-gradient($cor-red, $cor-red, horizontal);
+            //background: @include background-image(linear-gradient(left, rgba(183,29,41,0.4);) 0%, rgba(183,29,41,0.4); 100%));
+        }
+          @include expositor_headings;
+  }       
+}
+
 
 
 

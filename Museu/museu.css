@@ -655,7 +655,7 @@ section {
 
 section#header-bg {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   	/*
    	.header-img {
    	 width: 100%;
@@ -695,13 +695,14 @@ section#header-bg {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
     section#header-bg .header-img-small .pic-caption {
-      position: absolute;
+      position: relative;
       color: white;
-      bottom: -12px;
-      left: 200px; }
+      top: 330px;
+      left: 0px; }
       section#header-bg .header-img-small .pic-caption h1 {
-        font-size: 60px;
-        letter-spacing: 200; }
+        font-size: 90px;
+        letter-spacing: 24px;
+        font-variant: small-caps; }
 
 section#expo {
   margin-top: 150px;
@@ -710,8 +711,7 @@ section#expo {
     height: 200px;
     background: #ededad;
     margin: 0 auto;
-    float: none;
-    margin: 15px 0; }
+    margin: 25px 0; }
     section#expo .expositor img {
       height: 200px;
       width: 100%;
@@ -733,6 +733,46 @@ section#expo {
       left: 20px;
       bottom: 182px; }
     section#expo .expositor h3 {
+      font-family: "proxima_nova_rgbold_italic", Helvetica, Arial, sans-serif;
+      display: block;
+      font-size: 24px;
+      position: relative;
+      vertical-align: text-bottom;
+      text-align: left;
+      color: white;
+      left: 20px;
+      bottom: 175px;
+      line-height: 30px; }
+
+section#exposicoes {
+  position: relative;
+  margin-top: 80px; }
+  section#exposicoes .expositor {
+    height: 200px;
+    background: #ededad;
+    margin: 0 auto;
+    margin: 25px 0; }
+    section#exposicoes .expositor img {
+      height: 200px;
+      width: 100%;
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      filter: grayscale(0); }
+    section#exposicoes .expositor:hover {
+      -webkit-filter: grayscale(90%);
+      -moz-filter: grayscale(90%);
+      filter: grayscale(90%);
+      background-color: rgba(183, 29, 41, 0.4); }
+    section#exposicoes .expositor h2 {
+      font-family: "butlerbold'", Georgia, "Times New Roman", Times, serif;
+      display: block;
+      font-size: 60px;
+      position: relative;
+      text-align: left;
+      color: white;
+      left: 20px;
+      bottom: 182px; }
+    section#exposicoes .expositor h3 {
       font-family: "proxima_nova_rgbold_italic", Helvetica, Arial, sans-serif;
       display: block;
       font-size: 24px;
@@ -797,6 +837,10 @@ section#colecao {
     section#colecao .montra-colecao .col-colecao:first-child {
       margin-left: 0px; }
 
+section #gelha-colecao {
+  position: relative;
+  margin-top: 180px; }
+
 footer {
   text-align: left;
   color: white;
@@ -818,7 +862,8 @@ footer {
   footer h3 {
     font-family: "butlerregular'", Georgia, "Times New Roman", Times, serif;
     font-size: 17px;
-    line-height: 52px; }
+    line-height: 52px;
+    font-variant: small-caps; }
   footer ul li {
     font-family: "proxima_nova_rglight", Helvetica, Arial, sans-serif;
     text-align: left;
