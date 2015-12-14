@@ -29,13 +29,22 @@
 	<header>
 		<div class="container">
 			<div class="col-lg-3 logo algn-left ">
-				<a href="home.html"><img src="img/museu.png" alt="Logo Museu"/></a>	<!-- Logo Museu-->
+					<a href="home.html"><img src="img/museu.png" alt="Logo Museu"/></a>	<!-- Logo Museu-->
 			</div>
 			<div class="col-lg-9 algn-right menu">
-				<nav class="col-lg-12">
+				<nav class="row">
 					<ul>
-						<li><a href="exposicao.html">Exposições</a></li>
-						<li><a href="colecao.html">Colecções</a></li>
+						<li><a href="pag_exposicoe.html">Exposições</a></li>
+						<li class="dropdown-menu">
+							<a href="#">Colecções</a>
+							<ul class="dropdown-list">
+								<li><a href="colecao.html">Desenho</a></li>
+								<li><a href="colecao.html">Design</a></li>
+								<li><a href="colecao.html">Escultura</a></li>
+								<li><a href="colecao.html">Gravura</a></li>
+								<li><a href="colecao.html">Pintura</a></li>
+							</ul>
+						</li>	
 						<li><a href="galerias.html">Galerias</a></li>
 						<li><a href="sobre.html">Sobre</a></li>
 						<li>
@@ -54,19 +63,17 @@
 		</div>
 	</header>
 
-		<!-- Imagem Principal-->
-		<section id="header-bg" >
-			<div class="header-img">
-	<!-- A altura da imagem é mais pequena do que na home page! 
-			Imagem DA exposição desta página!!!!!! -->
-				<img src="" alt="">
-			</div>
-			<div>		
-	<!-- Titulo a grande em cima da imagem. Com margem -->
-				<h6>Exposição</h6>	
-			</div>
-		</section>
 
+			<!-- Imagem Principal-->
+		<section id="header-bg-small" >
+			<div class="header-img" >
+			 	 <img src="img/capa_img.jpg" alt="Pavilhão de Exposições">
+				 <div class="container pic-caption">
+					<h1>Galerias</h1>
+				</div>
+			</div>
+			
+		</section>
 		<section>
 			<div>
 			<h4>O Exercício do Desenho, na Colecção da FBAUP</h4>
@@ -143,17 +150,8 @@ Dos exemplos seleccionados, n&atilde;o se podem fazer compara&ccedil;&otilde;es 
 				</div>	
 			</div>
 		</footer>
-
 <script src="js/jquery.1.11.3.js"></script>
-<script type="text/javascript">
-   	
-   	$( ".search-icon" ).click(function() {
-  		$(this).toggleClass("open");
-  		$('body').toggleClass('overNone');
-  		$(".search_oberlay").toggle();
-
-	});
-</script>
+<script src="js/main.js"></script>
 
 </body>
 

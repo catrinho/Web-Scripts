@@ -152,4 +152,36 @@ $i: 1;
    	   	line-height: 26px;
    }
 }
+
+@mixin heading_four_ss{
+	h4 {
+			@include font_family($font-family-sans-PN-regular);
+			font-size: 25px;					
+			text-align:left;
+			color: #000000;
+			line-height: 60px;
+			padding-bottom:15px;
+		}
+}
+
+@mixin paragraph_ss {
+	p{
+			@include font_family($font-family-sans-PN-light);
+			font-size: 15px;					
+			text-align:left;
+			color: #000000;
+			line-height: 30px;
+			text-align:left;
+			text-indent: 15px;
+			padding-top: 15px;
+		}
+}
+
+@mixin block_text{
+	.block-text{
+		width:70%;
+		margin:0 auto;
+		padding-top: 50px;
+	}
+}	
  

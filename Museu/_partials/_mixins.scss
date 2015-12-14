@@ -88,10 +88,10 @@ $duration: 0.6s;
 
 .handle {
  position: absolute;
-    background-color: #ffffff;
+    background-color: $cor-black;
     top: 22px;
     left: 7px;
-    width: 16px;
+    width: 18px;
     height: 2px;
     display: block;
     transform: rotate(45deg);
@@ -121,23 +121,6 @@ $duration: 0.6s;
     transform-origin: center center;
     transform: rotate(90deg);
   }
-}
-}
-@mixin placeholder($color){
--webkit-input-placeholder {
-   color: $color;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: $color;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: $color;  
-}
-
-:-ms-input-placeholder {  
-   color: $color;  
 }
 }
 

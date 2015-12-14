@@ -46,9 +46,25 @@ body{
 	    padding-left: 30px;
 	    padding-right: 30px;
 	    outline: none;
-	    @include placeholder($cor-black);
 	}
+		.search::-webkit-input-placeholder {
+		   color: $cor-black;
+		   float: left;
+		}
 
+		.search:-moz-placeholder { /* Firefox 18- */
+		   color: $cor-black;  
+		}
+
+		.search::-moz-placeholder {  /* Firefox 19+ */
+		   color: $cor-black;  
+		}
+
+		.search:-ms-input-placeholder {  
+		   color: $cor-black;  
+		}
+		
+	
 
 }
 
@@ -59,7 +75,7 @@ header{
 	position:fixed;
 	top:0;
 	display:block;
-	background:$bg-color;
+	background:$header-color;
 	@include header_height;
 
 
@@ -84,31 +100,54 @@ header{
 			  list-style: none;
 			  text-align: center;
 			  float:right;
-			}
+			
 
-			li {
-			  display: inline-block;
-			  	a{
-			  		text-decoration: none;
-			  		color:$cor-black;
-			  		margin: 15px 20px;
-					display: block;
-					@include font_family($font-family-serif-buttler-medium);
-					font-size: floor(($font-size-base * 1.26));
-			  	}
-			  	
-			}
-			.search{
+				li {
+				  display: inline-block;
+				  	a{
+				  		text-decoration: none;
+				  		color:$cor-black;
+				  		margin: 15px 20px;
+						display: block;
+						@include font_family($font-family-serif-buttler-medium);
+						font-size: floor(($font-size-base * 1.26));
+				  	}
+				  	ul.dropdown-list{
+				  		width: 200px;
+				  		position: absolute;
+				  		background-color:$header-color;
+				  		z-index: 100;
+				  		display: none;
+
+				  		li{
+				  			float:left;
+				  			width:100%;
+				  			text-align:left;
+				  			
+
+				  			 &:hover {
+				  			 	background-color:darken($header-color, 2%);
+				  			}
+
+				  			a{
+				  				margin-left:32px;
+				  			}
+				  		}
+				  	}
+				}
+				.search{
 				float:right;
 				@include search;
+				}
 			}	
+
 		}	
 	}		
 }
 	
 section{
-	width:101%;
-	// position:relative;
+	width:100%;
+	position:relative;
 	display:block;
 
 	.page-title{
@@ -120,9 +159,9 @@ section{
 	}
 }
 
- section#header-bg{
- 	width: 100%;
-	height:100%;
+section#header-bg-big{
+ 	width: 100vw;
+	height:100vh;
 	//background-color:black;
 	/*
  	.header-img {
@@ -133,8 +172,8 @@ section{
 	}*/
 	.header-img {
 		  position: relative;
-		  width: 101%;
-		  height: 101%;
+		  width: 100%;
+		  height: 100%;
 		  overflow: hidden;
 		
 		img {
@@ -154,9 +193,13 @@ section{
 		    left: 200px;
 		}
 	}
-	.header-img-small{
+}
+
+section#header-bg-small{
+ 	width: 100vw;
+ 	.header-img{
 		  position: relative;
-		  width: 101%;
+		  width: 100%;
 		  height: 400px;
 		  overflow: hidden;
 		
@@ -165,7 +208,7 @@ section{
 		  left: 50%;
 		  top: 50%;
 		  // height: 100%;
-		  width: 100%;
+		  width: 101%;
 		  -webkit-transform: translate(-50%,-50%);
 		      -ms-transform: translate(-50%,-50%);
 		          transform: translate(-50%,-50%);
@@ -184,9 +227,7 @@ section{
 		    }
 		}
 	}
-
-
- }
+}
 
 section#expo{
 	margin-top: 150px;
@@ -233,6 +274,15 @@ section#colecao{
 							//background: @include background-image(linear-gradient(left, rgba(183,29,41,0.4);) 0%, rgba(183,29,41,0.4); 100%));
 
 					    }	
+				&:hover span{
+					content: "";
+					position:absolute;
+					width: 100%;
+					height:100%; 
+					top:0px;
+					background-color:rgba(183, 29, 41, 0.5);
+					
+				}	    
 				@include colecao_headings;
 		}
 
@@ -243,26 +293,107 @@ section#colecao{
 
 		.col-colecao:first-child{
 			margin-left: 0px;
-		}	
+		}
+
+		@include MediaMediumScreens{
+			.col-colecao{
+				margin: 10px 11px;
+			}
+		}
+	}
+	
+	@include MediaSmallScreens{
+			.montra-colecao{
+				display: none;
+			}	
 	}	
 }
 
-section #gelha-colecao{
+section#grelha-colecao{
+	margin-top:80px;
 	position:relative;
-	margin-top: 180px;
+
+	.container>.grelha{
+		width: 100%;
+		.item>.footnotes{
+			margin-top: 10px;
+			font-size: 12px;
+			color: $colecao-legenda;
+		}
+	}	
 }
+
+
+section#sobremuseu{
+	padding-top: 80px;
+	@include block_text;
+
+	@include heading_four_ss;
+	
+	@include paragraph_ss;
+
+	em{
+		@include font_family($font-family-sans-PN-lightitalic);
+		font-size: 20px;
+		text-indent: 15px;
+	}	
+
+	.first {
+		text-indent: initial;
+	}
+}
+
+
+section#localizacao{
+	@include block_text;
+
+	@include heading_four_ss;
+	
+	*{
+		line-height: 25px;
+		text-indent: initial;
+	}
+	
+	dt{
+		@include font_family($font-family-sans-PN-regular);
+		font-size: 17px;					
+		text-align:left;
+		color: #000000;
+	}
+
+	dd{
+		@include font_family($font-family-sans-PN-light);
+		font-size: 15px;		
+		text-align:left;
+		color: #000000;
+		text-align:left;
+	}	
+
+	#map{
+		width: 100%;
+		height: 300px;
+	}
+
+	
+}
+
 footer{
+	  clear: both;			
 	text-align:left; 
 	color:white;
 	background-color:$cor-red;
 	display:block;
-	position: absolute;	
+	position: relative;	
     margin-top: 60px;
     margin-bottom: 0px!important;
     padding-top:20px;
     height: auto;
     padding-bottom: 35px;
+    //bottom:0px;
 
+    div[class*="col-"]{
+    	margin: 0 15px;
+    }
     @include footer_Text;
 
     a{

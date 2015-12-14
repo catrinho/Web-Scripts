@@ -2,7 +2,7 @@
 
 //********* Cores
 
-// Vermelho  #b71d29
+// Vermelho  #b71d29 // 183,29,41
 // Azul  #29bbb3
 // Beje  #edecd6
 // Castanho  #7d6949
@@ -17,7 +17,11 @@ $cor-black: #0b0e16;
 
 
 $bg-color:#ffffff;
+$header-color:#FFF;
 
+
+// cor das legendas da página tipo: coleção
+$colecao-legenda :darken($header-color, 50%);
 // altura do menu top
 $header-height:70px;
 
