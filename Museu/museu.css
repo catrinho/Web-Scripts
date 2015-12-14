@@ -681,6 +681,27 @@ section#header-bg {
       color: white;
       top: 400px;
       left: 200px; }
+  section#header-bg .header-img-small {
+    position: relative;
+    width: 101%;
+    height: 400px;
+    overflow: hidden; }
+    section#header-bg .header-img-small img {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    section#header-bg .header-img-small .pic-caption {
+      position: absolute;
+      color: white;
+      bottom: -12px;
+      left: 200px; }
+      section#header-bg .header-img-small .pic-caption h1 {
+        font-size: 60px;
+        letter-spacing: 200; }
 
 section#expo {
   margin-top: 150px;

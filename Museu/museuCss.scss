@@ -154,6 +154,35 @@ section{
 		    left: 200px;
 		}
 	}
+	.header-img-small{
+		  position: relative;
+		  width: 101%;
+		  height: 400px;
+		  overflow: hidden;
+		
+		img {
+		  position: absolute;
+		  left: 50%;
+		  top: 50%;
+		  // height: 100%;
+		  width: 100%;
+		  -webkit-transform: translate(-50%,-50%);
+		      -ms-transform: translate(-50%,-50%);
+		          transform: translate(-50%,-50%);
+		}
+		.pic-caption{
+		    position: absolute;
+		    color: white;
+		    bottom: -12px;
+		    left: 200px;
+
+		    h1{
+		    	font-size: 60px;
+		    	letter-spacing: 200;
+		    }
+		}
+	}
+
 
  }
 
