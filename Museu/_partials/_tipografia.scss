@@ -88,7 +88,10 @@ $i: 1;
      $i: $i + 1;
 }
 
+				
+
 @mixin colecao_headings{
+
 			h2{
 					@include font_family($font-family-serif-buttler-bold);
 					display: block;
@@ -102,6 +105,13 @@ $i: 1;
     				left: 60px;
     				@include clearfix;
     		}
+    		
+    		// RETIRAR O UNDERLINE (apesar de ficar giro)
+
+    		a{
+    			text-decoration: none;
+    		}
+
 }
 @mixin expositor_headings{
 			h2{
@@ -126,6 +136,12 @@ $i: 1;
     				left: 20px;
     				bottom: 175px;
     				line-height: 30px;
+    		}
+
+    		// RETIRAR O UNDERLINE (apesar de ficar giro)
+
+    		a{
+    			text-decoration: none;
     		}
 }
 @mixin footer_Text{
