@@ -1,5 +1,4 @@
 // Tipografia
-@mixin LoadFonts{
 
 //## Fonte: Buttler
 	@include font-face('butlerregular','fonts/Butler/butler_regular-webfont'){
@@ -21,7 +20,7 @@
 
 //## Fonte: Proxima Nova
 
-	@include font-face('proxima_nova_rgregular','fonts/ProximaNova/proxima_nova_regular-webfont'){
+	@include font-face('proxima_nova_regular','fonts/ProximaNova/proxima_nova_regular-webfont'){
 		font-weight: normal;
    		font-style: normal;
 	}
@@ -46,7 +45,7 @@
    		font-style: normal;
 	}
 
-}	
+	
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
@@ -58,10 +57,10 @@
 	$font-family-sans-PN-light:  "proxima_nova_rglight", Helvetica, Arial, sans-serif !default;
 	$font-family-sans-PN-lightitalic:  "proxima_nova_rgligth_italic", Helvetica, Arial, sans-serif !default;
 
-	$font-family-serif-buttler-regular:       "butlerregular'",Georgia, "Times New Roman", Times, serif !default;
-	$font-family-serif-buttler-bold:       "butlerbold'",Georgia, "Times New Roman", Times, serif !default;
-	$font-family-serif-buttler-medium:       "butlermedium'",Georgia, "Times New Roman", Times, serif !default;
-	$font-family-serif-buttler-stencil:       "butler_stencilblack'",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-regular:       "butlerregular",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-bold:       "butlerbold",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-medium:       "butlermedium",Georgia, "Times New Roman", Times, serif !default;
+	$font-family-serif-buttler-stencil:       "butler_stencilblack",Georgia, "Times New Roman", Times, serif !default;
 
 
 
@@ -146,7 +145,7 @@ $i: 1;
    		font-variant: small-caps;
    }
 
-   ul li {
+   ul li a {
    	   	@include font_family($font-family-sans-PN-light);
    	   	text-align:left;
    	   	line-height: 26px;

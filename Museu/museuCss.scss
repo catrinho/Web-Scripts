@@ -13,6 +13,7 @@
 @import "_partials/grelhas";
 @import "_partials/tipografia";
 
+
 body{
 	@include border_box;
 	background: #FFF;
@@ -135,6 +136,9 @@ header{
 				  			}
 				  		}
 				  	}
+				  .button-searc{
+				  	height: 40px!important;
+				  }	
 				}
 				.search{
 				float:right;
@@ -154,7 +158,8 @@ section{
 	.page-title{
 		text-align:center;
 		h1{
-			@include font_family($font-family-serif-buttler-medium);
+			@include font_family($font-family-sans-PN-bold);
+			//font-family: $font-family-sans-PN-bold;
 			font-size: $font-size-h1;
 		}	
 	}
@@ -188,6 +193,7 @@ section#header-bg-big{
 		          transform: translate(-50%,-50%);
 		}
 		.pic-caption{
+			@include font_family($font-family-serif-buttler-stencil);
 		    position: absolute;
 		    color: white;
 		    top: 400px;
@@ -316,10 +322,11 @@ section#grelha-colecao{
 
 	.container>.grelha{
 		width: 100%;
-		.item>.footnotes{
+		.item>.footnotes p{
 			margin-top: 10px;
-			font-size: 12px;
+			font-size: 10px;
 			color: $colecao-legenda;
+			font-family: $font-family-sans-PN-light;
 		}
 	}	
 }
@@ -395,11 +402,13 @@ footer{
 
     div[class*="col-"]{
     	margin: 0 15px;
-    }
-    @include footer_Text;
-
-    a{
+    	 @include footer_Text;
+    	 a{
     	text-decoration:none;
     	color: white;
     }
+    }
+   
+
+    
 }
