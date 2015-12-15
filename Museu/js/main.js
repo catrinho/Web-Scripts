@@ -19,13 +19,13 @@
  	
  // Icon Search 
 
-   	$( ".search-icon" ).click(function() {
-  		$(this).toggleClass("open");
+   	$(".button-search").click(function() {
+  		$(".search-icon").toggleClass("open");
   		$('body').toggleClass('overNone');
   		$(".search_oberlay").toggle();
 
 	});
-	
+
 
 // 	Grelha da Pagina coleção... sistema tipo pinterest
 

@@ -84,7 +84,7 @@
         width:calculo-column-width($num);
      } 
   }
-  @include container(22,$tablet-width);    
+  @include container(22,$medium-screen-width);    
 }
 
 
