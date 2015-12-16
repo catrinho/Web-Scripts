@@ -178,6 +178,16 @@ $i: 1;
 			padding-bottom:15px;
 		}
 }
+@mixin heading_five_ss{
+	h4 {
+			@include font_family($font-family-sans-PN-light);
+			font-size: 25px;					
+			text-align:left;
+			color: #000000;
+			line-height: 60px;
+			padding-bottom:15px;
+		}
+}
 
 @mixin paragraph_ss {
 	p{
