@@ -619,17 +619,6 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     outline: none; }
-  .search_oberlay .search::-webkit-input-placeholder {
-    color: #0b0e16;
-    float: left; }
-  .search_oberlay .search:-moz-placeholder {
-    /* Firefox 18- */
-    color: #0b0e16; }
-  .search_oberlay .search::-moz-placeholder {
-    /* Firefox 19+ */
-    color: #0b0e16; }
-  .search_oberlay .search:-ms-input-placeholder {
-    color: #0b0e16; }
 
 header {
   z-index: 100;
@@ -733,14 +722,6 @@ header {
           header .menu nav ul .search .open .handle:after {
             transform-origin: center center;
             transform: rotate(90deg); }
-          header .menu nav ul .search -webkit-input-placeholder {
-            color: #0b0e16; }
-          header .menu nav ul .search :-moz-placeholder {
-            color: #0b0e16; }
-          header .menu nav ul .search ::-moz-placeholder {
-            color: #0b0e16; }
-          header .menu nav ul .search :-ms-input-placeholder {
-            color: #0b0e16; }
 
 @media screen and (max-width: 767px) {
   header .logo img {

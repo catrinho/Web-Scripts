@@ -48,24 +48,7 @@ body{
 	    padding-right: 30px;
 	    outline: none;
 	}
-		.search::-webkit-input-placeholder {
-		   color: $cor-black;
-		   float: left;
-		}
 
-		.search:-moz-placeholder { /* Firefox 18- */
-		   color: $cor-black;  
-		}
-
-		.search::-moz-placeholder {  /* Firefox 19+ */
-		   color: $cor-black;  
-		}
-
-		.search:-ms-input-placeholder {  
-		   color: $cor-black;  
-		}
-		
-	
 
 }
 
@@ -145,7 +128,6 @@ header{
 				float:right;
 				@include search;
 
-				@include placeholder($cor-black);
 				}
 			}	
 
