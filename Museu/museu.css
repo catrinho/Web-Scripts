@@ -733,6 +733,14 @@ header {
           header .menu nav ul .search .open .handle:after {
             transform-origin: center center;
             transform: rotate(90deg); }
+          header .menu nav ul .search -webkit-input-placeholder {
+            color: #0b0e16; }
+          header .menu nav ul .search :-moz-placeholder {
+            color: #0b0e16; }
+          header .menu nav ul .search ::-moz-placeholder {
+            color: #0b0e16; }
+          header .menu nav ul .search :-ms-input-placeholder {
+            color: #0b0e16; }
 
 @media screen and (max-width: 767px) {
   header .logo img {

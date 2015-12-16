@@ -144,6 +144,8 @@ header{
 				.search{
 				float:right;
 				@include search;
+
+				@include placeholder($cor-black);
 				}
 			}	
 
