@@ -85,6 +85,7 @@ header{
 		width: 200px;
 		margin-top: 10px;
 	}
+	 
 
 	.menu{
 		margin: 0px;
@@ -147,8 +148,25 @@ header{
 			}	
 
 		}	
-	}		
+	}
+
+	// .mobile-nav{
+	// 	position:fixed;
+	// 	background-color:darken($header-color, 2%);
+	// 	left: 0;
+	// 	top: 0;
+	// 	height: 100%;
+	// 	width: 100%;
+	// }	
 }
+@include MediaMobileScreens{
+	header{
+		.logo img{
+			width: 170px;
+			margin-top: 20px;
+		}
+	}
+}		 
 	
 section{
 	width:100%;
@@ -314,7 +332,13 @@ section#colecao{
 			.montra-colecao{
 				display: none;
 			}	
-	}	
+	}
+	@include MediaMobileScreens{
+			.montra-colecao{
+				display: none;
+			}	
+	}		
+	
 }
 
 section#grelha-colecao{

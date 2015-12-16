@@ -177,7 +177,10 @@ table {
   .container {
     width: 1170px;
     margin: 0 auto;
-    position: relative; } }
+    position: relative; }
+
+  .hide-lg {
+    display: none; } }
 /* Small Desktop/ Tablet screens */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .col-md-1 {
@@ -279,7 +282,10 @@ table {
   .container {
     width: 1002px;
     margin: 0 auto;
-    position: relative; } }
+    position: relative; }
+
+  .hide-md {
+    display: none; } }
 /* Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .col-sm-1 {
@@ -381,7 +387,10 @@ table {
   .container {
     width: 938px;
     margin: 0 auto;
-    position: relative; } }
+    position: relative; }
+
+  .hide-sm {
+    display: none; } }
 /* Small /Mobile screens */
 @media screen and (max-width: 767px) {
   .col-xs-1 {
@@ -481,9 +490,12 @@ table {
     width: 96.66667%; }
 
   .container {
-    width: 938px;
+    width: 100%;
     margin: 0 auto;
-    position: relative; } }
+    position: relative; }
+
+  .hide-xs {
+    display: none; } }
 @font-face {
   font-family: butlerregular;
   src: url("fonts/Butler/butler_regular-webfont.eot");
@@ -722,6 +734,10 @@ header {
             transform-origin: center center;
             transform: rotate(90deg); }
 
+@media screen and (max-width: 767px) {
+  header .logo img {
+    width: 170px;
+    margin-top: 20px; } }
 section {
   width: 100%;
   position: relative;
@@ -827,6 +843,8 @@ section#expo {
       left: 20px;
       bottom: 175px;
       line-height: 30px; }
+    section#expo .expositor a {
+      text-decoration: none; }
 
 section#exposicoes {
   position: relative;
@@ -867,6 +885,8 @@ section#exposicoes {
       left: 20px;
       bottom: 175px;
       line-height: 30px; }
+    section#exposicoes .expositor a {
+      text-decoration: none; }
 
 section#colecao {
   margin-top: 150px;
@@ -922,6 +942,8 @@ section#colecao {
           visibility: hidden;
           width: 0;
           height: 0; }
+      section#colecao .montra-colecao .col-colecao a {
+        text-decoration: none; }
     section#colecao .montra-colecao .col-colecao:last-child {
       float: right;
       margin-right: 0px; }
@@ -931,6 +953,9 @@ section#colecao {
       section#colecao .montra-colecao .col-colecao {
         margin: 10px 11px; } }
   @media screen and (min-width: 768px) and (max-width: 991px) {
+    section#colecao .montra-colecao {
+      display: none; } }
+  @media screen and (max-width: 767px) {
     section#colecao .montra-colecao {
       display: none; } }
 

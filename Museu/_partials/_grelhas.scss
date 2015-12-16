@@ -72,7 +72,11 @@
         width:calculo-column-width($num);
      }
   }  
-   @include container(30,$desktop-width); 
+   @include container(30,$desktop-width);
+
+   .hide-lg{
+    display: none;
+   } 
 }
 
 /* Small Desktop/ Tablet screens */
@@ -84,7 +88,11 @@
         width:calculo-column-width($num);
      } 
   }
-  @include container(22,$medium-screen-width);    
+  @include container(22,$medium-screen-width);
+
+   .hide-md{
+    display: none;
+   }     
 }
 
 
@@ -98,7 +106,11 @@
         width:calculo-column-width($num);
      }   
   } 
-  @include container(22,$tablet-width);       
+  @include container(22,$tablet-width); 
+
+   .hide-sm{
+    display: none;
+   }       
 }
 
 
@@ -112,6 +124,15 @@
         width:calculo-column-width($num);
      }   
   }  
-  @include container(22,$tablet-width);    
+    .container{
+        width:100%;
+        margin:0 auto;
+        position: relative;
+      }  
+
+
+   .hide-xs{
+    display: none;
+   }   
 }
 
