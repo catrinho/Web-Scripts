@@ -239,7 +239,7 @@ section#header-bg-big{
 		    }
 		}
 		
-		@include MediaMobileScreens{
+		@include MediaMediumScreens{
 			.pic-caption{
 				top:40%;
 			    left: 6%;
@@ -253,7 +253,7 @@ section#header-bg-big{
 
 			.pic-caption{
 		    top: 400px;
-		    left: 100px;
+		    left: 140px;
 			}
 		}
 	}	
@@ -287,7 +287,7 @@ section#header-bg-small{
 		  height: 400px;
 		  overflow: hidden;
 		
-		.capaimg {
+		img.capaimg {
 		  position: absolute;
 		  left: 50%;
 		  top: 50%;
@@ -298,17 +298,17 @@ section#header-bg-small{
 		          transform: translate(-50%,-50%);
 		}
 		.pic-caption{
-		    position: absolute;
+		    
 		    color: white;
-		     top:290px;
+		    top:80%;
 		    width: 70%;
 		    bottom:-1px;
 
-		   img.musebranco{
-		   	    width: 100%;
-			    bottom: 0;
-			    position: absolute;	
-		   }
+		   // img{
+		   // 	    width: 100%;
+			  //   bottom: 0;
+			  //   position: relative;	
+		   // }
 
 		    h1{
 		    	font-size: 100px;
@@ -317,14 +317,84 @@ section#header-bg-small{
 		    	font-variant: small-caps;
 		    }
 		}
+		@include MediaMediumScreens{
+			img.museubranco {
+			    margin-top: 16px;
+			    width: 70%;
+			}
+			.pic-caption{
+		    
+		   	 color: white;
+		     top:80%;
+		     width: 70%;
+		     bottom:-1px;
+		 	}
+		}
+		@include MediaMobileScreens{
+			img.museubranco {
+			    margin-top: 16px;
+			    width: 70%;
+			}
+			.pic-caption{
+				img.musebranco{
+		   	    width: 100%;
+			    bottom: 0;
+			    position: absolute;	
+		   		}
+			}
+		}
+		
 	}
+	@include MediaMobileScreens{
+		.header-img{
+			height: 330px;
+
+			.pic-caption{
+		    
+		   	 color: white;
+		     width: 70%;
+		     height: 100%;
+		     bottom:-1px;
+		     padding-top:17px;
+		 	
+			 	h1{
+			 		font-size: 60px;
+			    	letter-spacing: 13px;
+			 	}
+		 	}
+		}
+	}
+
+	@media screen and (min-width: 320px) and (max-width:400px){
+		.header-img{
+			height: 330px;
+
+			.pic-caption{
+		    
+		   	 color: white;
+		     width: 70%;
+		     height: 100%;
+		     bottom:-1px;
+		     padding-top:17px;
+		 	
+			 	h1{
+			 		font-size: 60px;
+			    	letter-spacing: 13px;
+			 	}
+		 	}
+		}
+	}	
+
 }
 
 section#expo{
 	margin-top: 150px;
 	position:relative;
 	@include expositor;
-		
+}
+
+@include MediaMobileScreens{
+	margin-top:60px;
 }
 
 section#exposicoes{
@@ -568,7 +638,22 @@ footer{
 		    }
 	}   
 		}
-	
 
+	@media screen and (max-width:480px){
+		.col-xs-6
+		{
+			width: 100%
+		}
+	}
+	
+	
 }
-    	 
+    
+	@media screen and (max-width:320px){
+		.endofresponsive
+		{
+			background: #000;
+			display: block;
+		}
+	}
+

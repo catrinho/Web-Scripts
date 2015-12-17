@@ -71,7 +71,10 @@
 			 	 <img class="capaimg" src="img/capa_img.jpg" alt="Pavilhão de Exposições">
 				 <div class="container pic-caption">
 					<!-- <h1>Museu</h1> -->
-					<img class="museubranco" src="img/museubranco.png" alt="Museu Faculdade Belas Artes "/>
+					<img class="museubranco" src="img/museualbino.png" alt="Museu Faculdade Belas Artes " style="   
+							width: 70%;
+
+					"/>
 				</div>
 			</div>
 			
@@ -123,6 +126,45 @@
 		</div>
 	</section>
 
+<footer>
+			<div class="row hide-xs hide-sm  ">
+				<div class="container">
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<a href="home.html"><h2 class="museu">Museu</h2></a>
+						<ul>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="sobre.html#localizacao">Contactos</a></li>
+							<li><a href="sobre.html#mapas">Localização</a></li>
+						</ul>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-5">
+						<a href="pag_exposicoe.html"><h3>Exposições</h3></a>
+						<ul>
+							<li><a href="exposicao.html">Exposição de Finalistas</a></li>
+							<li><a href="exposicao.html">Identidade(s) 2</a></li>
+							<li><a href="exposicao.html">Armanda Passos - Bloco de desenhos ESBAP</a></li>
+						</ul>
+					</div>	
+					<div class="col-lg-3 col-md-3 col-sm-3">
+						<a href="galerias.html"><h3>Galerias</h3></a>
+						<ul>
+							<li><a href="galerias.html">Museu</a></li>
+							<li><a href="galerias.html">Cozinha</a></li>
+							<li><a href="galerias.html">Galeria dos Leões</a></li>
+						</ul>
+					</div>	
+					<div class="col-lg-1 col-md-1 col-sm-2">
+						<a href="#"><h3>Arquivo</h3></a>		<!-- ???!?!?!??!?!?!?! -->
+						<ul>
+							<li><a href="#">2015</a></li>
+							<li><a href="#">2014</a></li>
+							<li><a href="#">2013</a></li>
+							<li><a href="#">2012</a></li>
+						</ul>
+					</div>	
+				</div>	
+			</div>
+
 			<div class="row mobile show-xs hide-md hide-lg">
 				<div class="container">
 
@@ -163,8 +205,23 @@
 
 		</footer>
 <script src="js/jquery.1.11.3.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+
 <script src="js/main.js"></script>
 
+<script type="text/javascript">
+	function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(41.1456729, -8.6008423),
+          zoom: 16,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
 </body>
 
 </html>
