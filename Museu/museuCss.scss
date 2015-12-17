@@ -197,6 +197,9 @@ section{
 section#header-bg-big{
  	width: 100vw;
 	height:100vh;
+	@include MediaMobileScreens{
+		height: 400px;
+	}
 	//background-color:black;
 	/*
  	.header-img {
@@ -206,6 +209,7 @@ section#header-bg-big{
 	  background-image:'img/capa_img.png';
 	}*/
 	.header-img {
+		  padding-top:60px;
 		  position: relative;
 		  width: 100%;
 		  height: 100%;
