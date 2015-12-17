@@ -75,8 +75,11 @@
    @include container(30,$desktop-width);
 
    .hide-lg{
-    display: none;
+    display: none!important;;
    } 
+   .show-lg{
+    display:block !important;
+   }
 }
 
 /* Small Desktop/ Tablet screens */
@@ -91,8 +94,11 @@
   @include container(22,$medium-screen-width);
 
    .hide-md{
-    display: none;
-   }     
+    display: none!important;;
+   } 
+   .show-md{
+    display:block !important;
+   }   
 }
 
 
@@ -109,8 +115,11 @@
   @include container(22,$tablet-width); 
 
    .hide-sm{
-    display: none;
-   }       
+    display: none!important;;
+   } 
+   .show-sm{
+    display:block !important;
+   }      
 }
 
 
@@ -132,7 +141,10 @@
 
 
    .hide-xs{
-    display: none;
-   }   
+    display: none!important;;
+   } 
+   .show-xs{
+    display:block !important;
+   } 
 }
 

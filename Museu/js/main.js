@@ -25,7 +25,9 @@
   		$(".search_oberlay").toggle();
 
 	});
+   	var expositores =  $('#expo .expositor');
 
+   	console.log($('#expo .expositor').each();
 
 // 	Grelha da Pagina coleção... sistema tipo pinterest
 

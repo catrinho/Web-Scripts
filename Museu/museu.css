@@ -180,7 +180,10 @@ table {
     position: relative; }
 
   .hide-lg {
-    display: none; } }
+    display: none !important; }
+
+  .show-lg {
+    display: block !important; } }
 /* Small Desktop/ Tablet screens */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   .col-md-1 {
@@ -285,7 +288,10 @@ table {
     position: relative; }
 
   .hide-md {
-    display: none; } }
+    display: none !important; }
+
+  .show-md {
+    display: block !important; } }
 /* Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 991px) {
   .col-sm-1 {
@@ -390,7 +396,10 @@ table {
     position: relative; }
 
   .hide-sm {
-    display: none; } }
+    display: none !important; }
+
+  .show-sm {
+    display: block !important; } }
 /* Small /Mobile screens */
 @media screen and (max-width: 767px) {
   .col-xs-1 {
@@ -495,7 +504,10 @@ table {
     position: relative; }
 
   .hide-xs {
-    display: none; } }
+    display: none !important; }
+
+  .show-xs {
+    display: block !important; } }
 @font-face {
   font-family: butlerregular;
   src: url("fonts/Butler/butler_regular-webfont.eot");
@@ -767,6 +779,13 @@ section#header-bg-big {
       color: white;
       top: 400px;
       left: 200px; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      section#header-bg-big .header-img .pic-caption {
+        font-family: butler_stencilblack, Georgia, Times New Roman, Times, serif;
+        position: absolute;
+        color: white;
+        top: 400px;
+        left: 100px; } }
 
 section#header-bg-small {
   width: 100vw; }
@@ -957,7 +976,7 @@ section#grelha-colecao {
       margin-top: 10px;
       font-size: 10px;
       color: gray;
-      font-family: "proxima_nova_rglight", Helvetica, Arial, sans-serif; }
+      font-family: "proxima_novalight", Helvetica, Arial, sans-serif; }
 
 section#sobremuseu {
   padding-top: 80px; }
@@ -973,7 +992,7 @@ section#sobremuseu {
     line-height: 60px;
     padding-bottom: 15px; }
   section#sobremuseu p {
-    font-family: proxima_nova_rglight, Helvetica, Arial, sans-serif;
+    font-family: proxima_novalight, Helvetica, Arial, sans-serif;
     font-size: 15px;
     text-align: left;
     color: #000000;
@@ -982,7 +1001,7 @@ section#sobremuseu {
     text-indent: 15px;
     padding-top: 15px; }
   section#sobremuseu em {
-    font-family: proxima_nova_rgligth_italic, Helvetica, Arial, sans-serif;
+    font-family: proxima_novalight_italic, Helvetica, Arial, sans-serif;
     font-size: 20px;
     text-indent: 15px; }
   section#sobremuseu .first {
@@ -1008,7 +1027,7 @@ section#localizacao dt {
   text-align: left;
   color: #000000; }
 section#localizacao dd {
-  font-family: proxima_nova_rglight, Helvetica, Arial, sans-serif;
+  font-family: proxima_novalight, Helvetica, Arial, sans-serif;
   font-size: 15px;
   text-align: left;
   color: #000000;
@@ -1044,7 +1063,7 @@ footer {
       line-height: 52px;
       font-variant: small-caps; }
     footer div[class*="col-"] ul li a {
-      font-family: proxima_nova_rglight, Helvetica, Arial, sans-serif;
+      font-family: proxima_novalight, Helvetica, Arial, sans-serif;
       text-align: left;
       line-height: 26px; }
     footer div[class*="col-"] a {
