@@ -1,20 +1,21 @@
- // DropDown Menu
+// DropDown Menu
  	// $('.dropdown-menu>a').click(function() {
  	// 	// alert('click');
  	// 	$(".dropdown-list").slideToggle( "slow" );
  	// });
- 	$('.dropdown-menu').click(function() {
+ 	$('.dropdown-menu').mouseover(function() {
  		// alert('click');
  		$(".dropdown-list").show(200);
  	});
 
- 	$(".dropdown-menu")
+	$(".dropdown-list")
 	  .mouseover(function() {
 	  $(".dropdown-list").show(200);
 	});
-	$(".dropdown-menu")
+
+	$(".dropdown-list")
 	  .mouseleave(function() {
-	  $(".dropdown-list").hide(400);
+	  $(".dropdown-list").hide(75);
 	});
  	
  // Icon Search 
@@ -25,12 +26,4 @@
   		$(".search_oberlay").toggle();
 
 	});
-   	// var expositores =  $('#expo .expositor');
-
-   	// console.log($('#expo .expositor').each();
-
-// 	Grelha da Pagina coleção... sistema tipo pinterest
-
-
-
 

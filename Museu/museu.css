@@ -887,11 +887,11 @@ section#header-bg-small {
     section#header-bg-small .header-img .pic-caption {
       position: relative;
       color: white;
-      top: 320px;
-      left: 0px; }
+      top: 290px;
+      width: 70%; }
       section#header-bg-small .header-img .pic-caption h1 {
-        font-size: 90px;
-        letter-spacing: 24px;
+        font-size: 100px;
+        letter-spacing: 13px;
         font-variant: small-caps; }
 
 section#expo {
