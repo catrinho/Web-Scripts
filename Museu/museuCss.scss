@@ -262,7 +262,7 @@ section#header-bg-small{
 		  height: 400px;
 		  overflow: hidden;
 		
-		img {
+		.capaimg {
 		  position: absolute;
 		  left: 50%;
 		  top: 50%;
@@ -273,11 +273,17 @@ section#header-bg-small{
 		          transform: translate(-50%,-50%);
 		}
 		.pic-caption{
-		    position: relative;
+		    position: absolute;
 		    color: white;
 		     top:290px;
 		    width: 70%;
+		    bottom:-1px;
 
+		   img.musebranco{
+		   	    width: 100%;
+			    bottom: 0;
+			    position: absolute;	
+		   }
 
 		    h1{
 		    	font-size: 100px;
@@ -502,6 +508,9 @@ footer{
 		    	margin: 0 9px;
 		    }
 
+		    ul{
+		    	padding-bottom:20px; 
+		    }
 			  li{
 				display: inline;	
 				margin-right: 17px;

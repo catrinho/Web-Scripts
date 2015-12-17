@@ -876,7 +876,7 @@ section#header-bg-small {
     width: 100%;
     height: 400px;
     overflow: hidden; }
-    section#header-bg-small .header-img img {
+    section#header-bg-small .header-img .capaimg {
       position: absolute;
       left: 50%;
       top: 50%;
@@ -885,10 +885,15 @@ section#header-bg-small {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
     section#header-bg-small .header-img .pic-caption {
-      position: relative;
+      position: absolute;
       color: white;
       top: 290px;
-      width: 70%; }
+      width: 70%;
+      bottom: -1px; }
+      section#header-bg-small .header-img .pic-caption img.musebranco {
+        width: 100%;
+        bottom: 0;
+        position: absolute; }
       section#header-bg-small .header-img .pic-caption h1 {
         font-size: 100px;
         letter-spacing: 13px;
@@ -1151,7 +1156,6 @@ footer {
       letter-spacing: 1.5px;
       font-size: 22px;
       line-height: 50px;
-      margin-top: 20px;
       font-variant: small-caps; }
     footer div[class*="col-"] ul li a {
       font-family: proxima_novalight, Helvetica, Arial, sans-serif;
@@ -1179,6 +1183,8 @@ footer {
       padding-bottom: 25px; }
       footer .mobile div[class*="col-"] {
         margin: 0 9px; }
+      footer .mobile ul {
+        padding-bottom: 20px; }
       footer .mobile li {
         display: inline;
         margin-right: 17px; }
