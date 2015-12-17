@@ -20,11 +20,11 @@
 
 //## Fonte: Proxima Nova
 
-	@include font-face('proxima_nova_regular','fonts/ProximaNova/proxima_nova_regular-webfont'){
+	@include font-face('proxima_nova_rgregular','fonts/ProximaNova/proxima_nova_regular-webfont'){
 		font-weight: normal;
    		font-style: normal;
 	}
-	@include font-face('proxima_novaregular_italicc','fonts/ProximaNova/proxima_novaregular_italic'){
+	@include font-face('proxima_novaregular_italic','fonts/ProximaNova/proxima_novaregular_italic'){
 		font-weight: normal;
    		font-style: normal;
 	}
@@ -121,7 +121,7 @@ $i: 1;
 					position: relative;
     				text-align:left;
     				color: white;
-    				left: 20px;
+    				margin-left: 20px;
     				bottom: 182px;
     		}
 
@@ -133,7 +133,7 @@ $i: 1;
     				vertical-align: text-bottom;
     				text-align:left;
     				color: white;
-    				left: 20px;
+    				margin-left: 20px;
     				bottom: 175px;
     				line-height: 30px;
     		}
@@ -151,20 +151,25 @@ $i: 1;
 		text-transform: uppercase;
 		letter-spacing: 7px;
 		font-weight: 400;
-		font-size: 17px;
-		line-height: 52px;
+		font-size: 22px;
+		line-height: 50px;
    }
    h3{
    		@include font_family($font-family-serif-buttler-regular);
-   		font-size: 17px;
-   		line-height: 52px;
+   		letter-spacing: 1.5px;
+   		font-size: 22px;
+   		line-height: 50px;
+   		margin-top:20px; 
    		font-variant: small-caps;
    }
 
    ul li a {
    	   	@include font_family($font-family-sans-PN-light);
    	   	text-align:left;
-   	   	line-height: 26px;
+   	   	line-height: 36px;
+   	   	font-size: 13px;
+   	   	letter-spacing: 0.5px;
+
    }
 }
 

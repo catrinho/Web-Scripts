@@ -499,7 +499,7 @@ table {
     width: 96.66667%; }
 
   .container {
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     position: relative; }
 
@@ -533,15 +533,15 @@ table {
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: proxima_nova_regular;
+  font-family: proxima_nova_rgregular;
   src: url("fonts/ProximaNova/proxima_nova_regular-webfont.eot");
-  src: url("fonts/ProximaNova/proxima_nova_regular-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_regular-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_regular-webfont.svg#proxima_nova_regular") format("svg"), url("fonts/ProximaNova/proxima_nova_regular-webfont.woff") format("woff");
+  src: url("fonts/ProximaNova/proxima_nova_regular-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_regular-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_regular-webfont.svg#proxima_nova_rgregular") format("svg"), url("fonts/ProximaNova/proxima_nova_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
-  font-family: proxima_novaregular_italicc;
+  font-family: proxima_novaregular_italic;
   src: url("fonts/ProximaNova/proxima_novaregular_italic.eot");
-  src: url("fonts/ProximaNova/proxima_novaregular_italic.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_novaregular_italic.ttf") format("truetype"), url("fonts/ProximaNova/proxima_novaregular_italic.svg#proxima_novaregular_italicc") format("svg"), url("fonts/ProximaNova/proxima_novaregular_italic.woff") format("woff");
+  src: url("fonts/ProximaNova/proxima_novaregular_italic.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_novaregular_italic.ttf") format("truetype"), url("fonts/ProximaNova/proxima_novaregular_italic.svg#proxima_novaregular_italic") format("svg"), url("fonts/ProximaNova/proxima_novaregular_italic.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -614,8 +614,9 @@ body {
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
-  display: none;
-  -webkit-transition: all 0.5s ease-in; }
+  display: block;
+  -webkit-transition: all 0.5s ease-in;
+  display: none; }
   .search_oberlay .search {
     position: absolute;
     top: 50%;
@@ -632,6 +633,16 @@ body {
     padding-right: 30px;
     outline: none; }
 
+.nav_mobile nav {
+  z-index: 100;
+  position: fixed;
+  background: rgba(255, 255, 255, 0.9);
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  display: block;
+  -webkit-transition: all 0.5s ease-in; }
+
 header {
   z-index: 100;
   width: 100%;
@@ -643,6 +654,10 @@ header {
   header .logo img {
     width: 200px;
     margin-top: 10px; }
+  @media screen and (max-width: 767px) {
+    header .logo img {
+      width: 140px;
+      margin-top: 10px; } }
   header .menu {
     margin: 0px;
     float: right; }
@@ -665,6 +680,8 @@ header {
             display: block;
             font-family: butlermedium, Georgia, Times New Roman, Times, serif;
             font-size: 17px; }
+            header .menu nav ul li a:hover {
+              color: #7d6949; }
           header .menu nav ul li ul.dropdown-list {
             width: 200px;
             position: absolute;
@@ -734,6 +751,62 @@ header {
           header .menu nav ul .search .open .handle:after {
             transform-origin: center center;
             transform: rotate(90deg); }
+  header .mb-mobile {
+    display: none;
+    float: right; }
+    header .mb-mobile .search {
+      float: right;
+      margin: 15px 20px 0; }
+      header .mb-mobile .search .search-icon {
+        height: 3px;
+        width: 20px;
+        display: block;
+        position: relative;
+        cursor: pointer;
+        border-radius: 6px;
+        padding-top: 8px;
+        z-index: 150;
+        margin-right: 10px; }
+      header .mb-mobile .search .circle {
+        position: relative;
+        display: block;
+        height: 14px;
+        width: 14px;
+        background-color: #ffffff;
+        border-radius: 70px;
+        z-index: 0;
+        border: 2px solid #0b0e16;
+        transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+        z-index: 1; }
+      header .mb-mobile .search .handle {
+        position: absolute;
+        background-color: #0b0e16;
+        top: 22px;
+        left: 7px;
+        width: 18px;
+        height: 2px;
+        display: block;
+        transform: rotate(45deg);
+        float: right;
+        border-radius: 2px; }
+        header .mb-mobile .search .handle:after {
+          content: "";
+          background-color: #0b0e16;
+          width: 18px;
+          height: 2px;
+          display: block;
+          float: right;
+          border-radius: 2px;
+          transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+          z-index: -1; }
+      header .mb-mobile .search .open .circle {
+        transform: scale(0.02);
+        transform-origin: 30% 40%;
+        background: #0b0e16;
+        border-color: #0b0e16; }
+      header .mb-mobile .search .open .handle:after {
+        transform-origin: center center;
+        transform: rotate(90deg); }
 
 @media screen and (max-width: 767px) {
   header .logo img {
@@ -774,18 +847,23 @@ section#header-bg-big {
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
     section#header-bg-big .header-img .pic-caption {
-      font-family: butler_stencilblack, Georgia, Times New Roman, Times, serif;
+      font-family: butlerregular, Georgia, Times New Roman, Times, serif;
       position: absolute;
       color: white;
-      top: 400px;
-      left: 200px; }
+      top: 440px;
+      left: 200px;
+      line-height: 70px; }
+      section#header-bg-big .header-img .pic-caption p {
+        line-height: 30px;
+        letter-spacing: 0.7px; }
     @media screen and (min-width: 992px) and (max-width: 1199px) {
       section#header-bg-big .header-img .pic-caption {
-        font-family: butler_stencilblack, Georgia, Times New Roman, Times, serif;
-        position: absolute;
-        color: white;
         top: 400px;
         left: 100px; } }
+    @media screen and (max-width: 767px) {
+      section#header-bg-big .header-img .pic-caption {
+        top: 40%;
+        left: 6%; } }
 
 section#header-bg-small {
   width: 100vw; }
@@ -805,7 +883,7 @@ section#header-bg-small {
     section#header-bg-small .header-img .pic-caption {
       position: relative;
       color: white;
-      top: 330px;
+      top: 320px;
       left: 0px; }
       section#header-bg-small .header-img .pic-caption h1 {
         font-size: 90px;
@@ -838,7 +916,7 @@ section#expo {
       position: relative;
       text-align: left;
       color: white;
-      left: 20px;
+      margin-left: 20px;
       bottom: 182px; }
     section#expo .expositor h3 {
       font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
@@ -848,7 +926,7 @@ section#expo {
       vertical-align: text-bottom;
       text-align: left;
       color: white;
-      left: 20px;
+      margin-left: 20px;
       bottom: 175px;
       line-height: 30px; }
     section#expo .expositor a {
@@ -880,7 +958,7 @@ section#exposicoes {
       position: relative;
       text-align: left;
       color: white;
-      left: 20px;
+      margin-left: 20px;
       bottom: 182px; }
     section#exposicoes .expositor h3 {
       font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
@@ -890,7 +968,7 @@ section#exposicoes {
       vertical-align: text-bottom;
       text-align: left;
       color: white;
-      left: 20px;
+      margin-left: 20px;
       bottom: 175px;
       line-height: 30px; }
     section#exposicoes .expositor a {
@@ -1006,6 +1084,11 @@ section#sobremuseu {
     text-indent: 15px; }
   section#sobremuseu .first {
     text-indent: initial; }
+  section#sobremuseu a {
+    text-decoration: none;
+    color: #000000;
+    font-family: proxima_nova_rgbold, Helvetica, Arial, sans-serif;
+    line-height: 40px; }
 
 section#localizacao .block-text {
   width: 70%;
@@ -1048,6 +1131,8 @@ footer {
   padding-top: 20px;
   height: auto;
   padding-bottom: 35px; }
+  footer .largescreen {
+    display: none; }
   footer div[class*="col-"] {
     margin: 0 15px; }
     footer div[class*="col-"] h2.museu {
@@ -1055,19 +1140,45 @@ footer {
       text-transform: uppercase;
       letter-spacing: 7px;
       font-weight: 400;
-      font-size: 17px;
-      line-height: 52px; }
+      font-size: 22px;
+      line-height: 50px; }
     footer div[class*="col-"] h3 {
       font-family: butlerregular, Georgia, Times New Roman, Times, serif;
-      font-size: 17px;
-      line-height: 52px;
+      letter-spacing: 1.5px;
+      font-size: 22px;
+      line-height: 50px;
+      margin-top: 20px;
       font-variant: small-caps; }
     footer div[class*="col-"] ul li a {
       font-family: proxima_novalight, Helvetica, Arial, sans-serif;
       text-align: left;
-      line-height: 26px; }
+      line-height: 36px;
+      font-size: 13px;
+      letter-spacing: 0.5px; }
     footer div[class*="col-"] a {
       text-decoration: none;
       color: white; }
+      footer div[class*="col-"] a:hover {
+        font-weight: 600; }
+  @media screen and (max-width: 767px) {
+    footer div[class*="col-"] {
+      margin: 0px; }
+    footer .mobile {
+      clear: both;
+      text-align: left;
+      color: white;
+      background-color: #b71d29;
+      position: relative;
+      margin-bottom: 0px !important;
+      padding-top: 10px;
+      height: auto;
+      padding-bottom: 25px; }
+      footer .mobile div[class*="col-"] {
+        margin: 0 9px; }
+      footer .mobile li {
+        display: inline;
+        margin-right: 17px; }
+      footer .mobile .exposicoes li {
+        display: block; } }
 
 /*# sourceMappingURL=museu.css.map */

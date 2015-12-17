@@ -23,14 +23,8 @@ body{
 	}
 
 .search_oberlay{
-	z-index:100;
-	position:fixed;
-	background:rgba(255,255,255,0.9);
-	height:100vh;
-	width:100vw;
-	overflow-y:hidden;
-	display:none;
-	 -webkit-transition: all 0.5s ease-in;
+		@include Fullscreen_over;
+		display: none;
 
 	.search {
 	    position: absolute;
@@ -48,8 +42,18 @@ body{
 	    padding-right: 30px;
 	    outline: none;
 	}
+}
+.nav_mobile nav{
+	//@include Fullscreen_over;
 
-
+	z-index:100;
+  position:fixed;
+  background:rgba(255,255,255,0.9);
+  height:100vh;
+  width:100vw;
+  overflow-y:hidden;
+  display:block;
+   -webkit-transition: all 0.5s ease-in;
 }
 
 
@@ -67,6 +71,12 @@ header{
 	.logo img{
 		width: 200px;
 		margin-top: 10px;
+	}
+	@include MediaMobileScreens{
+		.logo img{
+		width: 140px;
+		margin-top: 10px;
+	}
 	}
 	 
 
@@ -96,6 +106,10 @@ header{
 						display: block;
 						@include font_family($font-family-serif-buttler-medium);
 						font-size: floor(($font-size-base * 1.26));
+						&:hover {
+					  		color: $cor-brow;
+					  	}
+				  	
 				  	}
 				  	ul.dropdown-list{
 				  		width: 200px;
@@ -129,11 +143,23 @@ header{
 				@include search;
 
 				}
-			}	
+			}
+
 
 		}	
 	}
 
+
+	.mb-mobile{
+		display: none;
+		float: right;
+		.search{
+				float:right;
+				margin: 15px 20px 0 ;
+				@include search;
+
+				}
+	}
 	// .mobile-nav{
 	// 	position:fixed;
 	// 	background-color:darken($header-color, 2%);
@@ -196,21 +222,31 @@ section#header-bg-big{
 		          transform: translate(-50%,-50%);
 		}
 		.pic-caption{
-			@include font_family($font-family-serif-buttler-stencil);
+			@include font_family($font-family-serif-buttler-regular);
 		    position: absolute;
 		    color: white;
-		    top: 400px;
+		    top: 440px;
 		    left: 200px;
+		    line-height: 70px;
+
+		    p{
+		    	line-height: 30px;
+		    	letter-spacing: 0.7px;
+		    }
 		}
 		@include MediaMediumScreens{
 			.pic-caption{
-			@include font_family($font-family-serif-buttler-stencil);
-		    position: absolute;
-		    color: white;
 		    top: 400px;
 		    left: 100px;
 			}
 		}
+		@include MediaMobileScreens{
+			.pic-caption{
+				top:40%;
+			    left: 6%;
+			  }  
+		}    
+
 	}
 }
 
@@ -235,7 +271,7 @@ section#header-bg-small{
 		.pic-caption{
 		    position: relative;
 		    color: white;
-		    top:330px;
+		    top:320px;
 		    left: 0px;
 
 		    h1{
@@ -367,6 +403,12 @@ section#sobremuseu{
 	.first {
 		text-indent: initial;
 	}
+	a {
+		text-decoration: none;
+		color: #000000;
+		@include font_family($font-family-sans-PN-bold);
+		line-height: 40px;
+	}	
 }
 
 
@@ -417,16 +459,57 @@ footer{
     height: auto;
     padding-bottom: 35px;
     //bottom:0px;
+    .largescreen{
+    	display: none;
+    }
 
     div[class*="col-"]{
     	margin: 0 15px;
     	 @include footer_Text;
-    	 a{
-    	text-decoration:none;
-    	color: white;
-    }
-    }
-   
+	    	 a{
+		    	text-decoration:none;
+		    	color: white;
+	    	 &:hover {
+		  		font-weight: 600;
+		  		}
+	 	 
+	    	}
+	}
+		@include MediaMobileScreens{
+			 div[class*="col-"]{
+    				margin: 0px;
+    		}		
 
-    
+			 .mobile{
+		  clear: both;			
+		text-align:left; 
+		color:white;
+		background-color:$cor-red;
+		position: relative;	
+	    //margin-top: 60px;
+	    margin-bottom: 0px!important;
+	    padding-top: 10px;
+	    height: auto;
+	    padding-bottom: 25px;
+	    //bottom:0px;
+
+		    div[class*="col-"]{
+		    	margin: 0 9px;
+		    }
+
+			  li{
+				display: inline;	
+				margin-right: 17px;
+			}
+			 .exposicoes{
+
+		    	li{
+		    		display: block;
+		    	}
+		    }
+	}   
+		}
+	
+
 }
+    	 
