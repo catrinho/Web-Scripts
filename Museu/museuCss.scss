@@ -43,19 +43,71 @@ body{
 	    outline: none;
 	}
 }
-.nav_mobile nav{
+.nav-mobile{
 	//@include Fullscreen_over;
 
-	z-index:100;
+  z-index:100;
   position:fixed;
   background:rgba(255,255,255,0.9);
-  height:100vh;
-  width:100vw;
-  overflow-y:hidden;
-  display:block;
+  height:100%;
+  width:100%;
+ 	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+text-align: center;
+	overflow: auto;
    -webkit-transition: all 0.5s ease-in;
-}
+   -webkit-overflow-scrolling: touch;
+   display: none;
+   div{
+   		padding-top: 90px; 
+   		a{
+			text-decoration: none;
+			color: $cor-black;
+				h3{
+					font-family:$font-family-serif-buttler-bold;
+					font-size: 1.2em;
+					padding:5%;
+					&:hover {
+				  		text-decoration: underline;
+					  	
+					 }
+				
+				}
 
+   		}
+
+   		ul{
+   			height: 100%;
+   			width: 100%;
+   			position:relative;
+   			margin: 0 auto;
+
+   			li {
+				font-family:$font-family-serif-buttler-medium;
+				font-weight: 300;
+				@include font-smoothing;
+				text-transform: capitalize;
+				height: 24px;
+				overflow: hidden;
+    				text-overflow:ellipsis;
+    				white-space: nowrap;
+    				display: block;
+    				margin: 0 auto;
+    				width: 70%;
+					a{
+						text-decoration: none;
+						color: $cor-black;
+						font-family:$font-family-sans-PN-light;
+						font-size: 14px;
+						&:hover {
+					  		text-decoration: underline;
+					  	}
+					}
+			}	
+		
+   		}
+     }
+}
 
 header{
 	z-index:100;
@@ -91,7 +143,7 @@ header{
 			ul {
 			  
 			  display: block;
-			  margin: 0 -15px;
+			  margin: 0 15px;
 			  list-style: none;
 			  text-align: center;
 			  float:right;
@@ -159,6 +211,7 @@ header{
 				@include search;
 
 				}
+		
 	}
 	// .mobile-nav{
 	// 	position:fixed;
@@ -172,9 +225,13 @@ header{
 @include MediaMobileScreens{
 	header{
 		.logo img{
-			width: 170px;
+			width: 140px;
 			margin-top: 20px;
 		}
+		.mb-mobile .search{
+			margin: 10px 20px 0;
+		}
+		@include BurgerKing;
 	}
 }		 
 	
@@ -259,7 +316,7 @@ section#header-bg-big{
 	}	
 	@include MediaSmallScreens{
 		.header-img{
-			height: 500px;
+			height:100vh;
 
 			.pic-caption{
 		    top: 48%;
@@ -319,7 +376,7 @@ section#header-bg-small{
 		}
 		@include MediaMediumScreens{
 			img.museubranco {
-			    margin-top: 16px;
+			    margin-top: 0px;
 			    width: 70%;
 			}
 			.pic-caption{
@@ -392,9 +449,21 @@ section#expo{
 	position:relative;
 	@include expositor;
 }
+@include MediaMediumScreens{
+	section#expo{
+		margin-top: 60px;
+	}
+}
+@include MediaSmallScreens{
+	section#expo{
+		margin-top: 60px;
+	}
+}
 
 @include MediaMobileScreens{
-	margin-top:60px;
+	section#expo{
+		margin-top: 60px;
+	}
 }
 
 section#exposicoes{
@@ -517,6 +586,8 @@ section#sobremuseu{
 	@include block_text;
 
 	@include heading_four_ss;
+
+	@include heading_five_ss;
 	
 	@include paragraph_ss;
 
@@ -535,6 +606,11 @@ section#sobremuseu{
 		@include font_family($font-family-sans-PN-bold);
 		line-height: 40px;
 	}	
+
+	img.img-expo{
+		width: 100%;
+		display: block;
+	}
 }
 
 
@@ -566,7 +642,7 @@ section#localizacao{
 	#map{
 		width: 100%;
 		height: 300px;
-		margin-bottom: 0px;
+		margin-bottom: -23px;
 	}
 
 	
@@ -620,7 +696,8 @@ footer{
 	    //bottom:0px;
 
 		    div[class*="col-"]{
-		    	margin: 0 9px;
+		    	margin: 0 20px;
+
 		    }
 
 		    ul{
@@ -629,6 +706,7 @@ footer{
 			  li{
 				display: inline;	
 				margin-right: 17px;
+				line-height: 36px;
 			}
 			 .exposicoes{
 
@@ -645,8 +723,6 @@ footer{
 			width: 100%
 		}
 	}
-	
-	
 }
     
 	@media screen and (max-width:320px){

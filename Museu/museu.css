@@ -633,15 +633,55 @@ body {
     padding-right: 30px;
     outline: none; }
 
-.nav_mobile nav {
+.nav-mobile {
   z-index: 100;
   position: fixed;
   background: rgba(255, 255, 255, 0.9);
-  height: 100vh;
-  width: 100vw;
-  overflow-y: hidden;
-  display: block;
-  -webkit-transition: all 0.5s ease-in; }
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  text-align: center;
+  overflow: auto;
+  -webkit-transition: all 0.5s ease-in;
+  -webkit-overflow-scrolling: touch;
+  display: none; }
+  .nav-mobile div {
+    padding-top: 90px; }
+    .nav-mobile div a {
+      text-decoration: none;
+      color: #0b0e16; }
+      .nav-mobile div a h3 {
+        font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+        font-size: 1.2em;
+        padding: 5%; }
+        .nav-mobile div a h3:hover {
+          text-decoration: underline; }
+    .nav-mobile div ul {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      margin: 0 auto; }
+      .nav-mobile div ul li {
+        font-family: "butlermedium", Georgia, "Times New Roman", Times, serif;
+        font-weight: 300;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-transform: capitalize;
+        height: 24px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        margin: 0 auto;
+        width: 70%; }
+        .nav-mobile div ul li a {
+          text-decoration: none;
+          color: #0b0e16;
+          font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
+          font-size: 14px; }
+          .nav-mobile div ul li a:hover {
+            text-decoration: underline; }
 
 header {
   z-index: 100;
@@ -667,7 +707,7 @@ header {
       margin-top: 8px; }
       header .menu nav ul {
         display: block;
-        margin: 0 -15px;
+        margin: 0 15px;
         list-style: none;
         text-align: center;
         float: right; }
@@ -748,6 +788,8 @@ header {
             transform-origin: 30% 40%;
             background: #0b0e16;
             border-color: #0b0e16; }
+          header .menu nav ul .search .open .handle {
+            top: 17px; }
           header .menu nav ul .search .open .handle:after {
             transform-origin: center center;
             transform: rotate(90deg); }
@@ -804,14 +846,55 @@ header {
         transform-origin: 30% 40%;
         background: #0b0e16;
         border-color: #0b0e16; }
+      header .mb-mobile .search .open .handle {
+        top: 17px; }
       header .mb-mobile .search .open .handle:after {
         transform-origin: center center;
         transform: rotate(90deg); }
 
 @media screen and (max-width: 767px) {
   header .logo img {
-    width: 170px;
-    margin-top: 20px; } }
+    width: 140px;
+    margin-top: 20px; }
+  header .mb-mobile .search {
+    margin: 10px 20px 0; }
+  header .burger {
+    width: 18px;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+    float: right;
+    margin-top: 7px; }
+  header .burger-brick {
+    height: 2px;
+    background: #fff;
+    margin-top: 5px;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -ms-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    background-color: #0b0e16; }
+  header .open .burger-brick:first-child {
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+    margin-top: 10px; }
+  header .open .burger-brick:last-child {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    margin-top: -9px; }
+  header .open .middle {
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0); } }
 section {
   width: 100%;
   position: relative;
@@ -872,7 +955,7 @@ section#header-bg-big {
         left: 140px; } }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     section#header-bg-big .header-img {
-      height: 500px; }
+      height: 100vh; }
       section#header-bg-big .header-img .pic-caption {
         top: 48%;
         left: 100px; } }
@@ -909,7 +992,7 @@ section#header-bg-small {
         font-variant: small-caps; }
     @media screen and (min-width: 992px) and (max-width: 1199px) {
       section#header-bg-small .header-img img.museubranco {
-        margin-top: 16px;
+        margin-top: 0px;
         width: 70%; }
       section#header-bg-small .header-img .pic-caption {
         color: white;
@@ -976,9 +1059,13 @@ section#expo {
       text-align: left;
       color: white;
       margin-left: 20px;
-      bottom: 182px; }
+      bottom: 182px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 10px; }
     section#expo .expositor h3 {
-      font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
+      font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
       display: block;
       font-size: 24px;
       position: relative;
@@ -987,12 +1074,35 @@ section#expo {
       color: white;
       margin-left: 20px;
       bottom: 175px;
-      line-height: 30px; }
+      line-height: 30px;
+      letter-spacing: 1px; }
     section#expo .expositor a {
       text-decoration: none; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      section#expo .expositor h2 {
+        font-size: 56px; }
+      section#expo .expositor h3 {
+        font-size: 21px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      section#expo .expositor h2 {
+        font-size: 46px; }
+      section#expo .expositor h3 {
+        font-size: 19px; } }
+    @media screen and (max-width: 767px) {
+      section#expo .expositor h2 {
+        font-size: 36px; }
+      section#expo .expositor h3 {
+        font-size: 17px; } }
 
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section#expo {
+    margin-top: 60px; } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section#expo {
+    margin-top: 60px; } }
 @media screen and (max-width: 767px) {
-  margin-top: 60px; }
+  section#expo {
+    margin-top: 60px; } }
 section#exposicoes {
   position: relative;
   margin-top: 80px; }
@@ -1020,9 +1130,13 @@ section#exposicoes {
       text-align: left;
       color: white;
       margin-left: 20px;
-      bottom: 182px; }
+      bottom: 182px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      margin-bottom: 10px; }
     section#exposicoes .expositor h3 {
-      font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
+      font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
       display: block;
       font-size: 24px;
       position: relative;
@@ -1031,9 +1145,25 @@ section#exposicoes {
       color: white;
       margin-left: 20px;
       bottom: 175px;
-      line-height: 30px; }
+      line-height: 30px;
+      letter-spacing: 1px; }
     section#exposicoes .expositor a {
       text-decoration: none; }
+    @media screen and (min-width: 992px) and (max-width: 1199px) {
+      section#exposicoes .expositor h2 {
+        font-size: 56px; }
+      section#exposicoes .expositor h3 {
+        font-size: 21px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) {
+      section#exposicoes .expositor h2 {
+        font-size: 46px; }
+      section#exposicoes .expositor h3 {
+        font-size: 19px; } }
+    @media screen and (max-width: 767px) {
+      section#exposicoes .expositor h2 {
+        font-size: 36px; }
+      section#exposicoes .expositor h3 {
+        font-size: 17px; } }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     section#exposicoes .exposicoes {
       max-width: 800px; } }
@@ -1133,9 +1263,13 @@ section#colecao {
           text-align: left;
           color: white;
           margin-left: 20px;
-          bottom: 182px; }
+          bottom: 182px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 10px; }
         section#colecao .montra-colecao-mb .expositor h3 {
-          font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
+          font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
           display: block;
           font-size: 24px;
           position: relative;
@@ -1144,9 +1278,26 @@ section#colecao {
           color: white;
           margin-left: 20px;
           bottom: 175px;
-          line-height: 30px; }
+          line-height: 30px;
+          letter-spacing: 1px; }
         section#colecao .montra-colecao-mb .expositor a {
           text-decoration: none; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1199px) {
+      section#colecao .montra-colecao-mb .expositor h2 {
+        font-size: 56px; }
+      section#colecao .montra-colecao-mb .expositor h3 {
+        font-size: 21px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) and (min-width: 768px) and (max-width: 991px) {
+      section#colecao .montra-colecao-mb .expositor h2 {
+        font-size: 46px; }
+      section#colecao .montra-colecao-mb .expositor h3 {
+        font-size: 19px; } }
+    @media screen and (min-width: 768px) and (max-width: 991px) and (max-width: 767px) {
+      section#colecao .montra-colecao-mb .expositor h2 {
+        font-size: 36px; }
+      section#colecao .montra-colecao-mb .expositor h3 {
+        font-size: 17px; } }
+
   @media screen and (max-width: 767px) {
     section#colecao .montra-colecao {
       display: none; }
@@ -1178,9 +1329,13 @@ section#colecao {
           text-align: left;
           color: white;
           margin-left: 20px;
-          bottom: 182px; }
+          bottom: 182px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          margin-bottom: 10px; }
         section#colecao .montra-colecao-mb .expositor h3 {
-          font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
+          font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
           display: block;
           font-size: 24px;
           position: relative;
@@ -1189,9 +1344,25 @@ section#colecao {
           color: white;
           margin-left: 20px;
           bottom: 175px;
-          line-height: 30px; }
+          line-height: 30px;
+          letter-spacing: 1px; }
         section#colecao .montra-colecao-mb .expositor a {
           text-decoration: none; } }
+    @media screen and (max-width: 767px) and (min-width: 992px) and (max-width: 1199px) {
+      section#colecao .montra-colecao-mb .expositor h2 {
+        font-size: 56px; }
+      section#colecao .montra-colecao-mb .expositor h3 {
+        font-size: 21px; } }
+    @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 991px) {
+      section#colecao .montra-colecao-mb .expositor h2 {
+        font-size: 46px; }
+      section#colecao .montra-colecao-mb .expositor h3 {
+        font-size: 19px; } }
+    @media screen and (max-width: 767px) and (max-width: 767px) {
+      section#colecao .montra-colecao-mb .expositor h2 {
+        font-size: 36px; }
+      section#colecao .montra-colecao-mb .expositor h3 {
+        font-size: 17px; } }
 
 section#grelha-colecao {
   margin-top: 80px;
@@ -1215,11 +1386,18 @@ section#sobremuseu {
     font-size: 25px;
     text-align: left;
     color: #000000;
-    line-height: 60px;
+    line-height: 55px;
+    padding-bottom: 15px; }
+  section#sobremuseu h5 {
+    font-family: proxima_novalight, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    color: #000000;
+    line-height: 30px;
     padding-bottom: 15px; }
   section#sobremuseu p {
     font-family: proxima_novalight, Helvetica, Arial, sans-serif;
-    font-size: 15px;
+    font-size: 17	px;
     text-align: left;
     color: #000000;
     line-height: 30px;
@@ -1237,6 +1415,9 @@ section#sobremuseu {
     color: #000000;
     font-family: proxima_nova_rgbold, Helvetica, Arial, sans-serif;
     line-height: 40px; }
+  section#sobremuseu img.img-expo {
+    width: 100%;
+    display: block; }
 
 section#localizacao .block-text {
   width: 70%;
@@ -1247,7 +1428,7 @@ section#localizacao h4 {
   font-size: 25px;
   text-align: left;
   color: #000000;
-  line-height: 60px;
+  line-height: 55px;
   padding-bottom: 15px; }
 section#localizacao * {
   line-height: 25px;
@@ -1266,7 +1447,7 @@ section#localizacao dd {
 section#localizacao #map {
   width: 100%;
   height: 300px;
-  margin-bottom: 0px; }
+  margin-bottom: -23px; }
 
 footer {
   clear: both;
@@ -1289,17 +1470,17 @@ footer {
       letter-spacing: 7px;
       font-weight: 400;
       font-size: 22px;
-      line-height: 50px; }
+      line-height: 48px; }
     footer div[class*="col-"] h3 {
       font-family: butlerregular, Georgia, Times New Roman, Times, serif;
       letter-spacing: 1.5px;
       font-size: 22px;
-      line-height: 50px;
+      line-height: 49px;
       font-variant: small-caps; }
     footer div[class*="col-"] ul li a {
       font-family: proxima_novalight, Helvetica, Arial, sans-serif;
       text-align: left;
-      line-height: 36px;
+      line-height: 22px;
       font-size: 13px;
       letter-spacing: 0.5px; }
     footer div[class*="col-"] a {
@@ -1321,12 +1502,13 @@ footer {
       height: auto;
       padding-bottom: 25px; }
       footer .mobile div[class*="col-"] {
-        margin: 0 9px; }
+        margin: 0 20px; }
       footer .mobile ul {
         padding-bottom: 20px; }
       footer .mobile li {
         display: inline;
-        margin-right: 17px; }
+        margin-right: 17px;
+        line-height: 36px; }
       footer .mobile .exposicoes li {
         display: block; } }
   @media screen and (max-width: 480px) {

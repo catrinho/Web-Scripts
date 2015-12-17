@@ -26,14 +26,38 @@
 		<input class="search" type="text" placeholder="Search" />
 	</div>
 	<!-- Menu de Navegação -->
+	<!-- Menu de Navegação -->
 
-		<header>
-			<div class="container">
-			<div class="col-lg-3 col-md-3 col-sm-3 logo algn-left ">
-					<a href="home.html"><img src="img/museu.png" alt="Logo Museu"/></a>	<!-- Logo Museu-->
+				<nav class="nav-mobile">
+						<div class="container">
+							<a href="home.html"><h3>Museu</h3></a>
+							<ul>
+								<li><a href="sobre.html">Sobre</a></li>
+								<li><a href="sobre.html">Contactos</a></li>
+								<li><a href="sobre.html">Localização</a></li>
+							</ul>
+						
+							<a href="home.html"><h3>Exposições</h3></a>
+							<ul>
+								<li><a href="exposicao.html">Exposição de Finalistas</a></li>
+							<li><a href="exposicao.html">Identidade(s) 2</a></li>
+							<li><a href="exposicao.html">Armanda Passos - Bloco de desenhos ESBAP</a></li>
+							</ul>
+						<a href="home.html"><h3>Galerias</h3></a>
+							<ul>
+								<li><a href="galerias.html">Museu</a></li>
+								<li><a href="galerias.html">Cozinha</a></li>
+								<li><a href="galerias.html">Galeria dos Leões</a></li>
+							</ul>
+					</div>		
+				</nav>
+<header>	
+		<div class="container">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-4 logo algn-left ">
+					<a href="home.html"><img src="img/museu.png" alt="Logo Museu"/></a>	
 			</div>
-			<div class="col-lg-9 col-md-9 col-sm-7 algn-right menu">
-				<nav class="row">
+			<div class="col-lg-9 col-md-9 col-sm-7 algn-right menu hide-xs">
+				<nav class="row ">
 					<ul>
 						<li><a href="pag_exposicoe.html">Exposições</a></li>
 						<li class="dropdown-menu">
@@ -60,11 +84,33 @@
 						</li>
 					</ul>	
 					
+				</nav>				
+			</div>
+			<div class="col-xs-7 mb-mobile algn-right show-xs">
+				<nav>
+					<ul>
+						
+						<li>
+							<div class="burger">
+							  <div class="burger-brick"></div>
+							  <div class="burger-brick middle"></div>
+							  <div class="burger-brick"></div>
+							</div>
+						</li>
+						<li>
+							<div class="button-search">
+								<div class="search">
+									<a class="search-icon">
+									  <span class="circle"></span>
+									  <span class="handle"></span>
+									</a>
+								</div>
+							</div>	
+						</li>
+					</ul>
 				</nav>
-				
 			</div>
-			</div>
-		</header>
+</header>
 			<!-- Imagem Principal-->
 		<section id="header-bg-small" >
 			<div class="header-img" >
@@ -205,23 +251,42 @@
 
 		</footer>
 <script src="js/jquery.1.11.3.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-
 <script src="js/main.js"></script>
 
-<script type="text/javascript">
-	function initialize() {
-        var mapCanvas = document.getElementById('map');
-        var mapOptions = {
-          center: new google.maps.LatLng(41.1456729, -8.6008423),
-          zoom: 16,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
+<script>
 
-</script>
+var markers = [
+    ['Museu | Cozinha </br> FBAUP', 41.1456729,-8.6008423],
+    ['Galeria dos Leões </br> Reitoria UP', 41.14690801, -8.61562081],
+	];
+
+function initMap() {
+	var myLatLng = {lat: 41.1456729, lng: -8.6008423};
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 15,
+    center: myLatLng
+    });
+
+ var infowindow = new google.maps.InfoWindow(), marker, i;
+    for (i = 0; i < markers.length; i++) {  
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(markers[i][1], markers[i][2]),
+            map: map
+        });
+        google.maps.event.addListener(marker, 'click', (function(marker, i) {
+            return function() {
+                infowindow.setContent(markers[i][0]);
+                infowindow.open(map, marker);
+            }
+        })(marker, i));
+    }
+}
+
+
+	</script>
+ 	<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeAs0nEhcZlE8KBen40ep-G-bj9FAyj20&signed_in=true&callback=initMap"></script>
 </body>
 
 </html>

@@ -117,6 +117,9 @@ $duration: 0.6s;
     background: $cor-black;
     border-color:$cor-black;
   }
+  .handle{
+    top: 17px;
+  }
   .handle:after {
     transform-origin: center center;
     transform: rotate(90deg);
@@ -153,7 +156,8 @@ $duration: 0.6s;
             //background: @include background-image(linear-gradient(left, rgba(183,29,41,0.4);) 0%, rgba(183,29,41,0.4); 100%));
         }
           @include expositor_headings;
-  }       
+  }  
+
 }
 
 
@@ -187,6 +191,55 @@ $duration: 0.6s;
    -webkit-transition: all 0.5s ease-in;
 }
 
+@mixin BurgerKing{
+
+.burger {
+  width: 18px;
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  float: right;
+margin-top:  7px;
+}
+
+.burger-brick {
+  height: 2px;
+  background: #fff;
+  margin-top: 5px;
+  -webkit-transition: 0.3s ease-out;
+  -moz-transition: 0.3s ease-out;
+  -ms-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  background-color:$cor-black;
+}
+
+.open .burger-brick:first-child {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin-top: 10px;
+}
+
+.open .burger-brick:last-child {
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+.open .middle {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+}
+}
 
 
      
