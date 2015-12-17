@@ -23,11 +23,16 @@
    	$(".button-search").click(function() {
   		$(".search-icon").toggleClass("open");
   		$('body').toggleClass('overNone');
-  		$(".search_oberlay").toggle();
-
+  		$(".search_oberlay").slideToggle();
+  		$('.nav-mobile').slideUp();
+  		$('.burger').removeClass('open');
 	});
 
    	$('.burger').click(function(){
 	  $(this).toggleClass('open');
 	  $('.nav-mobile').slideToggle('slow');
+
+	  $(".search_oberlay").slideUp();
+	  $(".search-icon").removeClass("open");
+
 	});
