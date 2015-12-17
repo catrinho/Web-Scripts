@@ -238,12 +238,7 @@ section#header-bg-big{
 		    	letter-spacing: 0.7px;
 		    }
 		}
-		@include MediaMediumScreens{
-			.pic-caption{
-		    top: 400px;
-		    left: 100px;
-			}
-		}
+		
 		@include MediaMobileScreens{
 			.pic-caption{
 				top:40%;
@@ -252,7 +247,37 @@ section#header-bg-big{
 		}    
 
 	}
-}
+	@include MediaMediumScreens{
+		.header-img{
+			height: 640px;
+
+			.pic-caption{
+		    top: 400px;
+		    left: 100px;
+			}
+		}
+	}	
+	@include MediaSmallScreens{
+		.header-img{
+			height: 500px;
+
+			.pic-caption{
+		    top: 48%;
+		    left: 100px;
+			}
+		}
+	}	
+	@include MediaMobileScreens{
+		.header-img{
+			height: 76.6666666666%;
+
+			.pic-caption{
+		    top: 48%;
+		    left: 100px;
+			}
+		}
+	}	
+}	
 
 section#header-bg-small{
  	width: 100vw;
@@ -306,7 +331,14 @@ section#exposicoes{
 	position:relative;
 	margin-top: 80px;
 	@include expositor;
-		
+	
+	
+				
+	@include MediaSmallScreens{
+		.exposicoes{
+			max-width: 800px;
+		}
+	}	
 }
 
 
@@ -372,11 +404,24 @@ section#colecao{
 			.montra-colecao{
 				display: none;
 			}	
+			.montra-colecao-mb{
+				@include expositor;
+				min-width: 480px;
+				max-width: 600px;
+				padding-bottom:50px;
+
+			}
 	}
 	@include MediaMobileScreens{
 			.montra-colecao{
 				display: none;
 			}	
+			.montra-colecao-mb{
+				@include expositor;
+				min-width: 300px;
+				max-width: 400px;
+				padding-bottom:50px;
+			}
 	}		
 	
 }

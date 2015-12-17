@@ -860,14 +860,28 @@ section#header-bg-big {
       section#header-bg-big .header-img .pic-caption p {
         line-height: 30px;
         letter-spacing: 0.7px; }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      section#header-bg-big .header-img .pic-caption {
-        top: 400px;
-        left: 100px; } }
     @media screen and (max-width: 767px) {
       section#header-bg-big .header-img .pic-caption {
         top: 40%;
         left: 6%; } }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    section#header-bg-big .header-img {
+      height: 640px; }
+      section#header-bg-big .header-img .pic-caption {
+        top: 400px;
+        left: 100px; } }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    section#header-bg-big .header-img {
+      height: 500px; }
+      section#header-bg-big .header-img .pic-caption {
+        top: 48%;
+        left: 100px; } }
+  @media screen and (max-width: 767px) {
+    section#header-bg-big .header-img {
+      height: 76.6666666666%; }
+      section#header-bg-big .header-img .pic-caption {
+        top: 48%;
+        left: 100px; } }
 
 section#header-bg-small {
   width: 100vw; }
@@ -982,6 +996,9 @@ section#exposicoes {
       line-height: 30px; }
     section#exposicoes .expositor a {
       text-decoration: none; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    section#exposicoes .exposicoes {
+      max-width: 800px; } }
 
 section#colecao {
   margin-top: 150px;
@@ -1049,10 +1066,94 @@ section#colecao {
         margin: 10px 11px; } }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     section#colecao .montra-colecao {
-      display: none; } }
+      display: none; }
+    section#colecao .montra-colecao-mb {
+      min-width: 480px;
+      max-width: 600px;
+      padding-bottom: 50px; }
+      section#colecao .montra-colecao-mb .expositor {
+        height: 200px;
+        background: #ededad;
+        margin: 0 auto;
+        margin: 25px 0; }
+        section#colecao .montra-colecao-mb .expositor img {
+          height: 200px;
+          width: 100%;
+          -webkit-filter: grayscale(0);
+          -moz-filter: grayscale(0);
+          filter: grayscale(0); }
+        section#colecao .montra-colecao-mb .expositor:hover {
+          -webkit-filter: grayscale(90%);
+          -moz-filter: grayscale(90%);
+          filter: grayscale(90%);
+          background-color: rgba(183, 29, 41, 0.4); }
+        section#colecao .montra-colecao-mb .expositor h2 {
+          font-family: butlerbold, Georgia, Times New Roman, Times, serif;
+          display: block;
+          font-size: 60px;
+          position: relative;
+          text-align: left;
+          color: white;
+          margin-left: 20px;
+          bottom: 182px; }
+        section#colecao .montra-colecao-mb .expositor h3 {
+          font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
+          display: block;
+          font-size: 24px;
+          position: relative;
+          vertical-align: text-bottom;
+          text-align: left;
+          color: white;
+          margin-left: 20px;
+          bottom: 175px;
+          line-height: 30px; }
+        section#colecao .montra-colecao-mb .expositor a {
+          text-decoration: none; } }
   @media screen and (max-width: 767px) {
     section#colecao .montra-colecao {
-      display: none; } }
+      display: none; }
+    section#colecao .montra-colecao-mb {
+      min-width: 300px;
+      max-width: 400px;
+      padding-bottom: 50px; }
+      section#colecao .montra-colecao-mb .expositor {
+        height: 200px;
+        background: #ededad;
+        margin: 0 auto;
+        margin: 25px 0; }
+        section#colecao .montra-colecao-mb .expositor img {
+          height: 200px;
+          width: 100%;
+          -webkit-filter: grayscale(0);
+          -moz-filter: grayscale(0);
+          filter: grayscale(0); }
+        section#colecao .montra-colecao-mb .expositor:hover {
+          -webkit-filter: grayscale(90%);
+          -moz-filter: grayscale(90%);
+          filter: grayscale(90%);
+          background-color: rgba(183, 29, 41, 0.4); }
+        section#colecao .montra-colecao-mb .expositor h2 {
+          font-family: butlerbold, Georgia, Times New Roman, Times, serif;
+          display: block;
+          font-size: 60px;
+          position: relative;
+          text-align: left;
+          color: white;
+          margin-left: 20px;
+          bottom: 182px; }
+        section#colecao .montra-colecao-mb .expositor h3 {
+          font-family: proxima_nova_rgbold_italic, Helvetica, Arial, sans-serif;
+          display: block;
+          font-size: 24px;
+          position: relative;
+          vertical-align: text-bottom;
+          text-align: left;
+          color: white;
+          margin-left: 20px;
+          bottom: 175px;
+          line-height: 30px; }
+        section#colecao .montra-colecao-mb .expositor a {
+          text-decoration: none; } }
 
 section#grelha-colecao {
   margin-top: 80px;
