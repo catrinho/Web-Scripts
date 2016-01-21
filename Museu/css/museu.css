@@ -391,7 +391,7 @@ table {
     width: 96.66667%; }
 
   .container {
-    width: 938px;
+    width: 98%;
     margin: 0 auto;
     position: relative; }
 
@@ -918,7 +918,7 @@ section#header-bg-big {
   	}*/ }
   @media screen and (max-width: 767px) {
     section#header-bg-big {
-      height: 400px; } }
+      height: 320px; } }
   section#header-bg-big .header-img {
     padding-top: 60px;
     position: relative;
@@ -940,6 +940,9 @@ section#header-bg-big {
       top: 440px;
       left: 200px;
       line-height: 70px; }
+      section#header-bg-big .header-img .pic-caption h1 {
+        line-height: 40px;
+        font-size: 30px; }
       section#header-bg-big .header-img .pic-caption p {
         line-height: 30px;
         letter-spacing: 0.7px; }
@@ -1463,7 +1466,7 @@ footer {
   footer .largescreen {
     display: none; }
   footer div[class*="col-"] {
-    margin: 0 15px; }
+    margin: 0 10px; }
     footer div[class*="col-"] h2.museu {
       font-family: butler_stencilblack, Georgia, Times New Roman, Times, serif;
       text-transform: uppercase;

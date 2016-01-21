@@ -112,8 +112,12 @@
         width:calculo-column-width($num);
      }   
   } 
-  @include container(22,$tablet-width); 
-
+  //@include container(22,$tablet-width); 
+.container{
+        width:98%;
+        margin:0 auto;
+        position: relative;
+      } 
    .hide-sm{
     display: none!important;;
    } 

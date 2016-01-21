@@ -36,3 +36,10 @@
 	  $(".search-icon").removeClass("open");
 
 	});
+
+	// Carrousel JQuery - OWL
+
+	$('.header-slider').owlCarousel({
+    items:1,
+    margin:10
+	});

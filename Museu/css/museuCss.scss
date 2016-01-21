@@ -255,7 +255,7 @@ section#header-bg-big{
  	width: 100vw;
 	height:100vh;
 	@include MediaMobileScreens{
-		height: 400px;
+		height: 320px;
 	}
 	//background-color:black;
 	/*
@@ -290,6 +290,10 @@ section#header-bg-big{
 		    left: 200px;
 		    line-height: 70px;
 
+		    h1{
+		    	    line-height: 40px;
+		    	    font-size: 30px;
+		    }
 		    p{
 		    	line-height: 30px;
 		    	letter-spacing: 0.7px;
@@ -666,7 +670,7 @@ footer{
     }
 
     div[class*="col-"]{
-    	margin: 0 15px;
+    	margin: 0 10px;
     	 @include footer_Text;
 	    	 a{
 		    	text-decoration:none;
