@@ -154,23 +154,24 @@ $i: 1;
     				font-size:21px;
     			}
 			} 
-		
-			@include MediaSmallScreens{
-    			h2{
-    				font-size: 46px;
-    			}
-    			h3{ 
-    				font-size:19px;
-    			}
-			} 
-    		@include MediaMobileScreens{
-    			h2{
-    				font-size: 36px;
-    			}
-    			h3{ 
-    				font-size:17px;
-    			}
-			} 
+			@content;
+			// @include MediaSmallScreens{
+   //  			h2{
+   //  				font-size: 46px;
+   //  			}
+   //  			h3{ 
+   //  				font-size:19px;
+   //  			}
+			// } 
+   //  		@include MediaMobileScreens{
+   //  			h2{
+   //  				font-size: 36px;
+   //  			}
+   //  			h3{ 
+   //  				font-size:17px;
+   //  			}
+			// } 
+			
 }
 @mixin footer_Text{
 
@@ -203,28 +204,38 @@ $i: 1;
 @mixin heading_four_ss{
 	h4 {
 			@include font_family($font-family-sans-PN-regular);
-			font-size: 25px;					
+			font-size: 35px;					
 			text-align:left;
 			color: #000000;
-			line-height: 55px;
+			line-height: 45px;
 			padding-bottom:15px;
 		}
 }
 @mixin heading_five_ss{
 	h5 {
-			@include font_family($font-family-sans-PN-light);
-			font-size: 25px;					
+			@include font_family($font-family-sans-PN-regular);
+			font-size: 27px;					
 			text-align:left;
 			color: #000000;
-			line-height: 30px;
+			line-height: 25px;
 			padding-bottom:15px;
 		}
 }
-
+@mixin heading_six_ss{
+	h6 {
+			@include font_family($font-family-sans-PN-regular);
+			font-size: 21px;
+			text-align:left;
+			color: #000000;
+			line-height: 25px;
+			padding-bottom:15px;
+			letter-spacing: 0,5px;
+		}
+}
 @mixin paragraph_ss {
 	p{
 			@include font_family($font-family-sans-PN-light);
-			font-size: 17	px;					
+			font-size: 17px;					
 			text-align:left;
 			color: #000000;
 			line-height: 30px;

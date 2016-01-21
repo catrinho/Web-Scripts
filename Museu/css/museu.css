@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* 
 
 	PROJECTO: MUSEU FBAUP;
@@ -8,635 +7,832 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/* line 6, ../sass/_partials/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
+/* line 16, ../sass/_partials/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
+/* line 19, ../sass/_partials/_reset.scss */
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
+/* line 22, ../sass/_partials/_reset.scss */
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
+/* line 25, ../sass/_partials/_reset.scss */
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
+/* line 29, ../sass/_partials/_reset.scss */
 blockquote:before, blockquote:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
+/* line 34, ../sass/_partials/_reset.scss */
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
+/* line 38, ../sass/_partials/_reset.scss */
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
+/* line 40, ../sass/_partials/_grelhas.scss */
 .clearfix {
-  zoom: 1; }
-  .clearfix:after {
-    clear: both; }
-  .clearfix:before, .clearfix:after {
-    content: '\0020';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0; }
+  zoom: 1;
+}
+/* line 30, ../sass/_partials/_grelhas.scss */
+.clearfix:after {
+  clear: both;
+}
+/* line 31, ../sass/_partials/_grelhas.scss */
+.clearfix:before, .clearfix:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
+/* line 56, ../sass/_partials/_grelhas.scss */
 .row {
   zoom: 1;
   zoom: 1;
   margin-bottom: 40px;
-  width: 100%; }
-  .row:after {
-    clear: both; }
-  .row:before, .row:after {
-    content: '\0020';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0; }
-  .row:after {
-    clear: both; }
-  .row:before, .row:after {
-    content: '\0020';
-    display: block;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-    height: 0; }
+  width: 100%;
+}
+/* line 30, ../sass/_partials/_grelhas.scss */
+.row:after {
+  clear: both;
+}
+/* line 31, ../sass/_partials/_grelhas.scss */
+.row:before, .row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* line 30, ../sass/_partials/_grelhas.scss */
+.row:after {
+  clear: both;
+}
+/* line 31, ../sass/_partials/_grelhas.scss */
+.row:before, .row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
 
 @media screen and (min-width: 1200px) {
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-1 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 5%; }
+    width: 5%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-2 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 13.33333%; }
+    width: 13.33333%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-3 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 21.66667%; }
+    width: 21.66667%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-4 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 30%; }
+    width: 30%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-5 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 38.33333%; }
+    width: 38.33333%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-6 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 46.66667%; }
+    width: 46.66667%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-7 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 55%; }
+    width: 55%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-8 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 63.33333%; }
+    width: 63.33333%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-9 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 71.66667%; }
+    width: 71.66667%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-10 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 80%; }
+    width: 80%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-11 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 88.33333%; }
+    width: 88.33333%;
+  }
 
+  /* line 69, ../sass/_partials/_grelhas.scss */
   .col-lg-12 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 96.66667%; }
+    width: 96.66667%;
+  }
 
+  /* line 44, ../sass/_partials/_grelhas.scss */
   .container {
     width: 1170px;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+  }
 
+  /* line 77, ../sass/_partials/_grelhas.scss */
   .hide-lg {
-    display: none !important; }
+    display: none!important;
+  }
 
+  /* line 80, ../sass/_partials/_grelhas.scss */
   .show-lg {
-    display: block !important; } }
+    display: block !important;
+  }
+}
 /* Small Desktop/ Tablet screens */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-1 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 5%; }
+    width: 5%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-2 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 13.33333%; }
+    width: 13.33333%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-3 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 21.66667%; }
+    width: 21.66667%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-4 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 30%; }
+    width: 30%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-5 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 38.33333%; }
+    width: 38.33333%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-6 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 46.66667%; }
+    width: 46.66667%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-7 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 55%; }
+    width: 55%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-8 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 63.33333%; }
+    width: 63.33333%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-9 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 71.66667%; }
+    width: 71.66667%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-10 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 80%; }
+    width: 80%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-11 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 88.33333%; }
+    width: 88.33333%;
+  }
 
+  /* line 88, ../sass/_partials/_grelhas.scss */
   .col-md-12 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 96.66667%; }
+    width: 96.66667%;
+  }
 
+  /* line 44, ../sass/_partials/_grelhas.scss */
   .container {
     width: 1002px;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+  }
 
+  /* line 96, ../sass/_partials/_grelhas.scss */
   .hide-md {
-    display: none !important; }
+    display: none!important;
+  }
 
+  /* line 99, ../sass/_partials/_grelhas.scss */
   .show-md {
-    display: block !important; } }
+    display: block !important;
+  }
+}
 /* Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-1 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 5%; }
+    width: 5%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-2 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 13.33333%; }
+    width: 13.33333%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-3 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 21.66667%; }
+    width: 21.66667%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-4 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 30%; }
+    width: 30%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-5 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 38.33333%; }
+    width: 38.33333%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-6 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 46.66667%; }
+    width: 46.66667%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-7 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 55%; }
+    width: 55%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-8 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 63.33333%; }
+    width: 63.33333%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-9 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 71.66667%; }
+    width: 71.66667%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-10 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 80%; }
+    width: 80%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-11 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 88.33333%; }
+    width: 88.33333%;
+  }
 
+  /* line 109, ../sass/_partials/_grelhas.scss */
   .col-sm-12 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 96.66667%; }
+    width: 96.66667%;
+  }
 
+  /* line 116, ../sass/_partials/_grelhas.scss */
   .container {
     width: 98%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+  }
 
+  /* line 121, ../sass/_partials/_grelhas.scss */
   .hide-sm {
-    display: none !important; }
+    display: none!important;
+  }
 
+  /* line 124, ../sass/_partials/_grelhas.scss */
   .show-sm {
-    display: block !important; } }
+    display: block !important;
+  }
+}
 /* Small /Mobile screens */
 @media screen and (max-width: 767px) {
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-1 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 5%; }
+    width: 5%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-2 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 13.33333%; }
+    width: 13.33333%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-3 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 21.66667%; }
+    width: 21.66667%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-4 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 30%; }
+    width: 30%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-5 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 38.33333%; }
+    width: 38.33333%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-6 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 46.66667%; }
+    width: 46.66667%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-7 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 55%; }
+    width: 55%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-8 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 63.33333%; }
+    width: 63.33333%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-9 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 71.66667%; }
+    width: 71.66667%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-10 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 80%; }
+    width: 80%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-11 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 88.33333%; }
+    width: 88.33333%;
+  }
 
+  /* line 134, ../sass/_partials/_grelhas.scss */
   .col-xs-12 {
     display: block;
     float: left;
     position: relative;
     min-height: 2px;
     margin: 10px;
-    width: 96.66667%; }
+    width: 96.66667%;
+  }
 
+  /* line 140, ../sass/_partials/_grelhas.scss */
   .container {
     width: 98%;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+  }
 
+  /* line 147, ../sass/_partials/_grelhas.scss */
   .hide-xs {
-    display: none !important; }
+    display: none!important;
+  }
 
+  /* line 150, ../sass/_partials/_grelhas.scss */
   .show-xs {
-    display: block !important; } }
+    display: block !important;
+  }
+}
 @font-face {
   font-family: butlerregular;
   src: url("fonts/Butler/butler_regular-webfont.eot");
   src: url("fonts/Butler/butler_regular-webfont.eot#iefix") format("embedded-opentype"), url("fonts/Butler/butler_regular-webfont.ttf") format("truetype"), url("fonts/Butler/butler_regular-webfont.svg#butlerregular") format("svg"), url("fonts/Butler/butler_regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: butlerbold;
   src: url("fonts/Butler/butler_bold-webfont.eot");
   src: url("fonts/Butler/butler_bold-webfont.eot#iefix") format("embedded-opentype"), url("fonts/Butler/butler_bold-webfont.ttf") format("truetype"), url("fonts/Butler/butler_bold-webfont.svg#butlerbold") format("svg"), url("fonts/Butler/butler_bold-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: butlermedium;
   src: url("fonts/Butler/butler_medium-webfont.eot");
   src: url("fonts/Butler/butler_medium-webfont.eot#iefix") format("embedded-opentype"), url("fonts/Butler/butler_medium-webfont.ttf") format("truetype"), url("fonts/Butler/butler_medium-webfont.svg#butlermedium") format("svg"), url("fonts/Butler/butler_medium-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: butler_stencilblack;
   src: url("fonts/Butler/butler_black_stencil-webfont.eot");
   src: url("fonts/Butler/butler_black_stencil-webfont.eot#iefix") format("embedded-opentype"), url("fonts/Butler/butler_black_stencil-webfont.ttf") format("truetype"), url("fonts/Butler/butler_black_stencil-webfont.svg#butler_stencilblack") format("svg"), url("fonts/Butler/butler_black_stencil-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: proxima_nova_rgregular;
   src: url("fonts/ProximaNova/proxima_nova_regular-webfont.eot");
   src: url("fonts/ProximaNova/proxima_nova_regular-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_regular-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_regular-webfont.svg#proxima_nova_rgregular") format("svg"), url("fonts/ProximaNova/proxima_nova_regular-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: proxima_novaregular_italic;
   src: url("fonts/ProximaNova/proxima_novaregular_italic.eot");
   src: url("fonts/ProximaNova/proxima_novaregular_italic.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_novaregular_italic.ttf") format("truetype"), url("fonts/ProximaNova/proxima_novaregular_italic.svg#proxima_novaregular_italic") format("svg"), url("fonts/ProximaNova/proxima_novaregular_italic.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: proxima_novalight;
   src: url("fonts/ProximaNova/proxima_nova_light-webfont.eot");
   src: url("fonts/ProximaNova/proxima_nova_light-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_light-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_light-webfont.svg#proxima_novalight") format("svg"), url("fonts/ProximaNova/proxima_nova_light-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: proxima_novalight_italic;
   src: url("fonts/ProximaNova/proxima_nova_light_italic-webfont.eot");
   src: url("fonts/ProximaNova/proxima_nova_light_italic-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_light_italic-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_light_italic-webfont.svg#proxima_novalight_italic") format("svg"), url("fonts/ProximaNova/proxima_nova_light_italic-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: proxima_nova_rgbold;
   src: url("fonts/ProximaNova/proxima_nova_bold-webfont.eot");
   src: url("fonts/ProximaNova/proxima_nova_bold-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_bold-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_bold-webfont.svg#proxima_nova_rgbold") format("svg"), url("fonts/ProximaNova/proxima_nova_bold-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
 @font-face {
   font-family: proxima_nova_rgbold_italic;
   src: url("fonts/ProximaNova/proxima_nova_bold_italic-webfont.eot");
   src: url("fonts/ProximaNova/proxima_nova_bold_italic-webfont.eot#iefix") format("embedded-opentype"), url("fonts/ProximaNova/proxima_nova_bold_italic-webfont.ttf") format("truetype"), url("fonts/ProximaNova/proxima_nova_bold_italic-webfont.svg#proxima_nova_rgbold_italic") format("svg"), url("fonts/ProximaNova/proxima_nova_bold_italic-webfont.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
+
+/* line 83, ../sass/_partials/_tipografia.scss */
 h1 {
   font-size: 36px;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 83, ../sass/_partials/_tipografia.scss */
 h2 {
   font-size: 30px;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 83, ../sass/_partials/_tipografia.scss */
 h3 {
   font-size: 24px;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 83, ../sass/_partials/_tipografia.scss */
 h4 {
   font-size: 18px;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 83, ../sass/_partials/_tipografia.scss */
 h5 {
   font-size: 14px;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 83, ../sass/_partials/_tipografia.scss */
 h6 {
   font-size: 12px;
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+}
 
+/* line 17, ../sass/museu.scss */
 body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background: #FFF; }
+  background: #FFF;
+}
 
+/* line 21, ../sass/museu.scss */
 .overNone {
-  overflow-y: hidden; }
+  overflow-y: hidden;
+}
 
+/* line 25, ../sass/museu.scss */
 .search_oberlay {
   z-index: 100;
   position: fixed;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0);
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
   display: block;
   -webkit-transition: all 0.5s ease-in;
-  display: none; }
-  .search_oberlay .search {
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    color: #0b0e16;
-    background: none;
-    font-size: 60px;
-    font-weight: 300;
-    text-align: center;
-    border: 0px;
-    margin: 0px auto;
-    margin-top: -51px;
-    padding-left: 30px;
-    padding-right: 30px;
-    outline: none; }
+  display: none;
+}
+/* line 29, ../sass/museu.scss */
+.search_oberlay .search {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  color: #0b0e16;
+  background: none;
+  font-size: 60px;
+  font-weight: 300;
+  text-align: center;
+  border: 0px;
+  margin: 0px auto;
+  margin-top: -51px;
+  padding-left: 30px;
+  padding-right: 30px;
+  outline: none;
+}
 
+/* line 46, ../sass/museu.scss */
 .nav-mobile {
   z-index: 100;
   position: fixed;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0);
   height: 100%;
   width: 100%;
   -webkit-backface-visibility: hidden;
@@ -645,226 +841,318 @@ body {
   overflow: auto;
   -webkit-transition: all 0.5s ease-in;
   -webkit-overflow-scrolling: touch;
-  display: none; }
-  .nav-mobile div {
-    padding-top: 90px; }
-    .nav-mobile div a {
-      text-decoration: none;
-      color: #0b0e16; }
-      .nav-mobile div a h3 {
-        font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
-        font-size: 1.2em;
-        padding: 5%; }
-        .nav-mobile div a h3:hover {
-          text-decoration: underline; }
-    .nav-mobile div ul {
-      height: 100%;
-      width: 100%;
-      position: relative;
-      margin: 0 auto; }
-      .nav-mobile div ul li {
-        font-family: "butlermedium", Georgia, "Times New Roman", Times, serif;
-        font-weight: 300;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        text-transform: capitalize;
-        height: 24px;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        display: block;
-        margin: 0 auto;
-        width: 70%; }
-        .nav-mobile div ul li a {
-          text-decoration: none;
-          color: #0b0e16;
-          font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
-          font-size: 14px; }
-          .nav-mobile div ul li a:hover {
-            text-decoration: underline; }
+  display: none;
+}
+/* line 61, ../sass/museu.scss */
+.nav-mobile div {
+  padding-top: 90px;
+}
+/* line 63, ../sass/museu.scss */
+.nav-mobile div a {
+  text-decoration: none;
+  color: #0b0e16;
+}
+/* line 66, ../sass/museu.scss */
+.nav-mobile div a h3 {
+  font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+  font-size: 1.2em;
+  padding: 5%;
+}
+/* line 70, ../sass/museu.scss */
+.nav-mobile div a h3:hover {
+  text-decoration: underline;
+}
+/* line 79, ../sass/museu.scss */
+.nav-mobile div ul {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+/* line 85, ../sass/museu.scss */
+.nav-mobile div ul li {
+  font-family: "butlermedium", Georgia, "Times New Roman", Times, serif;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-transform: capitalize;
+  height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+/* line 97, ../sass/museu.scss */
+.nav-mobile div ul li a {
+  text-decoration: none;
+  color: #0b0e16;
+  font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+/* line 102, ../sass/museu.scss */
+.nav-mobile div ul li a:hover {
+  text-decoration: underline;
+}
 
+/* line 112, ../sass/museu.scss */
 header {
   z-index: 100;
   width: 100%;
   position: fixed;
   top: 0;
   display: block;
-  background: #FFF;
-  height: 70px; }
-  header .logo img {
-    width: 200px;
-    margin-top: 10px; }
-  @media screen and (max-width: 767px) {
-    header .logo img {
-      width: 140px;
-      margin-top: 10px; } }
-  header .menu {
-    margin: 0px;
-    float: right; }
-    header .menu nav {
-      height: 70px;
-      margin: 0px;
-      margin-top: 8px; }
-      header .menu nav ul {
-        display: block;
-        margin: 0 15px;
-        list-style: none;
-        text-align: center;
-        float: right; }
-        header .menu nav ul li {
-          display: inline-block; }
-          header .menu nav ul li a {
-            text-decoration: none;
-            color: #0b0e16;
-            margin: 15px 20px;
-            display: block;
-            font-family: butlermedium, Georgia, Times New Roman, Times, serif;
-            font-size: 17px; }
-            header .menu nav ul li a:hover {
-              color: #7d6949; }
-          header .menu nav ul li ul.dropdown-list {
-            width: 200px;
-            position: absolute;
-            background-color: #FFF;
-            z-index: 100;
-            display: none;
-            top: 70px; }
-            header .menu nav ul li ul.dropdown-list li {
-              float: left;
-              width: 100%;
-              text-align: left; }
-              header .menu nav ul li ul.dropdown-list li:hover {
-                background-color: #fafafa; }
-              header .menu nav ul li ul.dropdown-list li a {
-                margin-left: 32px; }
-          header .menu nav ul li .button-searc {
-            height: 40px !important; }
-        header .menu nav ul .search {
-          float: right; }
-          header .menu nav ul .search .search-icon {
-            height: 3px;
-            width: 20px;
-            display: block;
-            position: relative;
-            cursor: pointer;
-            border-radius: 6px;
-            padding-top: 8px;
-            z-index: 150;
-            margin-right: 10px; }
-          header .menu nav ul .search .circle {
-            position: relative;
-            display: block;
-            height: 14px;
-            width: 14px;
-            background-color: #ffffff;
-            border-radius: 70px;
-            z-index: 0;
-            border: 2px solid #0b0e16;
-            transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-            z-index: 1; }
-          header .menu nav ul .search .handle {
-            position: absolute;
-            background-color: #0b0e16;
-            top: 22px;
-            left: 7px;
-            width: 18px;
-            height: 2px;
-            display: block;
-            transform: rotate(45deg);
-            float: right;
-            border-radius: 2px; }
-            header .menu nav ul .search .handle:after {
-              content: "";
-              background-color: #0b0e16;
-              width: 18px;
-              height: 2px;
-              display: block;
-              float: right;
-              border-radius: 2px;
-              transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-              z-index: -1; }
-          header .menu nav ul .search .open .circle {
-            transform: scale(0.02);
-            transform-origin: 30% 40%;
-            background: #0b0e16;
-            border-color: #0b0e16; }
-          header .menu nav ul .search .open .handle {
-            top: 17px; }
-          header .menu nav ul .search .open .handle:after {
-            transform-origin: center center;
-            transform: rotate(90deg); }
-  header .mb-mobile {
-    display: none;
-    float: right; }
-    header .mb-mobile .search {
-      float: right;
-      margin: 15px 20px 0; }
-      header .mb-mobile .search .search-icon {
-        height: 3px;
-        width: 20px;
-        display: block;
-        position: relative;
-        cursor: pointer;
-        border-radius: 6px;
-        padding-top: 8px;
-        z-index: 150;
-        margin-right: 10px; }
-      header .mb-mobile .search .circle {
-        position: relative;
-        display: block;
-        height: 14px;
-        width: 14px;
-        background-color: #ffffff;
-        border-radius: 70px;
-        z-index: 0;
-        border: 2px solid #0b0e16;
-        transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-        z-index: 1; }
-      header .mb-mobile .search .handle {
-        position: absolute;
-        background-color: #0b0e16;
-        top: 22px;
-        left: 7px;
-        width: 18px;
-        height: 2px;
-        display: block;
-        transform: rotate(45deg);
-        float: right;
-        border-radius: 2px; }
-        header .mb-mobile .search .handle:after {
-          content: "";
-          background-color: #0b0e16;
-          width: 18px;
-          height: 2px;
-          display: block;
-          float: right;
-          border-radius: 2px;
-          transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
-          z-index: -1; }
-      header .mb-mobile .search .open .circle {
-        transform: scale(0.02);
-        transform-origin: 30% 40%;
-        background: #0b0e16;
-        border-color: #0b0e16; }
-      header .mb-mobile .search .open .handle {
-        top: 17px; }
-      header .mb-mobile .search .open .handle:after {
-        transform-origin: center center;
-        transform: rotate(90deg); }
-
+  background: white;
+  height: 70px;
+}
+/* line 123, ../sass/museu.scss */
+header .logo img {
+  width: 200px;
+  margin-top: 10px;
+}
 @media screen and (max-width: 767px) {
+  /* line 128, ../sass/museu.scss */
   header .logo img {
     width: 140px;
-    margin-top: 20px; }
+    margin-top: 10px;
+  }
+}
+/* line 135, ../sass/museu.scss */
+header .menu {
+  margin: 0px;
+  float: right;
+}
+/* line 138, ../sass/museu.scss */
+header .menu nav {
+  height: 70px;
+  margin: 0px;
+  margin-top: 8px;
+}
+/* line 143, ../sass/museu.scss */
+header .menu nav ul {
+  display: block;
+  margin: 0 15px;
+  list-style: none;
+  text-align: center;
+  float: right;
+}
+/* line 152, ../sass/museu.scss */
+header .menu nav ul li {
+  display: inline-block;
+}
+/* line 154, ../sass/museu.scss */
+header .menu nav ul li a {
+  text-decoration: none;
+  color: #0b0e16;
+  margin: 15px 20px;
+  display: block;
+  font-family: "butlermedium", Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+}
+/* line 161, ../sass/museu.scss */
+header .menu nav ul li a:hover {
+  color: #7d6949;
+  border-bottom: solid 1px #7d6949;
+}
+/* line 167, ../sass/museu.scss */
+header .menu nav ul li .active {
+  color: #b71d29;
+}
+/* line 170, ../sass/museu.scss */
+header .menu nav ul li ul.dropdown-list {
+  width: 200px;
+  position: absolute;
+  background-color: white;
+  z-index: 100;
+  display: none;
+  top: 70px;
+}
+/* line 178, ../sass/museu.scss */
+header .menu nav ul li ul.dropdown-list li {
+  float: left;
+  width: 100%;
+  text-align: left;
+}
+/* line 184, ../sass/museu.scss */
+header .menu nav ul li ul.dropdown-list li:hover {
+  background-color: #fafafa;
+}
+/* line 188, ../sass/museu.scss */
+header .menu nav ul li ul.dropdown-list li a {
+  margin-left: 32px;
+}
+/* line 193, ../sass/museu.scss */
+header .menu nav ul li .button-searc {
+  height: 40px!important;
+}
+/* line 197, ../sass/museu.scss */
+header .menu nav ul .search {
+  float: right;
+}
+/* line 63, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .search-icon {
+  height: 3px;
+  width: 20px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  padding-top: 8px;
+  z-index: 150;
+  margin-right: 10px;
+}
+/* line 75, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .circle {
+  position: relative;
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-color: white;
+  border-radius: 70px;
+  z-index: 0;
+  border: 2px solid #0b0e16;
+  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: 1;
+}
+/* line 89, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .handle {
+  position: absolute;
+  background-color: #0b0e16;
+  top: 22px;
+  left: 7px;
+  width: 18px;
+  height: 2px;
+  display: block;
+  transform: rotate(45deg);
+  float: right;
+  border-radius: 2px;
+}
+/* line 100, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .handle:after {
+  content: "";
+  background-color: #0b0e16;
+  width: 18px;
+  height: 2px;
+  display: block;
+  float: right;
+  border-radius: 2px;
+  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: -1;
+}
+/* line 114, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .open .circle {
+  transform: scale(0.02);
+  transform-origin: 30% 40%;
+  background: #0b0e16;
+  border-color: #0b0e16;
+}
+/* line 120, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .open .handle {
+  top: 17px;
+}
+/* line 123, ../sass/_partials/_mixins.scss */
+header .menu nav ul .search .open .handle:after {
+  transform-origin: center center;
+  transform: rotate(90deg);
+}
+/* line 209, ../sass/museu.scss */
+header .mb-mobile {
+  display: none;
+  float: right;
+}
+/* line 212, ../sass/museu.scss */
+header .mb-mobile .search {
+  float: right;
+  margin: 15px 20px 0;
+}
+/* line 63, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .search-icon {
+  height: 3px;
+  width: 20px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+  border-radius: 6px;
+  padding-top: 8px;
+  z-index: 150;
+  margin-right: 10px;
+}
+/* line 75, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .circle {
+  position: relative;
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-color: white;
+  border-radius: 70px;
+  z-index: 0;
+  border: 2px solid #0b0e16;
+  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: 1;
+}
+/* line 89, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .handle {
+  position: absolute;
+  background-color: #0b0e16;
+  top: 22px;
+  left: 7px;
+  width: 18px;
+  height: 2px;
+  display: block;
+  transform: rotate(45deg);
+  float: right;
+  border-radius: 2px;
+}
+/* line 100, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .handle:after {
+  content: "";
+  background-color: #0b0e16;
+  width: 18px;
+  height: 2px;
+  display: block;
+  float: right;
+  border-radius: 2px;
+  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  z-index: -1;
+}
+/* line 114, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .open .circle {
+  transform: scale(0.02);
+  transform-origin: 30% 40%;
+  background: #0b0e16;
+  border-color: #0b0e16;
+}
+/* line 120, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .open .handle {
+  top: 17px;
+}
+/* line 123, ../sass/_partials/_mixins.scss */
+header .mb-mobile .search .open .handle:after {
+  transform-origin: center center;
+  transform: rotate(90deg);
+}
+
+@media screen and (max-width: 767px) {
+  /* line 231, ../sass/museu.scss */
+  header .logo img {
+    width: 140px;
+    margin-top: 20px;
+  }
+  /* line 235, ../sass/museu.scss */
   header .mb-mobile .search {
-    margin: 10px 20px 0; }
+    margin: 10px 20px 0;
+  }
+  /* line 196, ../sass/_partials/_mixins.scss */
   header .burger {
     width: 18px;
     position: relative;
     cursor: pointer;
     padding: 10px;
     float: right;
-    margin-top: 7px; }
+    margin-top: 7px;
+  }
+  /* line 205, ../sass/_partials/_mixins.scss */
   header .burger-brick {
     height: 2px;
     background: #fff;
@@ -874,38 +1162,53 @@ header {
     -ms-transition: 0.3s ease-out;
     -o-transition: 0.3s ease-out;
     transition: 0.3s ease-out;
-    background-color: #0b0e16; }
+    background-color: #0b0e16;
+  }
+  /* line 217, ../sass/_partials/_mixins.scss */
   header .open .burger-brick:first-child {
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     -o-transform: rotate(135deg);
     transform: rotate(135deg);
-    margin-top: 10px; }
+    margin-top: 10px;
+  }
+  /* line 226, ../sass/_partials/_mixins.scss */
   header .open .burger-brick:last-child {
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
     -ms-transform: rotate(-135deg);
     -o-transform: rotate(-135deg);
     transform: rotate(-135deg);
-    margin-top: -9px; }
+    margin-top: -9px;
+  }
+  /* line 235, ../sass/_partials/_mixins.scss */
   header .open .middle {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     -ms-transform: scale(0);
     -o-transform: scale(0);
-    transform: scale(0); } }
+    transform: scale(0);
+  }
+}
+/* line 242, ../sass/museu.scss */
 section {
   width: 100%;
   position: relative;
-  display: block; }
-  section .page-title {
-    text-align: center; }
-    section .page-title h1 {
-      font-family: butlermedium, Georgia, Times New Roman, Times, serif;
-      font-size: 36px;
-      font-variant: small-caps; }
+  display: block;
+}
+/* line 247, ../sass/museu.scss */
+section .page-title {
+  text-align: center;
+}
+/* line 249, ../sass/museu.scss */
+section .page-title h1 {
+  font-family: "butlermedium", Georgia, "Times New Roman", Times, serif;
+  font-size: 36px;
+  font-variant: small-caps;
+}
 
+/* line 258, ../sass/museu.scss */
 section#header-bg-big {
   width: 100vw;
   height: 100vh;
@@ -915,543 +1218,748 @@ section#header-bg-big {
   	  height:100vh;
   	  //background-color:black;
   	  background-image:'img/capa_img.png';
-  	}*/ }
-  @media screen and (max-width: 767px) {
-    section#header-bg-big {
-      height: 320px; } }
+  	}*/
+}
+@media screen and (max-width: 767px) {
+  /* line 258, ../sass/museu.scss */
+  section#header-bg-big {
+    height: 320px;
+  }
+}
+/* line 273, ../sass/museu.scss */
+section#header-bg-big .header-slider .owl-stage-outer .owl-stage .owl-item .item .header-img, section#header-bg-big .header-img {
+  padding-top: 60px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+/* line 280, ../sass/museu.scss */
+section#header-bg-big .header-slider .owl-stage-outer .owl-stage .owl-item .item .header-img img, section#header-bg-big .header-img img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 290, ../sass/museu.scss */
+section#header-bg-big .header-slider .owl-stage-outer .owl-stage .owl-item .item .header-img .pic-caption, section#header-bg-big .header-img .pic-caption {
+  font-family: "butlerregular", Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+  color: white;
+  top: 440px;
+  left: 200px;
+  line-height: 70px;
+}
+/* line 299, ../sass/museu.scss */
+section#header-bg-big .header-slider .owl-stage-outer .owl-stage .owl-item .item .header-img .pic-caption h1, section#header-bg-big .header-img .pic-caption h1 {
+  line-height: 40px;
+  font-size: 30px;
+}
+/* line 303, ../sass/museu.scss */
+section#header-bg-big .header-slider .owl-stage-outer .owl-stage .owl-item .item .header-img .pic-caption p, section#header-bg-big .header-img .pic-caption p {
+  line-height: 30px;
+  letter-spacing: 0.7px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 319, ../sass/museu.scss */
   section#header-bg-big .header-img {
-    padding-top: 60px;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; }
-    section#header-bg-big .header-img img {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 100%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-    section#header-bg-big .header-img .pic-caption {
-      font-family: butlerregular, Georgia, Times New Roman, Times, serif;
-      position: absolute;
-      color: white;
-      top: 440px;
-      left: 200px;
-      line-height: 70px; }
-      section#header-bg-big .header-img .pic-caption h1 {
-        line-height: 40px;
-        font-size: 30px; }
-      section#header-bg-big .header-img .pic-caption p {
-        line-height: 30px;
-        letter-spacing: 0.7px; }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      section#header-bg-big .header-img .pic-caption {
-        top: 40%;
-        left: 6%; } }
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    section#header-bg-big .header-img {
-      height: 640px; }
-      section#header-bg-big .header-img .pic-caption {
-        top: 400px;
-        left: 140px; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    section#header-bg-big .header-img {
-      height: 100vh; }
-      section#header-bg-big .header-img .pic-caption {
-        top: 48%;
-        left: 100px; } }
-  @media screen and (max-width: 767px) {
-    section#header-bg-big .header-img {
-      height: 76.6666666666%; }
-      section#header-bg-big .header-img .pic-caption {
-        top: 48%;
-        left: 100px; } }
+    height: 640px;
+  }
+  /* line 322, ../sass/museu.scss */
+  section#header-bg-big .header-img .pic-caption {
+    top: 400px;
+    left: 140px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 329, ../sass/museu.scss */
+  section#header-bg-big .header-img {
+    height: 100vh;
+  }
+  /* line 332, ../sass/museu.scss */
+  section#header-bg-big .header-img .pic-caption {
+    top: 48%;
+    left: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 339, ../sass/museu.scss */
+  section#header-bg-big .header-img {
+    height: 76.6666666666%;
+  }
+  /* line 342, ../sass/museu.scss */
+  section#header-bg-big .header-img .pic-caption {
+    top: 48%;
+    left: 100px;
+  }
+}
 
+/* line 350, ../sass/museu.scss */
 section#header-bg-small {
-  width: 100vw; }
-  section#header-bg-small .header-img {
-    position: relative;
+  width: 100vw;
+}
+/* line 352, ../sass/museu.scss */
+section#header-bg-small .header-img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+/* line 358, ../sass/museu.scss */
+section#header-bg-small .header-img img.capaimg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 101%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 368, ../sass/museu.scss */
+section#header-bg-small .header-img .pic-caption {
+  color: white;
+  top: 80%;
+  width: 70%;
+  bottom: -1px;
+}
+/* line 381, ../sass/museu.scss */
+section#header-bg-small .header-img .pic-caption h1 {
+  font-size: 100px;
+  letter-spacing: 13px;
+  font-variant: small-caps;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 389, ../sass/museu.scss */
+  section#header-bg-small .header-img img.museubranco {
+    margin-top: 0px;
+    width: 70%;
+  }
+  /* line 393, ../sass/museu.scss */
+  section#header-bg-small .header-img .pic-caption {
+    color: white;
+    top: 80%;
+    width: 70%;
+    bottom: -1px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 402, ../sass/museu.scss */
+  section#header-bg-small .header-img img.museubranco {
+    margin-top: 16px;
+    width: 70%;
+  }
+  /* line 407, ../sass/museu.scss */
+  section#header-bg-small .header-img .pic-caption img.musebranco {
     width: 100%;
-    height: 400px;
-    overflow: hidden; }
-    section#header-bg-small .header-img img.capaimg {
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 101%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-    section#header-bg-small .header-img .pic-caption {
-      color: white;
-      top: 80%;
-      width: 70%;
-      bottom: -1px; }
-      section#header-bg-small .header-img .pic-caption h1 {
-        font-size: 100px;
-        letter-spacing: 13px;
-        font-variant: small-caps; }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      section#header-bg-small .header-img img.museubranco {
-        margin-top: 0px;
-        width: 70%; }
-      section#header-bg-small .header-img .pic-caption {
-        color: white;
-        top: 80%;
-        width: 70%;
-        bottom: -1px; } }
-    @media screen and (max-width: 767px) {
-      section#header-bg-small .header-img img.museubranco {
-        margin-top: 16px;
-        width: 70%; }
-      section#header-bg-small .header-img .pic-caption img.musebranco {
-        width: 100%;
-        bottom: 0;
-        position: absolute; } }
-  @media screen and (max-width: 767px) {
-    section#header-bg-small .header-img {
-      height: 330px; }
-      section#header-bg-small .header-img .pic-caption {
-        color: white;
-        width: 70%;
-        height: 100%;
-        bottom: -1px;
-        padding-top: 17px; }
-        section#header-bg-small .header-img .pic-caption h1 {
-          font-size: 60px;
-          letter-spacing: 13px; } }
-  @media screen and (min-width: 320px) and (max-width: 400px) {
-    section#header-bg-small .header-img {
-      height: 330px; }
-      section#header-bg-small .header-img .pic-caption {
-        color: white;
-        width: 70%;
-        height: 100%;
-        bottom: -1px;
-        padding-top: 17px; }
-        section#header-bg-small .header-img .pic-caption h1 {
-          font-size: 60px;
-          letter-spacing: 13px; } }
+    bottom: 0;
+    position: absolute;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 417, ../sass/museu.scss */
+  section#header-bg-small .header-img {
+    height: 330px;
+  }
+  /* line 420, ../sass/museu.scss */
+  section#header-bg-small .header-img .pic-caption {
+    color: white;
+    width: 70%;
+    height: 100%;
+    bottom: -1px;
+    padding-top: 17px;
+  }
+  /* line 428, ../sass/museu.scss */
+  section#header-bg-small .header-img .pic-caption h1 {
+    font-size: 60px;
+    letter-spacing: 13px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  /* line 437, ../sass/museu.scss */
+  section#header-bg-small .header-img {
+    height: 330px;
+  }
+  /* line 440, ../sass/museu.scss */
+  section#header-bg-small .header-img .pic-caption {
+    color: white;
+    width: 70%;
+    height: 100%;
+    bottom: -1px;
+    padding-top: 17px;
+  }
+  /* line 448, ../sass/museu.scss */
+  section#header-bg-small .header-img .pic-caption h1 {
+    font-size: 60px;
+    letter-spacing: 13px;
+  }
+}
 
+/* line 458, ../sass/museu.scss */
 section#expo {
   margin-top: 150px;
-  position: relative; }
-  section#expo .expositor {
-    height: 200px;
-    background: #ededad;
-    margin: 0 auto;
-    margin: 25px 0; }
-    section#expo .expositor img {
-      height: 200px;
-      width: 100%;
-      -webkit-filter: grayscale(0);
-      -moz-filter: grayscale(0);
-      filter: grayscale(0); }
-    section#expo .expositor:hover {
-      -webkit-filter: grayscale(90%);
-      -moz-filter: grayscale(90%);
-      filter: grayscale(90%);
-      background-color: rgba(183, 29, 41, 0.4); }
-    section#expo .expositor h2 {
-      font-family: butlerbold, Georgia, Times New Roman, Times, serif;
-      display: block;
-      font-size: 60px;
-      position: relative;
-      text-align: left;
-      color: white;
-      margin-left: 20px;
-      bottom: 182px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin-bottom: 10px; }
-    section#expo .expositor h3 {
-      font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
-      display: block;
-      font-size: 24px;
-      position: relative;
-      vertical-align: text-bottom;
-      text-align: left;
-      color: white;
-      margin-left: 20px;
-      bottom: 175px;
-      line-height: 30px;
-      letter-spacing: 1px; }
-    section#expo .expositor a {
-      text-decoration: none; }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      section#expo .expositor h2 {
-        font-size: 56px; }
-      section#expo .expositor h3 {
-        font-size: 21px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      section#expo .expositor h2 {
-        font-size: 46px; }
-      section#expo .expositor h3 {
-        font-size: 19px; } }
-    @media screen and (max-width: 767px) {
-      section#expo .expositor h2 {
-        font-size: 36px; }
-      section#expo .expositor h3 {
-        font-size: 17px; } }
+  position: relative;
+}
+/* line 138, ../sass/_partials/_mixins.scss */
+section#expo .expositor {
+  height: 200px;
+  background: #ededad;
+  margin: 0 auto;
+  margin: 25px 0;
+}
+/* line 144, ../sass/_partials/_mixins.scss */
+section#expo .expositor img {
+  height: 200px;
+  width: 100%;
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+}
+/* line 151, ../sass/_partials/_mixins.scss */
+section#expo .expositor:hover {
+  -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  filter: grayscale(90%);
+  background-color: rgba(183, 29, 41, 0);
+}
+/* line 115, ../sass/_partials/_tipografia.scss */
+section#expo h2 {
+  font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+  display: block;
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  bottom: 182px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+/* line 131, ../sass/_partials/_tipografia.scss */
+section#expo h3 {
+  font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 24px;
+  position: relative;
+  vertical-align: text-bottom;
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  bottom: 175px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+/* line 145, ../sass/_partials/_tipografia.scss */
+section#expo a {
+  text-decoration: none;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 150, ../sass/_partials/_tipografia.scss */
+  section#expo h2 {
+    font-size: 56px;
+  }
+  /* line 153, ../sass/_partials/_tipografia.scss */
+  section#expo h3 {
+    font-size: 21px;
+  }
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 465, ../sass/museu.scss */
   section#expo {
-    margin-top: 60px; } }
+    margin-top: 60px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 470, ../sass/museu.scss */
   section#expo {
-    margin-top: 60px; } }
+    margin-top: 60px;
+  }
+}
 @media screen and (max-width: 767px) {
+  /* line 476, ../sass/museu.scss */
   section#expo {
-    margin-top: 60px; } }
+    margin-top: 60px;
+  }
+}
+/* line 481, ../sass/museu.scss */
 section#exposicoes {
   position: relative;
-  margin-top: 80px; }
-  section#exposicoes .expositor {
+  margin-top: 80px;
+}
+/* line 138, ../sass/_partials/_mixins.scss */
+section#exposicoes .expositor {
+  height: 200px;
+  background: #ededad;
+  margin: 0 auto;
+  margin: 25px 0;
+}
+/* line 144, ../sass/_partials/_mixins.scss */
+section#exposicoes .expositor img {
+  height: 200px;
+  width: 100%;
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+}
+/* line 151, ../sass/_partials/_mixins.scss */
+section#exposicoes .expositor:hover {
+  -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  filter: grayscale(90%);
+  background-color: rgba(183, 29, 41, 0);
+}
+/* line 115, ../sass/_partials/_tipografia.scss */
+section#exposicoes h2 {
+  font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+  display: block;
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  bottom: 182px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+/* line 131, ../sass/_partials/_tipografia.scss */
+section#exposicoes h3 {
+  font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
+  display: block;
+  font-size: 24px;
+  position: relative;
+  vertical-align: text-bottom;
+  text-align: left;
+  color: white;
+  margin-left: 20px;
+  bottom: 175px;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+/* line 145, ../sass/_partials/_tipografia.scss */
+section#exposicoes a {
+  text-decoration: none;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 150, ../sass/_partials/_tipografia.scss */
+  section#exposicoes h2 {
+    font-size: 56px;
+  }
+  /* line 153, ../sass/_partials/_tipografia.scss */
+  section#exposicoes h3 {
+    font-size: 21px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 490, ../sass/museu.scss */
+  section#exposicoes .exposicoes {
+    max-width: 800px;
+  }
+}
+
+/* line 497, ../sass/museu.scss */
+section#colecao {
+  margin-top: 150px;
+  position: relative;
+}
+/* line 501, ../sass/museu.scss */
+section#colecao .montra-colecao {
+  height: 500px;
+  padding-bottom: 40px;
+}
+/* line 504, ../sass/museu.scss */
+section#colecao .montra-colecao .col-colecao {
+  background: #0b0e16;
+  float: left;
+  width: 18.111%;
+  height: 450px;
+  margin: 10px 21.2px;
+  position: relative;
+  max-width: 200px;
+}
+/* line 513, ../sass/museu.scss */
+section#colecao .montra-colecao .col-colecao .grayscale {
+  width: 100%;
+  height: 100%;
+  max-width: 200px;
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+}
+/* line 519, ../sass/museu.scss */
+section#colecao .montra-colecao .col-colecao:hover {
+  -webkit-filter: grayscale(90%);
+  -moz-filter: grayscale(90%);
+  filter: grayscale(90%);
+  background-color: rgba(183, 29, 41, 0);
+}
+/* line 527, ../sass/museu.scss */
+section#colecao .montra-colecao .col-colecao:hover span {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  background-color: rgba(183, 29, 41, 0);
+}
+/* line 95, ../sass/_partials/_tipografia.scss */
+section#colecao .montra-colecao .col-colecao h2 {
+  font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+  display: block;
+  font-size: 65px;
+  transform: rotate(-90deg);
+  position: relative;
+  bottom: 150px;
+  vertical-align: text-bottom;
+  text-align: left;
+  color: white;
+  left: 60px;
+  zoom: 1;
+}
+/* line 30, ../sass/_partials/_grelhas.scss */
+section#colecao .montra-colecao .col-colecao h2:after {
+  clear: both;
+}
+/* line 31, ../sass/_partials/_grelhas.scss */
+section#colecao .montra-colecao .col-colecao h2:before, section#colecao .montra-colecao .col-colecao h2:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/* line 109, ../sass/_partials/_tipografia.scss */
+section#colecao .montra-colecao .col-colecao a {
+  text-decoration: none;
+}
+/* line 539, ../sass/museu.scss */
+section#colecao .montra-colecao .col-colecao:last-child {
+  float: right;
+  margin-right: 0px;
+}
+/* line 544, ../sass/museu.scss */
+section#colecao .montra-colecao .col-colecao:first-child {
+  margin-left: 0px;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  /* line 549, ../sass/museu.scss */
+  section#colecao .montra-colecao .col-colecao {
+    margin: 10px 11px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* line 556, ../sass/museu.scss */
+  section#colecao .montra-colecao {
+    display: none;
+  }
+  /* line 559, ../sass/museu.scss */
+  section#colecao .montra-colecao-mb {
+    min-width: 480px;
+    max-width: 600px;
+    padding-bottom: 50px;
+  }
+  /* line 138, ../sass/_partials/_mixins.scss */
+  section#colecao .montra-colecao-mb .expositor {
     height: 200px;
     background: #ededad;
     margin: 0 auto;
-    margin: 25px 0; }
-    section#exposicoes .expositor img {
-      height: 200px;
-      width: 100%;
-      -webkit-filter: grayscale(0);
-      -moz-filter: grayscale(0);
-      filter: grayscale(0); }
-    section#exposicoes .expositor:hover {
-      -webkit-filter: grayscale(90%);
-      -moz-filter: grayscale(90%);
-      filter: grayscale(90%);
-      background-color: rgba(183, 29, 41, 0.4); }
-    section#exposicoes .expositor h2 {
-      font-family: butlerbold, Georgia, Times New Roman, Times, serif;
-      display: block;
-      font-size: 60px;
-      position: relative;
-      text-align: left;
-      color: white;
-      margin-left: 20px;
-      bottom: 182px;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      white-space: nowrap;
-      margin-bottom: 10px; }
-    section#exposicoes .expositor h3 {
-      font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
-      display: block;
-      font-size: 24px;
-      position: relative;
-      vertical-align: text-bottom;
-      text-align: left;
-      color: white;
-      margin-left: 20px;
-      bottom: 175px;
-      line-height: 30px;
-      letter-spacing: 1px; }
-    section#exposicoes .expositor a {
-      text-decoration: none; }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      section#exposicoes .expositor h2 {
-        font-size: 56px; }
-      section#exposicoes .expositor h3 {
-        font-size: 21px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) {
-      section#exposicoes .expositor h2 {
-        font-size: 46px; }
-      section#exposicoes .expositor h3 {
-        font-size: 19px; } }
-    @media screen and (max-width: 767px) {
-      section#exposicoes .expositor h2 {
-        font-size: 36px; }
-      section#exposicoes .expositor h3 {
-        font-size: 17px; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    section#exposicoes .exposicoes {
-      max-width: 800px; } }
-
-section#colecao {
-  margin-top: 150px;
-  position: relative; }
+    margin: 25px 0;
+  }
+  /* line 144, ../sass/_partials/_mixins.scss */
+  section#colecao .montra-colecao-mb .expositor img {
+    height: 200px;
+    width: 100%;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  /* line 151, ../sass/_partials/_mixins.scss */
+  section#colecao .montra-colecao-mb .expositor:hover {
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    filter: grayscale(90%);
+    background-color: rgba(183, 29, 41, 0);
+  }
+  /* line 115, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h2 {
+    font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+    display: block;
+    font-size: 60px;
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    bottom: 182px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+  /* line 131, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h3 {
+    font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
+    display: block;
+    font-size: 24px;
+    position: relative;
+    vertical-align: text-bottom;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    bottom: 175px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  /* line 145, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb a {
+    text-decoration: none;
+  }
+  /* line 562, ../sass/museu.scss */
+  section#colecao .montra-colecao-mb h2 {
+    font-size: 46px;
+  }
+  /* line 565, ../sass/museu.scss */
+  section#colecao .montra-colecao-mb h3 {
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 150, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h2 {
+    font-size: 56px;
+  }
+  /* line 153, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h3 {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 576, ../sass/museu.scss */
   section#colecao .montra-colecao {
-    height: 500px;
-    padding-bottom: 40px; }
-    section#colecao .montra-colecao .col-colecao {
-      background: #0b0e16;
-      float: left;
-      width: 18.111%;
-      height: 450px;
-      margin: 10px 21.2px;
-      position: relative;
-      max-width: 200px; }
-      section#colecao .montra-colecao .col-colecao .grayscale {
-        width: 100%;
-        height: 100%;
-        max-width: 200px;
-        -webkit-filter: grayscale(0);
-        -moz-filter: grayscale(0);
-        filter: grayscale(0); }
-      section#colecao .montra-colecao .col-colecao:hover {
-        -webkit-filter: grayscale(90%);
-        -moz-filter: grayscale(90%);
-        filter: grayscale(90%);
-        background-color: rgba(183, 29, 41, 0.4); }
-      section#colecao .montra-colecao .col-colecao:hover span {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0px;
-        background-color: rgba(183, 29, 41, 0.5); }
-      section#colecao .montra-colecao .col-colecao h2 {
-        font-family: butlerbold, Georgia, Times New Roman, Times, serif;
-        display: block;
-        font-size: 65px;
-        transform: rotate(-90deg);
-        position: relative;
-        bottom: 150px;
-        vertical-align: text-bottom;
-        text-align: left;
-        color: white;
-        left: 60px;
-        zoom: 1; }
-        section#colecao .montra-colecao .col-colecao h2:after {
-          clear: both; }
-        section#colecao .montra-colecao .col-colecao h2:before, section#colecao .montra-colecao .col-colecao h2:after {
-          content: '\0020';
-          display: block;
-          overflow: hidden;
-          visibility: hidden;
-          width: 0;
-          height: 0; }
-      section#colecao .montra-colecao .col-colecao a {
-        text-decoration: none; }
-    section#colecao .montra-colecao .col-colecao:last-child {
-      float: right;
-      margin-right: 0px; }
-    section#colecao .montra-colecao .col-colecao:first-child {
-      margin-left: 0px; }
-    @media screen and (min-width: 992px) and (max-width: 1199px) {
-      section#colecao .montra-colecao .col-colecao {
-        margin: 10px 11px; } }
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    section#colecao .montra-colecao {
-      display: none; }
-    section#colecao .montra-colecao-mb {
-      min-width: 480px;
-      max-width: 600px;
-      padding-bottom: 50px; }
-      section#colecao .montra-colecao-mb .expositor {
-        height: 200px;
-        background: #ededad;
-        margin: 0 auto;
-        margin: 25px 0; }
-        section#colecao .montra-colecao-mb .expositor img {
-          height: 200px;
-          width: 100%;
-          -webkit-filter: grayscale(0);
-          -moz-filter: grayscale(0);
-          filter: grayscale(0); }
-        section#colecao .montra-colecao-mb .expositor:hover {
-          -webkit-filter: grayscale(90%);
-          -moz-filter: grayscale(90%);
-          filter: grayscale(90%);
-          background-color: rgba(183, 29, 41, 0.4); }
-        section#colecao .montra-colecao-mb .expositor h2 {
-          font-family: butlerbold, Georgia, Times New Roman, Times, serif;
-          display: block;
-          font-size: 60px;
-          position: relative;
-          text-align: left;
-          color: white;
-          margin-left: 20px;
-          bottom: 182px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          margin-bottom: 10px; }
-        section#colecao .montra-colecao-mb .expositor h3 {
-          font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
-          display: block;
-          font-size: 24px;
-          position: relative;
-          vertical-align: text-bottom;
-          text-align: left;
-          color: white;
-          margin-left: 20px;
-          bottom: 175px;
-          line-height: 30px;
-          letter-spacing: 1px; }
-        section#colecao .montra-colecao-mb .expositor a {
-          text-decoration: none; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1199px) {
-      section#colecao .montra-colecao-mb .expositor h2 {
-        font-size: 56px; }
-      section#colecao .montra-colecao-mb .expositor h3 {
-        font-size: 21px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) and (min-width: 768px) and (max-width: 991px) {
-      section#colecao .montra-colecao-mb .expositor h2 {
-        font-size: 46px; }
-      section#colecao .montra-colecao-mb .expositor h3 {
-        font-size: 19px; } }
-    @media screen and (min-width: 768px) and (max-width: 991px) and (max-width: 767px) {
-      section#colecao .montra-colecao-mb .expositor h2 {
-        font-size: 36px; }
-      section#colecao .montra-colecao-mb .expositor h3 {
-        font-size: 17px; } }
+    display: none;
+  }
+  /* line 579, ../sass/museu.scss */
+  section#colecao .montra-colecao-mb {
+    min-width: 300px;
+    max-width: 400px;
+    padding-bottom: 50px;
+  }
+  /* line 138, ../sass/_partials/_mixins.scss */
+  section#colecao .montra-colecao-mb .expositor {
+    height: 200px;
+    background: #ededad;
+    margin: 0 auto;
+    margin: 25px 0;
+  }
+  /* line 144, ../sass/_partials/_mixins.scss */
+  section#colecao .montra-colecao-mb .expositor img {
+    height: 200px;
+    width: 100%;
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    filter: grayscale(0);
+  }
+  /* line 151, ../sass/_partials/_mixins.scss */
+  section#colecao .montra-colecao-mb .expositor:hover {
+    -webkit-filter: grayscale(90%);
+    -moz-filter: grayscale(90%);
+    filter: grayscale(90%);
+    background-color: rgba(183, 29, 41, 0);
+  }
+  /* line 115, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h2 {
+    font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
+    display: block;
+    font-size: 60px;
+    position: relative;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    bottom: 182px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10px;
+  }
+  /* line 131, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h3 {
+    font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
+    display: block;
+    font-size: 24px;
+    position: relative;
+    vertical-align: text-bottom;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    bottom: 175px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  /* line 145, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb a {
+    text-decoration: none;
+  }
+  /* line 586, ../sass/museu.scss */
+  section#colecao .montra-colecao-mb h2 {
+    font-size: 36px;
+  }
+  /* line 589, ../sass/museu.scss */
+  section#colecao .montra-colecao-mb h3 {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 767px) and (min-width: 992px) and (max-width: 1199px) {
+  /* line 150, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h2 {
+    font-size: 56px;
+  }
+  /* line 153, ../sass/_partials/_tipografia.scss */
+  section#colecao .montra-colecao-mb h3 {
+    font-size: 21px;
+  }
+}
 
-  @media screen and (max-width: 767px) {
-    section#colecao .montra-colecao {
-      display: none; }
-    section#colecao .montra-colecao-mb {
-      min-width: 300px;
-      max-width: 400px;
-      padding-bottom: 50px; }
-      section#colecao .montra-colecao-mb .expositor {
-        height: 200px;
-        background: #ededad;
-        margin: 0 auto;
-        margin: 25px 0; }
-        section#colecao .montra-colecao-mb .expositor img {
-          height: 200px;
-          width: 100%;
-          -webkit-filter: grayscale(0);
-          -moz-filter: grayscale(0);
-          filter: grayscale(0); }
-        section#colecao .montra-colecao-mb .expositor:hover {
-          -webkit-filter: grayscale(90%);
-          -moz-filter: grayscale(90%);
-          filter: grayscale(90%);
-          background-color: rgba(183, 29, 41, 0.4); }
-        section#colecao .montra-colecao-mb .expositor h2 {
-          font-family: butlerbold, Georgia, Times New Roman, Times, serif;
-          display: block;
-          font-size: 60px;
-          position: relative;
-          text-align: left;
-          color: white;
-          margin-left: 20px;
-          bottom: 182px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          margin-bottom: 10px; }
-        section#colecao .montra-colecao-mb .expositor h3 {
-          font-family: proxima_novaregular_italic, Helvetica, Arial, sans-serif;
-          display: block;
-          font-size: 24px;
-          position: relative;
-          vertical-align: text-bottom;
-          text-align: left;
-          color: white;
-          margin-left: 20px;
-          bottom: 175px;
-          line-height: 30px;
-          letter-spacing: 1px; }
-        section#colecao .montra-colecao-mb .expositor a {
-          text-decoration: none; } }
-    @media screen and (max-width: 767px) and (min-width: 992px) and (max-width: 1199px) {
-      section#colecao .montra-colecao-mb .expositor h2 {
-        font-size: 56px; }
-      section#colecao .montra-colecao-mb .expositor h3 {
-        font-size: 21px; } }
-    @media screen and (max-width: 767px) and (min-width: 768px) and (max-width: 991px) {
-      section#colecao .montra-colecao-mb .expositor h2 {
-        font-size: 46px; }
-      section#colecao .montra-colecao-mb .expositor h3 {
-        font-size: 19px; } }
-    @media screen and (max-width: 767px) and (max-width: 767px) {
-      section#colecao .montra-colecao-mb .expositor h2 {
-        font-size: 36px; }
-      section#colecao .montra-colecao-mb .expositor h3 {
-        font-size: 17px; } }
-
+/* line 598, ../sass/museu.scss */
 section#grelha-colecao {
   margin-top: 80px;
-  position: relative; }
-  section#grelha-colecao .container > .grelha {
-    width: 100%; }
-    section#grelha-colecao .container > .grelha .item > .footnotes p {
-      margin-top: 10px;
-      font-size: 10px;
-      color: gray;
-      font-family: "proxima_novalight", Helvetica, Arial, sans-serif; }
+  position: relative;
+}
+/* line 602, ../sass/museu.scss */
+section#grelha-colecao .container > .grelha {
+  width: 100%;
+}
+/* line 604, ../sass/museu.scss */
+section#grelha-colecao .container > .grelha .item > .footnotes p {
+  margin-top: 10px;
+  font-size: 10px;
+  color: gray;
+  font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
+}
 
+/* line 614, ../sass/museu.scss */
 section#sobremuseu {
-  padding-top: 80px; }
-  section#sobremuseu .block-text {
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 50px; }
-  section#sobremuseu h4 {
-    font-family: proxima_nova_rgregular, Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    text-align: left;
-    color: #000000;
-    line-height: 55px;
-    padding-bottom: 15px; }
-  section#sobremuseu h5 {
-    font-family: proxima_novalight, Helvetica, Arial, sans-serif;
-    font-size: 25px;
-    text-align: left;
-    color: #000000;
-    line-height: 30px;
-    padding-bottom: 15px; }
-  section#sobremuseu p {
-    font-family: proxima_novalight, Helvetica, Arial, sans-serif;
-    font-size: 17	px;
-    text-align: left;
-    color: #000000;
-    line-height: 30px;
-    text-align: left;
-    text-indent: 15px;
-    padding-top: 15px; }
-  section#sobremuseu em {
-    font-family: proxima_novalight_italic, Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    text-indent: 15px; }
-  section#sobremuseu .first {
-    text-indent: initial; }
-  section#sobremuseu a {
-    text-decoration: none;
-    color: #000000;
-    font-family: proxima_nova_rgbold, Helvetica, Arial, sans-serif;
-    line-height: 40px; }
-  section#sobremuseu img.img-expo {
-    width: 100%;
-    display: block; }
+  padding-top: 80px;
+}
+/* line 249, ../sass/_partials/_tipografia.scss */
+section#sobremuseu .block-text {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+/* line 205, ../sass/_partials/_tipografia.scss */
+section#sobremuseu h4 {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  font-size: 35px;
+  text-align: left;
+  color: #000000;
+  line-height: 45px;
+  padding-bottom: 15px;
+}
+/* line 215, ../sass/_partials/_tipografia.scss */
+section#sobremuseu h5 {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  font-size: 27px;
+  text-align: left;
+  color: #000000;
+  line-height: 25px;
+  padding-bottom: 15px;
+}
+/* line 225, ../sass/_partials/_tipografia.scss */
+section#sobremuseu h6 {
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  text-align: left;
+  color: #000000;
+  line-height: 25px;
+  padding-bottom: 15px;
+  letter-spacing: 0,5px;
+}
+/* line 236, ../sass/_partials/_tipografia.scss */
+section#sobremuseu p {
+  font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  text-align: left;
+  color: #000000;
+  line-height: 30px;
+  text-align: left;
+  text-indent: 15px;
+  padding-top: 15px;
+}
+/* line 626, ../sass/museu.scss */
+section#sobremuseu em {
+  font-family: "proxima_novalight_italic", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  text-indent: 15px;
+}
+/* line 632, ../sass/museu.scss */
+section#sobremuseu .first {
+  text-indent: initial;
+  margin-top: 20px;
+}
+/* line 636, ../sass/museu.scss */
+section#sobremuseu a {
+  text-decoration: none;
+  color: #000000;
+  font-family: "proxima_nova_rgbold", Helvetica, Arial, sans-serif;
+  line-height: 40px;
+}
+/* line 643, ../sass/museu.scss */
+section#sobremuseu img.img-expo {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
 
+/* line 249, ../sass/_partials/_tipografia.scss */
 section#localizacao .block-text {
   width: 70%;
   margin: 0 auto;
-  padding-top: 50px; }
+  padding-top: 50px;
+}
+/* line 205, ../sass/_partials/_tipografia.scss */
 section#localizacao h4 {
-  font-family: proxima_nova_rgregular, Helvetica, Arial, sans-serif;
-  font-size: 25px;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
+  font-size: 35px;
   text-align: left;
   color: #000000;
-  line-height: 55px;
-  padding-bottom: 15px; }
+  line-height: 45px;
+  padding-bottom: 15px;
+}
+/* line 657, ../sass/museu.scss */
 section#localizacao * {
   line-height: 25px;
-  text-indent: initial; }
+  text-indent: initial;
+}
+/* line 662, ../sass/museu.scss */
 section#localizacao dt {
-  font-family: proxima_nova_rgregular, Helvetica, Arial, sans-serif;
+  font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
   font-size: 17px;
   text-align: left;
-  color: #000000; }
+  color: #000000;
+}
+/* line 669, ../sass/museu.scss */
 section#localizacao dd {
-  font-family: proxima_novalight, Helvetica, Arial, sans-serif;
+  font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
   font-size: 15px;
   text-align: left;
   color: #000000;
-  text-align: left; }
+  text-align: left;
+}
+/* line 677, ../sass/museu.scss */
 section#localizacao #map {
   width: 100%;
   height: 300px;
-  margin-bottom: -23px; }
+  margin-bottom: -23px;
+}
 
+/* line 686, ../sass/museu.scss */
 footer {
   clear: both;
   text-align: left;
@@ -1459,68 +1967,100 @@ footer {
   background-color: #b71d29;
   display: block;
   position: relative;
-  margin-bottom: 0px !important;
+  margin-bottom: 0px!important;
   padding-top: 20px;
   height: auto;
-  padding-bottom: 35px; }
-  footer .largescreen {
-    display: none; }
+  padding-bottom: 35px;
+}
+/* line 699, ../sass/museu.scss */
+footer .largescreen {
+  display: none;
+}
+/* line 703, ../sass/museu.scss */
+footer div[class*="col-"] {
+  margin: 0 10px;
+}
+/* line 178, ../sass/_partials/_tipografia.scss */
+footer div[class*="col-"] h2.museu {
+  font-family: "butler_stencilblack", Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 48px;
+}
+/* line 186, ../sass/_partials/_tipografia.scss */
+footer div[class*="col-"] h3 {
+  font-family: "butlerregular", Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+  line-height: 49px;
+  font-variant: small-caps;
+}
+/* line 194, ../sass/_partials/_tipografia.scss */
+footer div[class*="col-"] ul li a {
+  font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
+  text-align: left;
+  line-height: 22px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+/* line 706, ../sass/museu.scss */
+footer div[class*="col-"] a {
+  text-decoration: none;
+  color: white;
+}
+/* line 709, ../sass/museu.scss */
+footer div[class*="col-"] a:hover {
+  font-weight: 600;
+}
+@media screen and (max-width: 767px) {
+  /* line 716, ../sass/museu.scss */
   footer div[class*="col-"] {
-    margin: 0 10px; }
-    footer div[class*="col-"] h2.museu {
-      font-family: butler_stencilblack, Georgia, Times New Roman, Times, serif;
-      text-transform: uppercase;
-      letter-spacing: 7px;
-      font-weight: 400;
-      font-size: 22px;
-      line-height: 48px; }
-    footer div[class*="col-"] h3 {
-      font-family: butlerregular, Georgia, Times New Roman, Times, serif;
-      letter-spacing: 1.5px;
-      font-size: 22px;
-      line-height: 49px;
-      font-variant: small-caps; }
-    footer div[class*="col-"] ul li a {
-      font-family: proxima_novalight, Helvetica, Arial, sans-serif;
-      text-align: left;
-      line-height: 22px;
-      font-size: 13px;
-      letter-spacing: 0.5px; }
-    footer div[class*="col-"] a {
-      text-decoration: none;
-      color: white; }
-      footer div[class*="col-"] a:hover {
-        font-weight: 600; }
-  @media screen and (max-width: 767px) {
-    footer div[class*="col-"] {
-      margin: 0px; }
-    footer .mobile {
-      clear: both;
-      text-align: left;
-      color: white;
-      background-color: #b71d29;
-      position: relative;
-      margin-bottom: 0px !important;
-      padding-top: 10px;
-      height: auto;
-      padding-bottom: 25px; }
-      footer .mobile div[class*="col-"] {
-        margin: 0 20px; }
-      footer .mobile ul {
-        padding-bottom: 20px; }
-      footer .mobile li {
-        display: inline;
-        margin-right: 17px;
-        line-height: 36px; }
-      footer .mobile .exposicoes li {
-        display: block; } }
-  @media screen and (max-width: 480px) {
-    footer .col-xs-6 {
-      width: 100%; } }
+    margin: 0px;
+  }
+  /* line 720, ../sass/museu.scss */
+  footer .mobile {
+    clear: both;
+    text-align: left;
+    color: white;
+    background-color: #b71d29;
+    position: relative;
+    margin-bottom: 0px!important;
+    padding-top: 10px;
+    height: auto;
+    padding-bottom: 25px;
+  }
+  /* line 733, ../sass/museu.scss */
+  footer .mobile div[class*="col-"] {
+    margin: 0 20px;
+  }
+  /* line 738, ../sass/museu.scss */
+  footer .mobile ul {
+    padding-bottom: 20px;
+  }
+  /* line 741, ../sass/museu.scss */
+  footer .mobile li {
+    display: inline;
+    margin-right: 17px;
+    line-height: 36px;
+  }
+  /* line 748, ../sass/museu.scss */
+  footer .mobile .exposicoes li {
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 757, ../sass/museu.scss */
+  footer .col-xs-6 {
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 320px) {
+  /* line 765, ../sass/museu.scss */
   .endofresponsive {
     background: #000;
-    display: block; } }
-
-/*# sourceMappingURL=museu.css.map */
+    display: block;
+  }
+}

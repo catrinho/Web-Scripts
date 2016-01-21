@@ -160,9 +160,13 @@ header{
 						font-size: floor(($font-size-base * 1.26));
 						&:hover {
 					  		color: $cor-brow;
+					  		border-bottom: solid 1px $cor-brow;
 					  	}
 				  	
 				  	}
+				  	.active {
+						color: $cor-red;
+					}
 				  	ul.dropdown-list{
 				  		width: 200px;
 				  		position: absolute;
@@ -265,7 +269,8 @@ section#header-bg-big{
 	  //background-color:black;
 	  background-image:'img/capa_img.png';
 	}*/
-	.header-img {
+
+	.header-slider .owl-stage-outer .owl-stage .owl-item .item .header-img, .header-img {
 		  padding-top:60px;
 		  position: relative;
 		  width: 100%;
@@ -283,6 +288,7 @@ section#header-bg-big{
 		          transform: translate(-50%,-50%);
 		}
 		.pic-caption{
+			//background-color:black;
 			@include font_family($font-family-serif-buttler-regular);
 		    position: absolute;
 		    color: white;
@@ -299,13 +305,14 @@ section#header-bg-big{
 		    	letter-spacing: 0.7px;
 		    }
 		}
+
 		
-		@include MediaMediumScreens{
-			.pic-caption{
-				top:40%;
-			    left: 6%;
-			  }  
-		}    
+		// @include MediaMediumScreens{
+		// 	.pic-caption{
+		// 		top:40%;
+		// 	    left: 6%;
+		// 	  }  
+		// }    
 
 	}
 	@include MediaMediumScreens{
@@ -452,6 +459,7 @@ section#expo{
 	margin-top: 150px;
 	position:relative;
 	@include expositor;
+	@include expositor_headings;
 }
 @include MediaMediumScreens{
 	section#expo{
@@ -474,6 +482,7 @@ section#exposicoes{
 	position:relative;
 	margin-top: 80px;
 	@include expositor;
+	@include expositor_headings;
 	
 	
 				
@@ -549,6 +558,14 @@ section#colecao{
 			}	
 			.montra-colecao-mb{
 				@include expositor;
+				@include expositor_headings{
+					h2{
+	    				font-size: 46px;
+	    			}
+	    			h3{ 
+	    				font-size:19px;
+	    			}
+				}
 				min-width: 480px;
 				max-width: 600px;
 				padding-bottom:50px;
@@ -560,10 +577,19 @@ section#colecao{
 				display: none;
 			}	
 			.montra-colecao-mb{
-				@include expositor;
 				min-width: 300px;
 				max-width: 400px;
 				padding-bottom:50px;
+				
+				@include expositor;
+				@include expositor_headings{
+					h2{
+	    				font-size: 36px;
+	    			}
+	    			h3{ 
+	    				font-size:17px;
+	    			}
+				}
 			}
 	}		
 	
@@ -593,6 +619,8 @@ section#sobremuseu{
 
 	@include heading_five_ss;
 	
+	@include heading_six_ss;
+
 	@include paragraph_ss;
 
 	em{
@@ -603,6 +631,7 @@ section#sobremuseu{
 
 	.first {
 		text-indent: initial;
+		margin-top: 20px;
 	}
 	a {
 		text-decoration: none;
@@ -614,6 +643,8 @@ section#sobremuseu{
 	img.img-expo{
 		width: 100%;
 		display: block;
+		margin: 0 auto;
+		margin-bottom: 50px;
 	}
 }
 
