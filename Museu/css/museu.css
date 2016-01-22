@@ -7,7 +7,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* line 6, ../sass/_partials/_reset.scss */
+/* line 6, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -18,53 +18,53 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 /* HTML5 display-role reset for older browsers */
-/* line 16, ../sass/_partials/_reset.scss */
+/* line 16, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 19, ../sass/_partials/_reset.scss */
+/* line 19, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 body {
   line-height: 1;
 }
 
-/* line 22, ../sass/_partials/_reset.scss */
+/* line 22, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 25, ../sass/_partials/_reset.scss */
+/* line 25, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 29, ../sass/_partials/_reset.scss */
+/* line 29, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 blockquote:before, blockquote:after {
   content: '';
   content: none;
 }
 
-/* line 34, ../sass/_partials/_reset.scss */
+/* line 34, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 38, ../sass/_partials/_reset.scss */
+/* line 38, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 40, ../sass/_partials/_grelhas.scss */
+/* line 40, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .clearfix {
   zoom: 1;
 }
-/* line 30, ../sass/_partials/_grelhas.scss */
+/* line 30, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .clearfix:after {
   clear: both;
 }
-/* line 31, ../sass/_partials/_grelhas.scss */
+/* line 31, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .clearfix:before, .clearfix:after {
   content: '\0020';
   display: block;
@@ -74,18 +74,18 @@ table {
   height: 0;
 }
 
-/* line 56, ../sass/_partials/_grelhas.scss */
+/* line 56, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .row {
   zoom: 1;
   zoom: 1;
   margin-bottom: 40px;
   width: 100%;
 }
-/* line 30, ../sass/_partials/_grelhas.scss */
+/* line 30, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .row:after {
   clear: both;
 }
-/* line 31, ../sass/_partials/_grelhas.scss */
+/* line 31, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .row:before, .row:after {
   content: '\0020';
   display: block;
@@ -94,11 +94,11 @@ table {
   width: 0;
   height: 0;
 }
-/* line 30, ../sass/_partials/_grelhas.scss */
+/* line 30, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .row:after {
   clear: both;
 }
-/* line 31, ../sass/_partials/_grelhas.scss */
+/* line 31, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 .row:before, .row:after {
   content: '\0020';
   display: block;
@@ -109,7 +109,7 @@ table {
 }
 
 @media screen and (min-width: 1200px) {
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-1 {
     display: block;
     float: left;
@@ -119,7 +119,7 @@ table {
     width: 5%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-2 {
     display: block;
     float: left;
@@ -129,7 +129,7 @@ table {
     width: 13.33333%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-3 {
     display: block;
     float: left;
@@ -139,7 +139,7 @@ table {
     width: 21.66667%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-4 {
     display: block;
     float: left;
@@ -149,7 +149,7 @@ table {
     width: 30%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-5 {
     display: block;
     float: left;
@@ -159,7 +159,7 @@ table {
     width: 38.33333%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-6 {
     display: block;
     float: left;
@@ -169,7 +169,7 @@ table {
     width: 46.66667%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-7 {
     display: block;
     float: left;
@@ -179,7 +179,7 @@ table {
     width: 55%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-8 {
     display: block;
     float: left;
@@ -189,7 +189,7 @@ table {
     width: 63.33333%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-9 {
     display: block;
     float: left;
@@ -199,7 +199,7 @@ table {
     width: 71.66667%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-10 {
     display: block;
     float: left;
@@ -209,7 +209,7 @@ table {
     width: 80%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-11 {
     display: block;
     float: left;
@@ -219,7 +219,7 @@ table {
     width: 88.33333%;
   }
 
-  /* line 69, ../sass/_partials/_grelhas.scss */
+  /* line 69, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-lg-12 {
     display: block;
     float: left;
@@ -229,26 +229,26 @@ table {
     width: 96.66667%;
   }
 
-  /* line 44, ../sass/_partials/_grelhas.scss */
+  /* line 44, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .container {
     width: 1170px;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 77, ../sass/_partials/_grelhas.scss */
+  /* line 77, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .hide-lg {
     display: none!important;
   }
 
-  /* line 80, ../sass/_partials/_grelhas.scss */
+  /* line 80, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .show-lg {
     display: block !important;
   }
 }
 /* Small Desktop/ Tablet screens */
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-1 {
     display: block;
     float: left;
@@ -258,7 +258,7 @@ table {
     width: 5%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-2 {
     display: block;
     float: left;
@@ -268,7 +268,7 @@ table {
     width: 13.33333%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-3 {
     display: block;
     float: left;
@@ -278,7 +278,7 @@ table {
     width: 21.66667%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-4 {
     display: block;
     float: left;
@@ -288,7 +288,7 @@ table {
     width: 30%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-5 {
     display: block;
     float: left;
@@ -298,7 +298,7 @@ table {
     width: 38.33333%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-6 {
     display: block;
     float: left;
@@ -308,7 +308,7 @@ table {
     width: 46.66667%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-7 {
     display: block;
     float: left;
@@ -318,7 +318,7 @@ table {
     width: 55%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-8 {
     display: block;
     float: left;
@@ -328,7 +328,7 @@ table {
     width: 63.33333%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-9 {
     display: block;
     float: left;
@@ -338,7 +338,7 @@ table {
     width: 71.66667%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-10 {
     display: block;
     float: left;
@@ -348,7 +348,7 @@ table {
     width: 80%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-11 {
     display: block;
     float: left;
@@ -358,7 +358,7 @@ table {
     width: 88.33333%;
   }
 
-  /* line 88, ../sass/_partials/_grelhas.scss */
+  /* line 88, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-md-12 {
     display: block;
     float: left;
@@ -368,26 +368,26 @@ table {
     width: 96.66667%;
   }
 
-  /* line 44, ../sass/_partials/_grelhas.scss */
+  /* line 44, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .container {
     width: 1002px;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 96, ../sass/_partials/_grelhas.scss */
+  /* line 96, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .hide-md {
     display: none!important;
   }
 
-  /* line 99, ../sass/_partials/_grelhas.scss */
+  /* line 99, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .show-md {
     display: block !important;
   }
 }
 /* Tablet screens */
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-1 {
     display: block;
     float: left;
@@ -397,7 +397,7 @@ table {
     width: 5%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-2 {
     display: block;
     float: left;
@@ -407,7 +407,7 @@ table {
     width: 13.33333%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-3 {
     display: block;
     float: left;
@@ -417,7 +417,7 @@ table {
     width: 21.66667%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-4 {
     display: block;
     float: left;
@@ -427,7 +427,7 @@ table {
     width: 30%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-5 {
     display: block;
     float: left;
@@ -437,7 +437,7 @@ table {
     width: 38.33333%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-6 {
     display: block;
     float: left;
@@ -447,7 +447,7 @@ table {
     width: 46.66667%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-7 {
     display: block;
     float: left;
@@ -457,7 +457,7 @@ table {
     width: 55%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-8 {
     display: block;
     float: left;
@@ -467,7 +467,7 @@ table {
     width: 63.33333%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-9 {
     display: block;
     float: left;
@@ -477,7 +477,7 @@ table {
     width: 71.66667%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-10 {
     display: block;
     float: left;
@@ -487,7 +487,7 @@ table {
     width: 80%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-11 {
     display: block;
     float: left;
@@ -497,7 +497,7 @@ table {
     width: 88.33333%;
   }
 
-  /* line 109, ../sass/_partials/_grelhas.scss */
+  /* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-sm-12 {
     display: block;
     float: left;
@@ -507,26 +507,26 @@ table {
     width: 96.66667%;
   }
 
-  /* line 116, ../sass/_partials/_grelhas.scss */
+  /* line 116, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .container {
     width: 98%;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 121, ../sass/_partials/_grelhas.scss */
+  /* line 121, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .hide-sm {
     display: none!important;
   }
 
-  /* line 124, ../sass/_partials/_grelhas.scss */
+  /* line 124, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .show-sm {
     display: block !important;
   }
 }
 /* Small /Mobile screens */
 @media screen and (max-width: 767px) {
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-1 {
     display: block;
     float: left;
@@ -536,7 +536,7 @@ table {
     width: 5%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-2 {
     display: block;
     float: left;
@@ -546,7 +546,7 @@ table {
     width: 13.33333%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-3 {
     display: block;
     float: left;
@@ -556,7 +556,7 @@ table {
     width: 21.66667%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-4 {
     display: block;
     float: left;
@@ -566,7 +566,7 @@ table {
     width: 30%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-5 {
     display: block;
     float: left;
@@ -576,7 +576,7 @@ table {
     width: 38.33333%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-6 {
     display: block;
     float: left;
@@ -586,7 +586,7 @@ table {
     width: 46.66667%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-7 {
     display: block;
     float: left;
@@ -596,7 +596,7 @@ table {
     width: 55%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-8 {
     display: block;
     float: left;
@@ -606,7 +606,7 @@ table {
     width: 63.33333%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-9 {
     display: block;
     float: left;
@@ -616,7 +616,7 @@ table {
     width: 71.66667%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-10 {
     display: block;
     float: left;
@@ -626,7 +626,7 @@ table {
     width: 80%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-11 {
     display: block;
     float: left;
@@ -636,7 +636,7 @@ table {
     width: 88.33333%;
   }
 
-  /* line 134, ../sass/_partials/_grelhas.scss */
+  /* line 134, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .col-xs-12 {
     display: block;
     float: left;
@@ -646,19 +646,19 @@ table {
     width: 96.66667%;
   }
 
-  /* line 140, ../sass/_partials/_grelhas.scss */
+  /* line 140, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .container {
     width: 98%;
     margin: 0 auto;
     position: relative;
   }
 
-  /* line 147, ../sass/_partials/_grelhas.scss */
+  /* line 147, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .hide-xs {
     display: none!important;
   }
 
-  /* line 150, ../sass/_partials/_grelhas.scss */
+  /* line 150, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
   .show-xs {
     display: block !important;
   }
@@ -743,44 +743,44 @@ table {
   font-style: normal;
 }
 
-/* line 83, ../sass/_partials/_tipografia.scss */
+/* line 83, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 h1 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 83, ../sass/_partials/_tipografia.scss */
+/* line 83, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 h2 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 83, ../sass/_partials/_tipografia.scss */
+/* line 83, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 h3 {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 83, ../sass/_partials/_tipografia.scss */
+/* line 83, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 h4 {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 83, ../sass/_partials/_tipografia.scss */
+/* line 83, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 h5 {
   font-size: 14px;
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 83, ../sass/_partials/_tipografia.scss */
+/* line 83, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 h6 {
-  font-size: 12px;
+  font-size: 0px;
   font-weight: normal;
   font-style: normal;
 }
@@ -802,7 +802,7 @@ body {
 .search_oberlay {
   z-index: 100;
   position: fixed;
-  background: rgba(255, 255, 255, 0);
+  background: rgba(255, 255, 255, 0.9);
   height: 100vh;
   width: 100vw;
   overflow-y: hidden;
@@ -990,7 +990,7 @@ header .menu nav ul li .button-searc {
 header .menu nav ul .search {
   float: right;
 }
-/* line 63, ../sass/_partials/_mixins.scss */
+/* line 63, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .search-icon {
   height: 3px;
   width: 20px;
@@ -1002,7 +1002,7 @@ header .menu nav ul .search .search-icon {
   z-index: 150;
   margin-right: 10px;
 }
-/* line 75, ../sass/_partials/_mixins.scss */
+/* line 75, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .circle {
   position: relative;
   display: block;
@@ -1012,10 +1012,10 @@ header .menu nav ul .search .circle {
   border-radius: 70px;
   z-index: 0;
   border: 2px solid #0b0e16;
-  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: 1;
 }
-/* line 89, ../sass/_partials/_mixins.scss */
+/* line 89, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .handle {
   position: absolute;
   background-color: #0b0e16;
@@ -1028,7 +1028,7 @@ header .menu nav ul .search .handle {
   float: right;
   border-radius: 2px;
 }
-/* line 100, ../sass/_partials/_mixins.scss */
+/* line 100, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .handle:after {
   content: "";
   background-color: #0b0e16;
@@ -1037,21 +1037,21 @@ header .menu nav ul .search .handle:after {
   display: block;
   float: right;
   border-radius: 2px;
-  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: -1;
 }
-/* line 114, ../sass/_partials/_mixins.scss */
+/* line 114, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .open .circle {
   transform: scale(0.02);
   transform-origin: 30% 40%;
   background: #0b0e16;
   border-color: #0b0e16;
 }
-/* line 120, ../sass/_partials/_mixins.scss */
+/* line 120, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .open .handle {
   top: 17px;
 }
-/* line 123, ../sass/_partials/_mixins.scss */
+/* line 123, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .menu nav ul .search .open .handle:after {
   transform-origin: center center;
   transform: rotate(90deg);
@@ -1066,7 +1066,7 @@ header .mb-mobile .search {
   float: right;
   margin: 15px 20px 0;
 }
-/* line 63, ../sass/_partials/_mixins.scss */
+/* line 63, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .search-icon {
   height: 3px;
   width: 20px;
@@ -1078,7 +1078,7 @@ header .mb-mobile .search .search-icon {
   z-index: 150;
   margin-right: 10px;
 }
-/* line 75, ../sass/_partials/_mixins.scss */
+/* line 75, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .circle {
   position: relative;
   display: block;
@@ -1088,10 +1088,10 @@ header .mb-mobile .search .circle {
   border-radius: 70px;
   z-index: 0;
   border: 2px solid #0b0e16;
-  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: 1;
 }
-/* line 89, ../sass/_partials/_mixins.scss */
+/* line 89, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .handle {
   position: absolute;
   background-color: #0b0e16;
@@ -1104,7 +1104,7 @@ header .mb-mobile .search .handle {
   float: right;
   border-radius: 2px;
 }
-/* line 100, ../sass/_partials/_mixins.scss */
+/* line 100, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .handle:after {
   content: "";
   background-color: #0b0e16;
@@ -1113,21 +1113,21 @@ header .mb-mobile .search .handle:after {
   display: block;
   float: right;
   border-radius: 2px;
-  transition: all 0s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+  transition: all 0.6s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: -1;
 }
-/* line 114, ../sass/_partials/_mixins.scss */
+/* line 114, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .open .circle {
   transform: scale(0.02);
   transform-origin: 30% 40%;
   background: #0b0e16;
   border-color: #0b0e16;
 }
-/* line 120, ../sass/_partials/_mixins.scss */
+/* line 120, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .open .handle {
   top: 17px;
 }
-/* line 123, ../sass/_partials/_mixins.scss */
+/* line 123, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 header .mb-mobile .search .open .handle:after {
   transform-origin: center center;
   transform: rotate(90deg);
@@ -1143,7 +1143,7 @@ header .mb-mobile .search .open .handle:after {
   header .mb-mobile .search {
     margin: 10px 20px 0;
   }
-  /* line 196, ../sass/_partials/_mixins.scss */
+  /* line 196, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   header .burger {
     width: 18px;
     position: relative;
@@ -1152,7 +1152,7 @@ header .mb-mobile .search .open .handle:after {
     float: right;
     margin-top: 7px;
   }
-  /* line 205, ../sass/_partials/_mixins.scss */
+  /* line 205, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   header .burger-brick {
     height: 2px;
     background: #fff;
@@ -1164,7 +1164,7 @@ header .mb-mobile .search .open .handle:after {
     transition: 0.3s ease-out;
     background-color: #0b0e16;
   }
-  /* line 217, ../sass/_partials/_mixins.scss */
+  /* line 217, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   header .open .burger-brick:first-child {
     -webkit-transform: rotate(135deg);
     -moz-transform: rotate(135deg);
@@ -1173,7 +1173,7 @@ header .mb-mobile .search .open .handle:after {
     transform: rotate(135deg);
     margin-top: 10px;
   }
-  /* line 226, ../sass/_partials/_mixins.scss */
+  /* line 226, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   header .open .burger-brick:last-child {
     -webkit-transform: rotate(-135deg);
     -moz-transform: rotate(-135deg);
@@ -1182,7 +1182,7 @@ header .mb-mobile .search .open .handle:after {
     transform: rotate(-135deg);
     margin-top: -9px;
   }
-  /* line 235, ../sass/_partials/_mixins.scss */
+  /* line 235, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   header .open .middle {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
@@ -1204,7 +1204,7 @@ section .page-title {
 /* line 249, ../sass/museu.scss */
 section .page-title h1 {
   font-family: "butlermedium", Georgia, "Times New Roman", Times, serif;
-  font-size: 36px;
+  font-size: 28px;
   font-variant: small-caps;
 }
 
@@ -1402,14 +1402,14 @@ section#expo {
   margin-top: 150px;
   position: relative;
 }
-/* line 138, ../sass/_partials/_mixins.scss */
+/* line 138, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 section#expo .expositor {
   height: 200px;
   background: #ededad;
   margin: 0 auto;
   margin: 25px 0;
 }
-/* line 144, ../sass/_partials/_mixins.scss */
+/* line 144, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 section#expo .expositor img {
   height: 200px;
   width: 100%;
@@ -1417,14 +1417,14 @@ section#expo .expositor img {
   -moz-filter: grayscale(0);
   filter: grayscale(0);
 }
-/* line 151, ../sass/_partials/_mixins.scss */
+/* line 151, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 section#expo .expositor:hover {
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
   filter: grayscale(90%);
-  background-color: rgba(183, 29, 41, 0);
+  background-color: rgba(183, 29, 41, 0.4);
 }
-/* line 115, ../sass/_partials/_tipografia.scss */
+/* line 115, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#expo h2 {
   font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
   display: block;
@@ -1439,7 +1439,7 @@ section#expo h2 {
   white-space: nowrap;
   margin-bottom: 10px;
 }
-/* line 131, ../sass/_partials/_tipografia.scss */
+/* line 131, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#expo h3 {
   font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
   display: block;
@@ -1453,16 +1453,16 @@ section#expo h3 {
   line-height: 30px;
   letter-spacing: 1px;
 }
-/* line 145, ../sass/_partials/_tipografia.scss */
+/* line 145, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#expo a {
   text-decoration: none;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 150, ../sass/_partials/_tipografia.scss */
+  /* line 150, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#expo h2 {
     font-size: 56px;
   }
-  /* line 153, ../sass/_partials/_tipografia.scss */
+  /* line 153, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#expo h3 {
     font-size: 21px;
   }
@@ -1491,14 +1491,14 @@ section#exposicoes {
   position: relative;
   margin-top: 80px;
 }
-/* line 138, ../sass/_partials/_mixins.scss */
+/* line 138, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 section#exposicoes .expositor {
   height: 200px;
   background: #ededad;
   margin: 0 auto;
   margin: 25px 0;
 }
-/* line 144, ../sass/_partials/_mixins.scss */
+/* line 144, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 section#exposicoes .expositor img {
   height: 200px;
   width: 100%;
@@ -1506,14 +1506,14 @@ section#exposicoes .expositor img {
   -moz-filter: grayscale(0);
   filter: grayscale(0);
 }
-/* line 151, ../sass/_partials/_mixins.scss */
+/* line 151, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
 section#exposicoes .expositor:hover {
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
   filter: grayscale(90%);
-  background-color: rgba(183, 29, 41, 0);
+  background-color: rgba(183, 29, 41, 0.4);
 }
-/* line 115, ../sass/_partials/_tipografia.scss */
+/* line 115, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#exposicoes h2 {
   font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
   display: block;
@@ -1528,7 +1528,7 @@ section#exposicoes h2 {
   white-space: nowrap;
   margin-bottom: 10px;
 }
-/* line 131, ../sass/_partials/_tipografia.scss */
+/* line 131, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#exposicoes h3 {
   font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
   display: block;
@@ -1542,16 +1542,16 @@ section#exposicoes h3 {
   line-height: 30px;
   letter-spacing: 1px;
 }
-/* line 145, ../sass/_partials/_tipografia.scss */
+/* line 145, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#exposicoes a {
   text-decoration: none;
 }
 @media screen and (min-width: 992px) and (max-width: 1199px) {
-  /* line 150, ../sass/_partials/_tipografia.scss */
+  /* line 150, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#exposicoes h2 {
     font-size: 56px;
   }
-  /* line 153, ../sass/_partials/_tipografia.scss */
+  /* line 153, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#exposicoes h3 {
     font-size: 21px;
   }
@@ -1608,7 +1608,7 @@ section#colecao .montra-colecao .col-colecao:hover span {
   top: 0px;
   background-color: rgba(183, 29, 41, 0);
 }
-/* line 95, ../sass/_partials/_tipografia.scss */
+/* line 95, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#colecao .montra-colecao .col-colecao h2 {
   font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
   display: block;
@@ -1622,11 +1622,11 @@ section#colecao .montra-colecao .col-colecao h2 {
   left: 60px;
   zoom: 1;
 }
-/* line 30, ../sass/_partials/_grelhas.scss */
+/* line 30, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 section#colecao .montra-colecao .col-colecao h2:after {
   clear: both;
 }
-/* line 31, ../sass/_partials/_grelhas.scss */
+/* line 31, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_grelhas.scss */
 section#colecao .montra-colecao .col-colecao h2:before, section#colecao .montra-colecao .col-colecao h2:after {
   content: '\0020';
   display: block;
@@ -1635,7 +1635,7 @@ section#colecao .montra-colecao .col-colecao h2:before, section#colecao .montra-
   width: 0;
   height: 0;
 }
-/* line 109, ../sass/_partials/_tipografia.scss */
+/* line 109, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#colecao .montra-colecao .col-colecao a {
   text-decoration: none;
 }
@@ -1665,14 +1665,14 @@ section#colecao .montra-colecao .col-colecao:first-child {
     max-width: 600px;
     padding-bottom: 50px;
   }
-  /* line 138, ../sass/_partials/_mixins.scss */
+  /* line 138, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   section#colecao .montra-colecao-mb .expositor {
     height: 200px;
     background: #ededad;
     margin: 0 auto;
     margin: 25px 0;
   }
-  /* line 144, ../sass/_partials/_mixins.scss */
+  /* line 144, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   section#colecao .montra-colecao-mb .expositor img {
     height: 200px;
     width: 100%;
@@ -1680,14 +1680,14 @@ section#colecao .montra-colecao .col-colecao:first-child {
     -moz-filter: grayscale(0);
     filter: grayscale(0);
   }
-  /* line 151, ../sass/_partials/_mixins.scss */
+  /* line 151, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   section#colecao .montra-colecao-mb .expositor:hover {
     -webkit-filter: grayscale(90%);
     -moz-filter: grayscale(90%);
     filter: grayscale(90%);
-    background-color: rgba(183, 29, 41, 0);
+    background-color: rgba(183, 29, 41, 0.4);
   }
-  /* line 115, ../sass/_partials/_tipografia.scss */
+  /* line 115, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h2 {
     font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
     display: block;
@@ -1702,7 +1702,7 @@ section#colecao .montra-colecao .col-colecao:first-child {
     white-space: nowrap;
     margin-bottom: 10px;
   }
-  /* line 131, ../sass/_partials/_tipografia.scss */
+  /* line 131, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h3 {
     font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
     display: block;
@@ -1716,7 +1716,7 @@ section#colecao .montra-colecao .col-colecao:first-child {
     line-height: 30px;
     letter-spacing: 1px;
   }
-  /* line 145, ../sass/_partials/_tipografia.scss */
+  /* line 145, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb a {
     text-decoration: none;
   }
@@ -1730,11 +1730,11 @@ section#colecao .montra-colecao .col-colecao:first-child {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) and (min-width: 992px) and (max-width: 1199px) {
-  /* line 150, ../sass/_partials/_tipografia.scss */
+  /* line 150, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h2 {
     font-size: 56px;
   }
-  /* line 153, ../sass/_partials/_tipografia.scss */
+  /* line 153, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h3 {
     font-size: 21px;
   }
@@ -1750,14 +1750,14 @@ section#colecao .montra-colecao .col-colecao:first-child {
     max-width: 400px;
     padding-bottom: 50px;
   }
-  /* line 138, ../sass/_partials/_mixins.scss */
+  /* line 138, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   section#colecao .montra-colecao-mb .expositor {
     height: 200px;
     background: #ededad;
     margin: 0 auto;
     margin: 25px 0;
   }
-  /* line 144, ../sass/_partials/_mixins.scss */
+  /* line 144, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   section#colecao .montra-colecao-mb .expositor img {
     height: 200px;
     width: 100%;
@@ -1765,14 +1765,14 @@ section#colecao .montra-colecao .col-colecao:first-child {
     -moz-filter: grayscale(0);
     filter: grayscale(0);
   }
-  /* line 151, ../sass/_partials/_mixins.scss */
+  /* line 151, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_mixins.scss */
   section#colecao .montra-colecao-mb .expositor:hover {
     -webkit-filter: grayscale(90%);
     -moz-filter: grayscale(90%);
     filter: grayscale(90%);
-    background-color: rgba(183, 29, 41, 0);
+    background-color: rgba(183, 29, 41, 0.4);
   }
-  /* line 115, ../sass/_partials/_tipografia.scss */
+  /* line 115, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h2 {
     font-family: "butlerbold", Georgia, "Times New Roman", Times, serif;
     display: block;
@@ -1787,7 +1787,7 @@ section#colecao .montra-colecao .col-colecao:first-child {
     white-space: nowrap;
     margin-bottom: 10px;
   }
-  /* line 131, ../sass/_partials/_tipografia.scss */
+  /* line 131, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h3 {
     font-family: "proxima_novaregular_italic", Helvetica, Arial, sans-serif;
     display: block;
@@ -1801,7 +1801,7 @@ section#colecao .montra-colecao .col-colecao:first-child {
     line-height: 30px;
     letter-spacing: 1px;
   }
-  /* line 145, ../sass/_partials/_tipografia.scss */
+  /* line 145, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb a {
     text-decoration: none;
   }
@@ -1815,11 +1815,11 @@ section#colecao .montra-colecao .col-colecao:first-child {
   }
 }
 @media screen and (max-width: 767px) and (min-width: 992px) and (max-width: 1199px) {
-  /* line 150, ../sass/_partials/_tipografia.scss */
+  /* line 150, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h2 {
     font-size: 56px;
   }
-  /* line 153, ../sass/_partials/_tipografia.scss */
+  /* line 153, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
   section#colecao .montra-colecao-mb h3 {
     font-size: 21px;
   }
@@ -1846,13 +1846,13 @@ section#grelha-colecao .container > .grelha .item > .footnotes p {
 section#sobremuseu {
   padding-top: 80px;
 }
-/* line 249, ../sass/_partials/_tipografia.scss */
+/* line 249, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#sobremuseu .block-text {
   width: 70%;
   margin: 0 auto;
   padding-top: 50px;
 }
-/* line 205, ../sass/_partials/_tipografia.scss */
+/* line 205, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#sobremuseu h4 {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
   font-size: 35px;
@@ -1861,7 +1861,7 @@ section#sobremuseu h4 {
   line-height: 45px;
   padding-bottom: 15px;
 }
-/* line 215, ../sass/_partials/_tipografia.scss */
+/* line 215, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#sobremuseu h5 {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
   font-size: 27px;
@@ -1870,7 +1870,7 @@ section#sobremuseu h5 {
   line-height: 25px;
   padding-bottom: 15px;
 }
-/* line 225, ../sass/_partials/_tipografia.scss */
+/* line 225, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#sobremuseu h6 {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
   font-size: 21px;
@@ -1880,7 +1880,7 @@ section#sobremuseu h6 {
   padding-bottom: 15px;
   letter-spacing: 0,5px;
 }
-/* line 236, ../sass/_partials/_tipografia.scss */
+/* line 236, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#sobremuseu p {
   font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
   font-size: 17px;
@@ -1917,13 +1917,13 @@ section#sobremuseu img.img-expo {
   margin-bottom: 50px;
 }
 
-/* line 249, ../sass/_partials/_tipografia.scss */
+/* line 249, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#localizacao .block-text {
   width: 70%;
   margin: 0 auto;
   padding-top: 50px;
 }
-/* line 205, ../sass/_partials/_tipografia.scss */
+/* line 205, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 section#localizacao h4 {
   font-family: "proxima_nova_rgregular", Helvetica, Arial, sans-serif;
   font-size: 35px;
@@ -1980,7 +1980,7 @@ footer .largescreen {
 footer div[class*="col-"] {
   margin: 0 10px;
 }
-/* line 178, ../sass/_partials/_tipografia.scss */
+/* line 178, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 footer div[class*="col-"] h2.museu {
   font-family: "butler_stencilblack", Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
@@ -1989,7 +1989,7 @@ footer div[class*="col-"] h2.museu {
   font-size: 22px;
   line-height: 48px;
 }
-/* line 186, ../sass/_partials/_tipografia.scss */
+/* line 186, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 footer div[class*="col-"] h3 {
   font-family: "butlerregular", Georgia, "Times New Roman", Times, serif;
   letter-spacing: 1.5px;
@@ -1997,7 +1997,7 @@ footer div[class*="col-"] h3 {
   line-height: 49px;
   font-variant: small-caps;
 }
-/* line 194, ../sass/_partials/_tipografia.scss */
+/* line 194, /Users/ruirocha/Sites/_FERRAMENTAS_WEB/Museu/sass/_partials/_tipografia.scss */
 footer div[class*="col-"] ul li a {
   font-family: "proxima_novalight", Helvetica, Arial, sans-serif;
   text-align: left;
